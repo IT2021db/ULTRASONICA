@@ -1,0 +1,574 @@
+<!DOCTYPE html><html class="dark" lang="pl" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#00e3fd", "on-error": "#690005", "inverse-primary": "#0056d1", "primary-fixed": "#dae2ff", "on-primary-container": "#fffeff", "surface-container-high": "#1a2a44", "on-primary-fixed-variant": "#0040a0", "on-tertiary-fixed": "#001d33", "surface-container": "#0f2039", "surface-container-lowest": "#000e25", "on-secondary": "#00363d", "surface-dim": "#02132c", "tertiary": "#97cbff", "tertiary-fixed": "#cee5ff", "surface-container-highest": "#25354f", "secondary": "#bdf4ff", "error-container": "#93000a", "on-tertiary": "#003354", "on-primary-fixed": "#001847", "on-secondary-container": "#00616d", "on-tertiary-container": "#fffeff", "surface-container-low": "#0a1c35", "secondary-fixed": "#9cf0ff", "inverse-surface": "#d6e3ff", "tertiary-fixed-dim": "#97cbff", "background": "#02132c", "outline-variant": "#424655", "on-primary": "#002c72", "primary": "#b2c5ff", "on-secondary-fixed-variant": "#004f58", "tertiary-container": "#007bc0", "on-surface": "#d6e3ff", "on-surface-variant": "#c2c6d8", "primary-fixed-dim": "#b2c5ff", "outline": "#8c90a1", "on-secondary-fixed": "#001f24", "surface-bright": "#2a3954", "on-tertiary-fixed-variant": "#004a77", "inverse-on-surface": "#21314b", "error": "#ffb4ab", "primary-container": "#0a6cff", "surface-variant": "#25354f", "secondary-fixed-dim": "#00daf3", "surface-tint": "#b2c5ff", "on-background": "#d6e3ff", "on-error-container": "#ffdad6", "surface": "#02132c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "margin": "4rem", "margin-mobile": "1.25rem", "margin-tablet": "2rem", "space-md": "1rem" }, "fontFamily": { "headline-xl": [ "Space Grotesk" ], "body-md-medium": [ "Inter" ], "headline-md": [ "Space Grotesk" ], "label-md": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "subheading-eyebrow": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-md": [ "Inter" ], "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "label-sm": [ "Inter" ] }, "fontSize": { "headline-xl": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md-medium": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "display-hero": [ "64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "display-hero-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-xl-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "subheading-eyebrow": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.15em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "29px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-sm": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between"><a class="flex items-center gap-space-sm group" data-path="start" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1USKhoaceUZFQyNAIcZkAtLUXSRjQogL0AlBl4aBXSOb-C8cpbAWVuLwm48E1y0hGhjP6ZJ1pu-1FPp0fHoVwJTTR1KtyG_HxKvqqgtocD5oSr2V5gw9ysT5i1g3xHR63cDWbgQY7NqiGRKassfPsB96Zr8N_DsNDzCKl94MCIDrbU8v-qnOFXrd53SthV93P_MeUGaPw4U-KRFP7Ebw1OFsDLB14dVpSPWtGdGCjVPnH2nd-ukTcIRwBIX"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface font-bold group-hover:text-secondary-fixed transition-colors">ULTRASONICA</span><span class="font-subheading-eyebrow text-subheading-eyebrow text-secondary-fixed-dim uppercase tracking-widest">INŻYNIERIA INTELIGENTNYCH SYSTEMÓW</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-secondary-fixed font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="start" href="#">Start</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="uslugi" href="#">Usługi</a><a aria-current="page" class="transition-colors text-secondary-fixed font-bold" data-path="realizacje" href="#">Realizacje</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kontakt" href="#">Kontakt</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded-full px-space-xs py-1"><a class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-highest text-secondary-fixed font-semibold transition-all" href="#">PL</a><span class="text-outline-variant font-label-sm text-label-sm px-0.5">|</span><a class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" href="#">EN</a></div><a class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md font-semibold text-on-primary-container bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-space-lg py-2.5 rounded-[10px] shadow-[0_0_20px_rgba(0,229,255,0.3)] hover:shadow-[0_0_28px_rgba(0,229,255,0.55)] transition-all" data-path="kontakt" href="#">Wyślij zapytanie</a></div></div></header><main class="w-full pt-20 bg-[#FAFAF9] min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Ambient Header Stage Layer -->
+<div class="relative w-full overflow-hidden bg-white border-b border-slate-200/80">
+<div class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-b from-[#00E5FF]/10 via-[#0A6CFF]/5 to-transparent blur-[120px] rounded-full"></div>
+<!-- Hero Header Stage -->
+<section class="relative max-w-[1280px] mx-auto px-gutter pt-12 pb-16 lg:pt-16 lg:pb-20">
+<div class="flex flex-col items-start max-w-4xl">
+<!-- Honest Disclaimer Badge (Pill with animated telemetry pip) -->
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-[#EBF3FF] border border-[#D0E2FF] text-[#0A6CFF] shadow-sm mb-6">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0A6CFF] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-[#0A6CFF]"></span>
+</span>
+<span class="font-subheading-eyebrow text-subheading-eyebrow tracking-widest uppercase font-bold text-[#0A6CFF]">
+            Przykładowy scenariusz wdrożenia • Nie referencja klienta
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-[#0B0F19] font-bold tracking-tight mb-4">
+          Jak inteligentne systemy pracują w firmach
+        </h1>
+<p class="font-body-lg text-body-lg text-[#475569] max-w-2xl leading-relaxed">
+          Zobacz realistyczne scenariusze wdrożeń automatyzacji i sztucznej inteligencji w małych i średnich przedsiębiorstwach. Żadnych fikcyjnych statystyk — czysta inżynieria procesowa i mierzalna eliminacja chaosu.
+        </p>
+<!-- Technical Telemetry Indicators Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full mt-10 p-5 bg-[#F8FAFC] border border-slate-200 shadow-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-slate-500 font-semibold">ARCHITEKTURA</span>
+<span class="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">Zero Data Leak</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-slate-500 font-semibold">STANDARD MODELI</span>
+<span class="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">Private LLM / RAG</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-slate-500 font-semibold">CZAS REAKCJI</span>
+<span class="font-headline-sm text-headline-sm text-[#0A6CFF] font-bold">≤ 10 sekund</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-slate-500 font-semibold">INTEGRACJE ERP</span>
+<span class="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">REST API &amp; Webhook</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- CASE SCENARIOS MASTER CONTAINER (Jasne tło, białe estetyczne karty) -->
+<div class="bg-[#FAFAF9] py-16 lg:py-24">
+<section class="max-w-[1280px] mx-auto px-gutter space-y-16 lg:space-y-24">
+<!-- SCENARIUSZ 01: ASYSTENT AI DO ZAPYTAŃ OFERTOWYCH -->
+<article class="bg-white border border-slate-200 p-6 lg:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden rounded-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Text Columns (6 cols) -->
+<div class="lg:col-span-6 flex flex-col space-y-6">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm font-bold text-[#0A6CFF] bg-[#F0F7FF] border border-[#D5E7FF] px-2.5 py-1 rounded">
+                SCENARIUSZ 01
+              </span>
+<span class="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider">
+                SPRZEDAŻ B2B &amp; KATALOGI TECHNICZNE
+              </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
+              Asystent AI do odpowiadania na zapytania ofertowe
+            </h2>
+<div class="space-y-4">
+<!-- Problem Block -->
+<div class="p-4 rounded-lg bg-[#F8FAFC] border border-slate-200/80 flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#E11D48] text-[22px] shrink-0 mt-0.5">report_problem</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#E11D48] uppercase tracking-wider block mb-1">Problem</span>
+<p class="font-body-md text-body-md text-[#475569]">
+                    Handlowcy spędzali po 2-3 godziny dziennie na przeszukiwaniu specyfikacji technicznych i redagowaniu powtarzalnych maili.
+                  </p>
+</div>
+</div>
+<!-- Solution Block -->
+<div class="p-4 rounded-lg bg-[#F0F7FF] border border-[#D5E7FF] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#0A6CFF] text-[22px] shrink-0 mt-0.5">neurology</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#0A6CFF] uppercase tracking-wider block mb-1">Rozwiązanie</span>
+<p class="font-body-md text-body-md text-[#334155]">
+                    Wdrożenie wewnętrznego asystenta AI połączonego z katalogiem produktów i bezpieczną bazą wiedzy firmy.
+                  </p>
+</div>
+</div>
+<!-- Effect Block -->
+<div class="p-4 rounded-lg bg-[#F0FDF4] border border-[#BBF7D0] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#16A34A] text-[22px] shrink-0 mt-0.5">verified</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#16A34A] uppercase tracking-wider block mb-1">Efekt</span>
+<p class="font-body-md text-body-md text-[#1E293B]">
+                    Wstępne wersje spersonalizowanych ofert generowane w 10 sekund; handlowcy skupiają się na relacjach i domykaniu sprzedaży.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- UI Frame: Laptop Frame (6 cols) -->
+<div class="lg:col-span-6 flex flex-col items-center justify-center">
+<div class="w-full max-w-[540px] bg-[#001029] rounded-t-xl p-2.5 pb-0 shadow-xl border border-slate-800">
+<!-- Laptop Top Bezel -->
+<div class="flex items-center justify-between px-3 py-1.5 bg-[#000E25] rounded-t-lg">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#10B981]"></div>
+</div>
+<div class="px-3 py-0.5 rounded-md bg-[#0F2039] text-slate-400 text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed">lock</span>
+                  crm.ultrasonica.local/sales-copilot
+                </div>
+<div class="w-8"></div>
+</div>
+<!-- Screen Inner Content: CRM AI Chat Interface -->
+<div class="bg-[#02132C] p-4 sm:p-5 flex flex-col space-y-4">
+<!-- Context header -->
+<div class="flex items-center justify-between pb-3 border-b border-[#1A2A44]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">smart_toy</span>
+<span class="font-headline-sm text-headline-sm text-white">Sales Assistant RAG</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed bg-[#0F2039] px-2 py-0.5 rounded-full border border-[#1A2A44]">Katalog v4.2 aktywny</span>
+</div>
+<!-- Chat flow -->
+<div class="space-y-3">
+<!-- User incoming request inquiry -->
+<div class="p-3 rounded-lg bg-[#0F2039] max-w-[85%] text-slate-200 border border-[#1E304F]">
+<span class="font-label-sm text-label-sm text-slate-400 block mb-1">Zapytanie klienta (E-mail ID: #4812)</span>
+<p class="font-body-sm text-body-sm text-slate-200">
+                      „Dzień dobry, szukamy 15 falowników o mocy &gt;22kW odpornych na pył chemiczny z dostawą w 48h. Jaki model rekomendujecie?”
+                    </p>
+</div>
+<!-- AI Generated Response preview -->
+<div class="p-3.5 rounded-lg bg-[#1A2A44] ml-auto max-w-[92%] shadow-sm border border-[#25354F]">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span> Propozycja szkicu (czas reakcji: 1.4s)
+                      </span>
+<span class="font-label-sm text-label-sm text-[#00E5FF] font-medium">Trafność: 99.4%</span>
+</div>
+<p class="font-body-sm text-body-sm text-white mb-3">
+                      Sugerowany model: <strong class="text-secondary-fixed">UltraDrive-X25 (IP66)</strong>. Mamy na stanie w magazynie Gdynia 24 sztuki. Przygotowano wycenę hurtową z rabatem progowym (tier B).
+                    </p>
+<div class="flex gap-2">
+<button class="font-label-sm text-label-sm px-3 py-1 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded font-semibold shadow-sm" type="button">
+                        Wstaw do Gmaila
+                      </button>
+<button class="font-label-sm text-label-sm px-3 py-1 bg-[#0F2039] text-slate-200 border border-[#25354F] rounded hover:text-white" type="button">
+                        Zmień rabat
+                      </button>
+</div>
+</div>
+</div>
+<!-- Input simulation -->
+<div class="flex items-center gap-2 p-2 rounded-lg bg-[#0F2039] text-slate-400 border border-[#1A2A44]">
+<span class="material-symbols-outlined text-[18px]">attach_file</span>
+<span class="font-body-sm text-body-sm flex-1 text-slate-400">Wpisz komendę lub podaj numer zapytania...</span>
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">send</span>
+</div>
+</div>
+</div>
+<!-- Laptop Bottom Base -->
+<div class="w-full max-w-[590px] h-3.5 bg-slate-800 rounded-b-xl flex justify-center items-center">
+<div class="w-16 h-1 bg-slate-600 rounded-full"></div>
+</div>
+</div>
+</div>
+</article>
+
+<!-- SCENARIUSZ 02: AUTOMATYCZNE PRZETWARZANIE FAKTUR -->
+<article class="bg-white border border-slate-200 p-6 lg:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden rounded-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Visual Mockup (6 cols - Order 2 on mobile, 1 on desktop) -->
+<div class="lg:col-span-6 order-2 lg:order-1 flex justify-center">
+<div class="w-full max-w-[460px] bg-[#001029] p-3 shadow-xl rounded-lg border border-slate-800">
+<!-- Tablet Glass Frame -->
+<div class="bg-[#02132C] p-5 flex flex-col space-y-4 rounded-md border border-[#1A2A44]">
+<div class="flex items-center justify-between pb-2 border-b border-[#1A2A44]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">document_scanner</span>
+<span class="font-headline-sm text-headline-sm text-white font-bold">OCR Parser • ERP Bridge</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed bg-[#0F2039] px-2.5 py-0.5 rounded-full border border-[#1E304F]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Status: Zgodny
+                  </span>
+</div>
+<!-- Document analysis view -->
+<div class="p-3.5 rounded-lg bg-[#0F2039] space-y-2.5 border border-[#1E304F]">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-slate-300 font-medium">Plik: Faktura_VAT_2026_03_991.pdf</span>
+<span class="text-secondary-fixed font-semibold">100% zaufania OCR</span>
+</div>
+<!-- Extracted Entities Pills -->
+<div class="grid grid-cols-2 gap-2 text-label-sm font-label-sm">
+<div class="p-2 rounded bg-[#1A2A44] border border-[#25354F]">
+<span class="text-slate-400 block text-xs">Sprzedawca:</span>
+<span class="text-white font-semibold truncate block">Nordic Metal Sp. z o.o.</span>
+<span class="text-secondary-fixed-dim text-xs">NIP: 586-21-44-890 [Biała Lista OK]</span>
+</div>
+<div class="p-2 rounded bg-[#1A2A44] border border-[#25354F]">
+<span class="text-slate-400 block text-xs">Kwota brutto:</span>
+<span class="text-white font-semibold block">48 760,00 PLN</span>
+<span class="text-secondary-fixed-dim text-xs">VAT: 23% (9 117,72 PLN)</span>
+</div>
+</div>
+<div class="p-2 rounded bg-[#1A2A44] border border-[#25354F]">
+<span class="text-slate-400 block text-xs">Numer konta (IBAN):</span>
+<div class="flex items-center justify-between">
+<span class="text-white font-mono text-xs">PL 88 1090 1102 0000 0005 3211 9901</span>
+<span class="text-secondary-fixed text-xs font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Zweryfikowano
+                      </span>
+</div>
+</div>
+</div>
+<!-- Live ERP Routing Log -->
+<div class="p-3 rounded-lg bg-[#1A2A44] flex flex-col gap-1.5 font-label-sm text-label-sm border border-[#25354F]">
+<div class="flex items-center justify-between text-slate-300">
+<span class="">Ścieżka dekretacji ERP:</span>
+<span class="text-white font-medium">Konto 401-02 (Surowce)</span>
+</div>
+<div class="flex items-center justify-between text-secondary-fixed">
+<span class="">Przesłano do Comarch Optima:</span>
+<span class="font-mono">Payload HTTP 201 Created</span>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-1">
+<button class="font-label-sm text-label-sm px-4 py-2 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded-lg font-semibold shadow-sm" type="button">
+                    Zatwierdź i zaksięguj
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Content Columns (6 cols - Order 1 on mobile, 2 on desktop) -->
+<div class="lg:col-span-6 order-1 lg:order-2 flex flex-col space-y-6">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm font-bold text-[#0A6CFF] bg-[#F0F7FF] border border-[#D5E7FF] px-2.5 py-1 rounded">
+                SCENARIUSZ 02
+              </span>
+<span class="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider">
+                FINANSE &amp; KSIĘGOWOŚĆ OPERACYJNA
+              </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
+              Automatyczne przetwarzanie faktur i dokumentów kosztowych
+            </h2>
+<div class="space-y-4">
+<!-- Problem Block -->
+<div class="p-4 rounded-lg bg-[#F8FAFC] border border-slate-200/80 flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#E11D48] text-[22px] shrink-0 mt-0.5">report_problem</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#E11D48] uppercase tracking-wider block mb-1">Problem</span>
+<p class="font-body-md text-body-md text-[#475569]">
+                    Dział księgowości ręcznie przepisywał dane z setek faktur PDF i skanów trafiających na pocztę.
+                  </p>
+</div>
+</div>
+<!-- Solution Block -->
+<div class="p-4 rounded-lg bg-[#F0F7FF] border border-[#D5E7FF] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#0A6CFF] text-[22px] shrink-0 mt-0.5">visibility</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#0A6CFF] uppercase tracking-wider block mb-1">Rozwiązanie</span>
+<p class="font-body-md text-body-md text-[#334155]">
+                    System OCR wspomagany AI, który automatycznie odczytuje pozycje, weryfikuje NIP oraz kwoty i przesyła dane bezpośrednio do systemu ERP.
+                  </p>
+</div>
+</div>
+<!-- Effect Block -->
+<div class="p-4 rounded-lg bg-[#F0FDF4] border border-[#BBF7D0] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#16A34A] text-[22px] shrink-0 mt-0.5">verified</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#16A34A] uppercase tracking-wider block mb-1">Efekt</span>
+<p class="font-body-md text-body-md text-[#1E293B]">
+                    Całkowita eliminacja ręcznego przepisywania danych i pomyłek w numerach kont, natychmiastowe księgowanie kosztów.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+
+<!-- SCENARIUSZ 03: DEDYKOWANY PORTAL KLIENTA -->
+<article class="bg-white border border-slate-200 p-6 lg:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden rounded-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Text Columns (6 cols) -->
+<div class="lg:col-span-6 flex flex-col space-y-6">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm font-bold text-[#0A6CFF] bg-[#F0F7FF] border border-[#D5E7FF] px-2.5 py-1 rounded">
+                SCENARIUSZ 03
+              </span>
+<span class="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider">
+                PORTAL B2B &amp; PLANOWANIE PRODUKCJI
+              </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
+              Dedykowany portal klienta z systemem zamówień
+            </h2>
+<div class="space-y-4">
+<!-- Problem Block -->
+<div class="p-4 rounded-lg bg-[#F8FAFC] border border-slate-200/80 flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#E11D48] text-[22px] shrink-0 mt-0.5">report_problem</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#E11D48] uppercase tracking-wider block mb-1">Problem</span>
+<p class="font-body-md text-body-md text-[#475569]">
+                    Zamówienia spływały chaotycznie przez telefon, SMS-y i maile, co prowadziło do pomyłek i opóźnień produkcyjnych.
+                  </p>
+</div>
+</div>
+<!-- Solution Block -->
+<div class="p-4 rounded-lg bg-[#F0F7FF] border border-[#D5E7FF] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#0A6CFF] text-[22px] shrink-0 mt-0.5">devices</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#0A6CFF] uppercase tracking-wider block mb-1">Rozwiązanie</span>
+<p class="font-body-md text-body-md text-[#334155]">
+                    Prosta, responsywna aplikacja webowa dla stałych kontrahentów z podglądem stanów, automatyczną wyceną i historią zleceń.
+                  </p>
+</div>
+</div>
+<!-- Effect Block -->
+<div class="p-4 rounded-lg bg-[#F0FDF4] border border-[#BBF7D0] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#16A34A] text-[22px] shrink-0 mt-0.5">verified</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#16A34A] uppercase tracking-wider block mb-1">Efekt</span>
+<p class="font-body-md text-body-md text-[#1E293B]">
+                    Pełna przejrzystość zamówień dla klientów w trybie 24/7 oraz uporządkowany harmonogram dla zespołu produkcyjnego.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Composite UI: Monitor + Phone Composition (6 cols) -->
+<div class="lg:col-span-6 relative flex items-center justify-center pt-4 pb-2">
+<!-- Monitor Mockup -->
+<div class="w-full max-w-[440px] bg-[#001029] rounded-xl p-3 shadow-xl border border-slate-800">
+<!-- Top bar -->
+<div class="flex items-center justify-between pb-3 bg-[#001029] border-b border-[#1A2A44]">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#10B981]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold">Portal Kontrahenta • B2B Portal</span>
+<span class="material-symbols-outlined text-slate-400 text-[16px]">account_circle</span>
+</div>
+<div class="rounded-lg bg-[#02132C] p-4 space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-white font-bold">Aktualne zlecenia w toku</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed bg-[#0F2039] px-2 py-0.5 rounded border border-[#1A2A44]">3 aktywne</span>
+</div>
+<!-- Table Preview -->
+<div class="space-y-2">
+<div class="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F]">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-white">#ORD-9021 • Moduły X4</span>
+<span class="font-label-sm text-label-sm text-slate-400">Dostawa: Piątek, 14:00</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-secondary-fixed font-medium">W produkcji</span>
+</div>
+<div class="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F]">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-white">#ORD-8940 • Elementy T-800</span>
+<span class="font-label-sm text-label-sm text-slate-400">Dostawa: Zrealizowano</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-[#00E5FF] font-medium">Wysłane kurierem</span>
+</div>
+</div>
+<!-- Direct Quick Action button -->
+<div class="pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-slate-400">Dostępność magazynu: 98%</span>
+<button class="font-label-sm text-label-sm px-3 py-1.5 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded font-medium shadow-sm" type="button">
+                    + Nowe zamówienie
+                  </button>
+</div>
+</div>
+</div>
+<!-- Overlapping Mobile Phone Screen Mockup -->
+<div class="absolute -bottom-4 right-0 sm:right-4 w-[190px] bg-[#000E25] p-2 shadow-2xl rounded-lg border border-slate-700">
+<div class="rounded-xl bg-[#02132C] p-3 space-y-2.5 border border-[#1A2A44]">
+<div class="w-10 h-1 bg-slate-600 rounded-full mx-auto mb-1"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary-fixed">Mobilny status</span>
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">notifications_active</span>
+</div>
+<div class="p-2 rounded bg-[#0F2039] border border-[#1E304F]">
+<span class="font-label-sm text-label-sm text-slate-400 block text-[10px]">Powiadomienie PUSH:</span>
+<span class="font-body-sm text-body-sm text-slate-200 text-xs block leading-tight font-medium">Partia #ORD-9021 opuściła linię montażową.</span>
+</div>
+<div class="w-full py-1 text-center bg-[#1A2A44] rounded text-[11px] font-label-sm text-secondary-fixed">
+                  Podgląd trasy GPS
+                </div>
+</div>
+</div>
+</div>
+</div>
+</article>
+
+<!-- SCENARIUSZ 04: INTEGRACJA CRM Z POCZTĄ I POWIADOMIENIAMI -->
+<article class="bg-white border border-slate-200 p-6 lg:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden rounded-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Mobile Phone Mockup (6 cols - Order 2 on mobile, 1 on desktop) -->
+<div class="lg:col-span-6 order-2 lg:order-1 flex justify-center">
+<div class="w-full max-w-[320px] bg-[#001029] p-3 shadow-xl rounded-lg border border-slate-800">
+<!-- Phone Shell -->
+<div class="bg-[#02132C] p-4 flex flex-col space-y-3.5 rounded-md border border-[#1A2A44]">
+<!-- Phone Dynamic Island Notch -->
+<div class="flex justify-center items-center py-1">
+<div class="w-20 h-4 bg-[#000E25] rounded-full flex items-center justify-end px-2">
+<div class="w-2 h-2 rounded-full bg-secondary-fixed"></div>
+</div>
+</div>
+<!-- Header Status -->
+<div class="flex items-center justify-between pb-1 border-b border-[#1A2A44]">
+<span class="font-headline-sm text-headline-sm text-white font-bold">CRM Sentinel</span>
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">sync</span>
+</div>
+<!-- Notification Stack 1 -->
+<div class="p-3 rounded-xl bg-[#1A2A44] shadow-md space-y-1 border border-[#25354F]">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-secondary-fixed font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">mark_email_read</span> Oferta otwarta
+                    </span>
+<span class="text-slate-400 text-xs">2 min temu</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-200 text-xs leading-snug">
+                    Prezes firmy <strong class="text-white">Vanguard Logistyka</strong> otworzył załącznik wyceny (czas czytania: 4m 12s).
+                  </p>
+</div>
+<!-- Notification Stack 2 -->
+<div class="p-3 rounded-xl bg-[#0F2039] space-y-1 border border-[#1E304F]">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-[#00E5FF] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule_send</span> Auto-przypomnienie
+                    </span>
+<span class="text-slate-400 text-xs">Zaplanowane</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-300 text-xs leading-snug">
+                    Sekwencja Follow-up #2 przygotowana do wysyłki na jutro g. 09:30 (brak odpowiedzi na maila #1).
+                  </p>
+</div>
+<!-- Notification Stack 3 -->
+<div class="p-3 rounded-xl bg-[#0F2039] space-y-1 border border-[#1E304F]">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-white font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-amber-400">phone_in_talk</span> Sugerowany telefon
+                    </span>
+<span class="text-secondary-fixed text-xs font-bold">GORĄCY LEAD</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-300 text-xs leading-snug">
+                    Współczynnik zainteresowania: <strong class="text-white">94%</strong>. Rekomendowany kontakt dziś do 16:00.
+                  </p>
+</div>
+<button class="w-full py-2.5 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white font-label-md text-label-md rounded-xl font-semibold shadow-sm flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">call</span> Zadzwoń do klienta
+                </button>
+</div>
+</div>
+</div>
+<!-- Content Columns (6 cols - Order 1 on mobile, 2 on desktop) -->
+<div class="lg:col-span-6 order-1 lg:order-2 flex flex-col space-y-6">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm font-bold text-[#0A6CFF] bg-[#F0F7FF] border border-[#D5E7FF] px-2.5 py-1 rounded">
+                SCENARIUSZ 04
+              </span>
+<span class="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider">
+                SYNCHRONIZACJA • LEAD NURTURING
+              </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
+              Integracja CRM z pocztą i powiadomieniami
+            </h2>
+<div class="space-y-4">
+<!-- Problem Block -->
+<div class="p-4 rounded-lg bg-[#F8FAFC] border border-slate-200/80 flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#E11D48] text-[22px] shrink-0 mt-0.5">report_problem</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#E11D48] uppercase tracking-wider block mb-1">Problem</span>
+<p class="font-body-md text-body-md text-[#475569]">
+                    Brak automatyzacji powodował gubienie leadów i brak terminowego kontaktu po wysłaniu oferty handlowej.
+                  </p>
+</div>
+</div>
+<!-- Solution Block -->
+<div class="p-4 rounded-lg bg-[#F0F7FF] border border-[#D5E7FF] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#0A6CFF] text-[22px] shrink-0 mt-0.5">sync_alt</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#0A6CFF] uppercase tracking-wider block mb-1">Rozwiązanie</span>
+<p class="font-body-md text-body-md text-[#334155]">
+                    Dwukierunkowa integracja skrzynki pocztowej z systemem CRM oraz inteligentne powiadomienia o aktywności klienta.
+                  </p>
+</div>
+</div>
+<!-- Effect Block -->
+<div class="p-4 rounded-lg bg-[#F0FDF4] border border-[#BBF7D0] flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#16A34A] text-[22px] shrink-0 mt-0.5">verified</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#16A34A] uppercase tracking-wider block mb-1">Efekt</span>
+<p class="font-body-md text-body-md text-[#1E293B]">
+                    Zespół handlowy zawsze wie, kiedy klient zapoznał się z ofertą, a przypomnienia wysyłają się automatycznie.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+
+<!-- BANER / RAMKA: Tu wkrótce pojawią się autoryzowane realizacje (Jasny moduł z obrysem) -->
+<section class="max-w-[1280px] mx-auto px-gutter pb-16 lg:pb-24">
+<div class="relative bg-white border-2 border-dashed border-slate-300 p-8 sm:p-12 overflow-hidden shadow-sm rounded-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EBF3FF] border border-[#D0E2FF] text-[#0A6CFF] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span class="">MODEL PARTNERSKI • BEZPOŚREDNI NADZÓR ARCHITEKTA</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">Tu wkrótce pojawią się autoryzowane realizacje</h3>
+<p class="font-body-md text-body-md text-[#475569] max-w-2xl leading-relaxed">
+Łączymy wieloletnie inżynieryjne fundamenty wytwarzania oprogramowania z najnowocześniejszymi modelami AI i automatyzacją procesów. Prowadzimy rygorystyczną politykę poufności (NDA) — wdrożenia komercyjne publikujemy wyłącznie po pełnej walidacji telemetrycznej i zgodzie klienta.
+</p>
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-2 text-slate-700 font-label-md text-label-md font-medium"><span class="material-symbols-outlined text-[#0A6CFF] text-[18px]">verified_user</span>Ścisła klauzula NDA</div>
+<div class="flex items-center gap-2 text-slate-700 font-label-md text-label-md font-medium"><span class="material-symbols-outlined text-[#0A6CFF] text-[18px]">shield</span>Suwerenność danych (On-premise / Private Cloud)</div>
+<div class="flex items-center gap-2 text-slate-700 font-label-md text-label-md font-medium"><span class="material-symbols-outlined text-[#0A6CFF] text-[18px]">code</span>Własność kodu i dedykowane repozytoria</div>
+</div>
+</div>
+<div class="lg:col-span-4 p-6 rounded-lg bg-[#F8FAFC] border border-slate-200 flex flex-col items-start space-y-4 shadow-sm">
+<span class="font-label-sm text-label-sm text-[#0A6CFF] bg-[#EBF3FF] px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">PROGRAM PILOTAŻOWY 2026</span>
+<h4 class="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">Zostań partnerem wdrożeniowym</h4>
+<p class="font-body-sm text-body-sm text-[#475569]">Dla zakwalifikowanych firm oferujemy dedykowane warunki wdrożenia pilotażowego z bezpośrednim zaangażowaniem głównego architekta w zamian za udokumentowane case study.</p>
+<a class="w-full text-center font-label-md text-label-md font-semibold text-white bg-[#0A6CFF] hover:bg-[#0056d1] px-4 py-2.5 rounded-lg transition-colors shadow-sm" data-path="kontakt" href="#">Zgłoś proces do pilotażu →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA BANNER (Zachowanie ciemnego granatu zgodnie z życzeniem) -->
+<section class="w-full bg-[#FAFAF9] pb-24 relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-gutter">
+<div class="relative rounded-lg overflow-hidden bg-gradient-to-r from-[#001433] via-[#051c3d] to-[#001029] border border-[#19355f] p-8 sm:p-12 lg:p-16 shadow-2xl">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-[#00E5FF]/20 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="absolute -left-16 -top-16 w-80 h-80 bg-[#0A6CFF]/25 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#081a33]/80 border border-[#1d375f] backdrop-blur-md text-secondary-fixed mb-space-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-subheading-eyebrow text-subheading-eyebrow font-semibold uppercase">POROZMAWIAJMY O TWOIM BIZNESIE</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white font-bold tracking-tight">
+            Chcesz wdrożyć podobne rozwiązanie w swojej firmie? Porozmawiajmy.
+          </h2>
+<p class="font-body-lg text-body-lg text-slate-300 max-w-xl">
+            Przeanalizujemy Twoje procesy biznesowe i wskażemy wąskie gardła, które najszybciej uwolnią czas Twojego zespołu. Bez pustych obietnic i zbędnych kosztów.
+          </p>
+<div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-8 py-3.5 rounded-[10px] shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:shadow-[0_0_36px_rgba(0,229,255,0.7)] hover:scale-105 transition-all" data-path="kontakt" href="#">
+              Wyślij zapytanie
+            </a>
+<a class="w-full sm:w-auto inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-white px-6 py-3.5 rounded-[10px] bg-[#0a1e3b]/80 border border-[#1e3962] hover:bg-[#112d54] transition-colors" href="mailto:programistka.pl@gmail.com">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+              Napisz bezpośrednio
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1280px] mx-auto px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl"><div class="lg:col-span-5 flex flex-col items-start gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-2.5 h-2.5 rounded-full bg-secondary-fixed shadow-[0_0_10px_#00daf3]"></div><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface font-bold">ULTRASONICA</span></div><p class="font-subheading-eyebrow text-subheading-eyebrow text-secondary-fixed-dim uppercase tracking-widest">INŻYNIERIA INTELIGENTNYCH SYSTEMÓW</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs max-w-md">Projektujemy i wdrażamy zaawansowane systemy sztucznej inteligencji oraz dedykowaną architekturę oprogramowania klasy enterprise dla liderów biznesu i operacji cyfrowych.</p></div><div class="lg:col-span-3 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Nawigacja</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary-fixed transition-colors" data-path="start" href="#">Start</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary-fixed transition-colors" data-path="uslugi" href="#">Usługi</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary-fixed transition-colors" data-path="realizacje" href="#">Realizacje</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary-fixed transition-colors" data-path="kontakt" href="#">Kontakt</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary-fixed transition-colors" href="#">Polityka prywatności</a></nav></div><div class="lg:col-span-4 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Kontakt &amp; Siedziba</span><p class="font-body-sm text-body-sm text-on-surface-variant">ul. Władysława IV 55, 81-358 Gdynia</p><a class="font-body-sm text-body-sm text-secondary-fixed hover:underline" href="mailto:programistka.pl@gmail.com">programistka.pl@gmail.com</a><a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed-dim hover:text-secondary-fixed mt-space-xs" href="https://maps.google.com/?q=Władysława+IV+55+Gdynia" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">map</span>Otwórz w mapach</a><div class="flex items-center gap-space-sm mt-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant">Język:</span><div class="flex items-center bg-surface-container-low rounded-full px-2 py-0.5"><a class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary-fixed font-semibold" href="#">PL</a><span class="text-outline-variant font-label-sm text-label-sm px-0.5">|</span><a class="font-label-sm text-label-sm px-2 py-0.5 rounded-full text-on-surface-variant hover:text-on-surface" href="#">EN</a></div></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-lowest"><span class="font-body-sm text-body-sm text-outline">© 2026 ULTRASONICA. Wszelkie prawa zastrzeżone.</span><span class="font-label-sm text-label-sm text-outline-variant">Intelligent Systems Architecture &amp; Deployment</span></div></div></footer>
+
+</body></html>
