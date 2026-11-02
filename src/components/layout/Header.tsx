@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageContext";
-import {translations} from "../../i18n/translations";
+import { translations } from "../../i18n/translations";
 export const Header: React.FC = () => {
   const { language, setLanguage } = useLanguage();
   const t = translations[language];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-const navLinks = [
-  { name: t.navigation.home, path: "/" },
-  { name: t.navigation.services, path: "/uslugi" },
-  { name: t.navigation.projects, path: "/realizacje" },
-  { name: t.navigation.contact, path: "/kontakt" },
-];
+  const navLinks = [
+    { name: t.navigation.home, path: "/" },
+    { name: t.navigation.services, path: "/uslugi" },
+    { name: t.navigation.projects, path: "/realizacje" },
+    { name: t.navigation.contact, path: "/kontakt" },
+  ];
 
- const contactLabel = t.navigation.contactButton;
+  const contactLabel = t.navigation.contactButton;
 
   const brandSubtitle =
     language === "PL"
@@ -29,7 +29,7 @@ const navLinks = [
           <img
             alt="ULTRASONICA Icon"
             className="w-8 h-8 rounded-full object-contain"
-            src="/images/logo.png"
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
           />
           <div className="flex flex-col">
             <span className="font-headline-sm text-headline-sm uppercase tracking-wider text-white font-bold group-hover:text-secondary-fixed transition-colors">

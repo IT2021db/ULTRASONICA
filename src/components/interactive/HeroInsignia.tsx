@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
 export const HeroInsignia: React.FC = () => {
   const badgeRef = useRef<HTMLDivElement>(null);
@@ -15,7 +15,8 @@ export const HeroInsignia: React.FC = () => {
   const handleMouseLeave = () => {
     const el = badgeRef.current;
     if (!el) return;
-    el.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)';
+    el.style.transform =
+      "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)";
   };
 
   return (
@@ -29,7 +30,7 @@ export const HeroInsignia: React.FC = () => {
       <img
         alt="ULTRASONICA Geometric Resonance Emblem"
         className="w-full h-full object-contain filter drop-shadow-[0_0_32px_rgba(0,229,255,0.45)]"
-        src="/images/logo.png"
+        src={`${import.meta.env.BASE_URL}images/logo.png`}
       />
     </div>
   );
