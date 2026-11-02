@@ -232,6 +232,15 @@ export const translations = {
           },
         ],
       },
+      cta: {
+        badge: "POROZMAWIAJMY O TWOIM BIZNESIE",
+        title: "Porozmawiajmy o tym, co możemy usprawnić u Ciebie",
+        description:
+          "Opowiedz nam o wyzwaniach, z którymi mierzy się Twoja firma. Wspólnie sprawdzimy, gdzie rozwiązania programistyczne, automatyzacja lub AI mogą przynieść realne korzyści.",
+        primaryButton: "Wyślij zapytanie",
+        secondaryButton: "Napisz bezpośrednio",
+        note: "Bez zobowiązań • Konkretna rozmowa • Indywidualne podejście",
+      },
     },
   },
 
@@ -457,7 +466,7 @@ export const translations = {
             category: "PROCESS AUTOMATION",
             title: "Automated document workflows",
             description:
-              "The solution helps read and organise documents such as invoices and orders, then transfers relevant data to subsequent stages of the process.",
+              "The solution helps read and organinse documents such as invoices and orders, then transfers relevant data to subsequent stages of the process.",
             features: [
               "Extracting data from documents",
               "Document type recognition",
@@ -468,6 +477,15 @@ export const translations = {
               "Fewer repetitive tasks and more organised document workflows",
           },
         ],
+      },
+      cta: {
+        badge: "LET'S TALK ABOUT YOUR BUSINESS",
+        title: "Let's discuss what we can improve in your business",
+        description:
+          "Tell us about the challenges your business is facing. Together, we will explore where software development, automation or AI can deliver real benefits.",
+        primaryButton: "Send an enquiry",
+        secondaryButton: "Email us directly",
+        note: "No obligation • A practical discussion • An individual approach",
       },
     },
   },

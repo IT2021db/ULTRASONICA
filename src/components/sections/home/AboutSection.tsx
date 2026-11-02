@@ -16,7 +16,7 @@ export const AboutSection: React.FC = () => {
               <img
                 alt={t.home.about.imageAlt}
                 className="w-full h-[460px] object-cover filter saturate-95 hover:saturate-100 transition-all duration-500"
-                src="/images/engineer.jpg"
+             src={`${import.meta.env.BASE_URL}images/engineer.jpg`}
               />
             </div>
           </div>

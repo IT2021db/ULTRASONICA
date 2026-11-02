@@ -11,7 +11,7 @@ import { ContactPage } from './pages/ContactPage';
 export const App: React.FC = () => {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+    <BrowserRouter basename="/ULTRASONICA">
         <ScrollToTop />
         <Layout>
           <Routes>
