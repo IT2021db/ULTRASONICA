@@ -1,14 +1,23 @@
-import React from 'react';
-import { HeroInsignia } from '../../interactive/HeroInsignia';
-import { Badge } from '../../ui/Badge';
-import { Button } from '../../ui/Button';
+import React from "react";
+import { HeroInsignia } from "../../interactive/HeroInsignia";
+import { Badge } from "../../ui/Badge";
+import { Button } from "../../ui/Button";
+import { useLanguage } from "../../../context/LanguageContext";
+import { translations } from "../../../i18n/translations";
 
 export const HeroSection: React.FC = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
-    <section className="relative w-full overflow-hidden bg-[#001029] text-white py-20 lg:py-28 border-b border-[#142642]">
-      {/* Ambient Hexagonal Background Lattice */}
+    <section className="relative w-full min-h-[100dvh] flex items-center overflow-hidden bg-[#001029] text-white py-20 lg:py-28 border-b border-[#142642]">
       <div className="absolute inset-0 pointer-events-none opacity-20">
-        <svg className="w-full h-full" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className="w-full h-full"
+          height="100%"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <defs>
             <pattern
               height="97"
@@ -39,29 +48,28 @@ export const HeroSection: React.FC = () => {
           {/* Left: Typographic Anchor & Value Proposition */}
           <div className="lg:col-span-7 flex flex-col items-start gap-space-md">
             {/* Live Telemetry Pill */}
-            <Badge variant="telemetry-dark">
-              Inżynieria inteligentnych systemów
-            </Badge>
+            <Badge variant="telemetry-dark">{t.hero.badge}</Badge>
 
             <h1 className="font-display-hero text-display-hero-mobile lg:text-display-hero text-white tracking-tight leading-tight">
-              Inteligentne systemy, które{' '}
+              {t.hero.title}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-fixed via-primary to-primary-container">
-                oszczędzają czas
-              </span>{' '}
-              Twojej firmy
+                {t.hero.highlight}
+              </span>{" "}
+              {t.hero.subtitle}
             </h1>
 
             <p className="font-body-lg text-body-lg text-slate-300 max-w-xl">
-              Programujemy dedykowane aplikacje i wdrażamy sztuczną inteligencję tak, żeby natychmiast działały w codziennej pracy: prosto, bezpiecznie i bez technicznego żargonu.
+              {t.hero.description}{" "}
             </p>
 
             {/* Action buttons */}
             <div className="flex flex-wrap items-center gap-space-md pt-space-xs">
               <Button to="/kontakt" variant="primary" icon="arrow_forward">
-                Wyślij zapytanie
+                {t.hero.contactButton}
               </Button>
+
               <Button to="/uslugi" variant="secondary" icon="arrow_outward">
-                Zobacz usługi
+                {t.hero.servicesButton}
               </Button>
             </div>
 
@@ -75,9 +83,10 @@ export const HeroSection: React.FC = () => {
                   forum
                 </span>
                 <span className="font-label-sm text-label-sm text-slate-200">
-                  Bez żargonu technicznego
+                  {t.hero.benefits.communication}
                 </span>
               </div>
+
               <div className="flex items-center gap-2 bg-[#091b35]/90 border border-[#1b345a] backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
                 <span
                   className="material-symbols-outlined text-secondary-fixed text-[18px]"
@@ -86,9 +95,10 @@ export const HeroSection: React.FC = () => {
                   verified_user
                 </span>
                 <span className="font-label-sm text-label-sm text-slate-200">
-                  Bezpieczeństwo danych i RODO
+                  {t.hero.benefits.security}
                 </span>
               </div>
+
               <div className="flex items-center gap-2 bg-[#091b35]/90 border border-[#1b345a] backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
                 <span
                   className="material-symbols-outlined text-secondary-fixed text-[18px]"
@@ -97,7 +107,7 @@ export const HeroSection: React.FC = () => {
                   trending_up
                 </span>
                 <span className="font-label-sm text-label-sm text-slate-200">
-                  Praktyczne korzyści biznesowe
+                  {t.hero.benefits.business}
                 </span>
               </div>
             </div>
@@ -119,19 +129,32 @@ export const HeroSection: React.FC = () => {
 
               {/* Floating Data Widgets for depth */}
               <div className="absolute -top-3 -right-2 bg-[#081b36]/90 border border-[#193764] backdrop-blur-lg px-4 py-2.5 rounded-lg shadow-lg flex items-center gap-2">
-                <span className="material-symbols-outlined text-secondary-fixed text-[20px]">bolt</span>
+                <span className="material-symbols-outlined text-secondary-fixed text-[20px]">
+                  bolt
+                </span>
                 <div>
-                  <p className="font-label-sm text-label-sm text-slate-300 leading-none">Automatyzacja procesów</p>
-                  <p className="font-headline-sm text-headline-sm text-white leading-tight font-bold">100% dopasowania</p>
+                  <p className="font-label-sm text-label-sm text-slate-300 leading-none">
+                    {t.hero.automation}
+                  </p>
+                  <p className="font-headline-sm text-headline-sm text-white leading-tight font-bold">
+                    {t.hero.tailored}
+                  </p>
                 </div>
               </div>
+
               <div className="absolute -bottom-4 -left-4 bg-[#081b36]/90 border border-[#193764] backdrop-blur-lg px-4 py-2.5 rounded-lg shadow-lg flex items-center gap-2.5">
                 <div className="w-8 h-8 rounded-lg bg-[#001029] border border-[#173055] flex items-center justify-center text-secondary-fixed">
-                  <span className="material-symbols-outlined text-[18px]">lock</span>
+                  <span className="material-symbols-outlined text-[18px]">
+                    lock
+                  </span>
                 </div>
                 <div>
-                  <p className="font-label-sm text-label-sm text-slate-300 leading-none">Poufność i zgodność</p>
-                  <p className="font-headline-sm text-headline-sm text-white leading-tight font-bold">Klasa Enterprise</p>
+                  <p className="font-label-sm text-label-sm text-slate-300 leading-none">
+                    {t.hero.confidentiality}
+                  </p>
+                  <p className="font-headline-sm text-headline-sm text-white leading-tight font-bold">
+                    {t.hero.enterprise}
+                  </p>
                 </div>
               </div>
             </div>

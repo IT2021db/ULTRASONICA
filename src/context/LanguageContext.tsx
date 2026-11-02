@@ -1,6 +1,6 @@
-import React, { createContext, useContext, useState } from 'react';
 
-type Language = 'PL' | 'EN';
+import React, { createContext, useContext, useState } from "react";
+import { translations, Language } from "../i18n/translations";
 
 interface LanguageContextType {
   language: Language;
@@ -8,12 +8,23 @@ interface LanguageContextType {
 }
 
 const LanguageContext = createContext<LanguageContextType>({
-  language: 'PL',
+  language: "PL",
   setLanguage: () => {},
 });
 
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('PL');
+export const LanguageProvider: React.FC<{
+  children: React.ReactNode;
+}> = ({ children }) => {
+  const [language, setLanguageState] = useState<Language>(() => {
+    const savedLanguage = localStorage.getItem("language");
+
+    return savedLanguage === "EN" ? "EN" : "PL";
+  });
+
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+    localStorage.setItem("language", lang);
+  };
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
