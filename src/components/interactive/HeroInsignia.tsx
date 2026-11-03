@@ -25,7 +25,7 @@ export const HeroInsignia: React.FC = () => {
       id="hero-floating-badge"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative z-10 w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center transition-transform duration-300 ease-out cursor-pointer"
+      className="relative z-10 w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center transition-transform duration-300 ease-out "
     >
       <img
         alt="ULTRASONICA Geometric Resonance Emblem"
