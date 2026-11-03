@@ -1,8 +1,7 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useLanguage } from '../../context/LanguageContext';
-import { translations } from '../../i18n/translations';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
+import { translations } from "../../i18n/translations";
 
 export const Footer: React.FC = () => {
   const { language, setLanguage } = useLanguage();
@@ -12,14 +11,13 @@ export const Footer: React.FC = () => {
     <footer className="w-full bg-[#001029] border-t border-[#12243d] text-white">
       <div className="max-w-[1280px] mx-auto px-gutter pt-space-xl pb-space-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl">
-
           {/* Col 1: Brand details */}
           <div className="lg:col-span-5 flex flex-col items-start gap-space-sm">
             <div className="flex items-center gap-space-sm">
               <img
                 alt="ULTRASONICA Icon"
                 className="w-6 h-6 object-contain"
-                src="/images/logo.png"
+                src={`${import.meta.env.BASE_URL}images/logo.png`}
               />
               <span className="font-headline-sm text-headline-sm uppercase tracking-wider text-white font-bold">
                 ULTRASONICA
@@ -99,9 +97,7 @@ export const Footer: React.FC = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="material-symbols-outlined text-[16px]">
-                map
-              </span>
+              <span className="material-symbols-outlined text-[16px]">map</span>
               {t.footer.mapLink}
             </a>
 
@@ -114,11 +110,11 @@ export const Footer: React.FC = () => {
               <div className="flex items-center bg-[#071933] border border-[#1a2e4e] rounded-full px-2 py-0.5">
                 <button
                   type="button"
-                  onClick={() => setLanguage('PL')}
+                  onClick={() => setLanguage("PL")}
                   className={`font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold transition-all ${
-                    language === 'PL'
-                      ? 'bg-[#162e54] text-secondary-fixed'
-                      : 'text-slate-400 hover:text-white'
+                    language === "PL"
+                      ? "bg-[#162e54] text-secondary-fixed"
+                      : "text-slate-400 hover:text-white"
                   }`}
                 >
                   PL
@@ -130,11 +126,11 @@ export const Footer: React.FC = () => {
 
                 <button
                   type="button"
-                  onClick={() => setLanguage('EN')}
+                  onClick={() => setLanguage("EN")}
                   className={`font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold transition-all ${
-                    language === 'EN'
-                      ? 'bg-[#162e54] text-secondary-fixed'
-                      : 'text-slate-400 hover:text-white'
+                    language === "EN"
+                      ? "bg-[#162e54] text-secondary-fixed"
+                      : "text-slate-400 hover:text-white"
                   }`}
                 >
                   EN
