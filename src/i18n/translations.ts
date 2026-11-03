@@ -242,6 +242,143 @@ export const translations = {
         note: "Bez zobowiązań • Konkretna rozmowa • Indywidualne podejście",
       },
     },
+
+    servicesPage: {
+      hero: {
+        badge: "KOMPLEKSOWE PORTFOLIO USŁUG",
+        title: "Nasze Usługi:",
+        highlight: "Inżynieria i AI",
+        subtitle: "dla Twojego Biznesu",
+        description:
+          "Lata komercyjnego rzemiosła programistycznego łączymy z architekturą modeli nowej generacji. Budujemy gotowe, stabilne rozwiązania produkcyjne i bezpieczne wdrożenia AI w modelu bezpośredniej współpracy z głównym inżynierem – bez pośredników i korporacyjnego szumu.",
+      },
+      metrics: [
+        "Aplikacje frontendowe",
+        "Analiza i wdrażanie AI",
+        "Integracje systemów",
+        "Automatyzacja procesów",
+      ],
+      services: [
+        {
+          module: "MODUŁ 01",
+          category: "Sztuczna inteligencja",
+          title: "Analiza i wdrażanie rozwiązań AI",
+          description:
+            "Pomagamy znaleźć obszary, w których sztuczna inteligencja może usprawnić pracę firmy. Projektujemy rozwiązania wykorzystujące modele językowe i integrujemy je z aplikacjami oraz narzędziami dopasowanymi do konkretnych potrzeb.",
+          audienceLabel: "Dla kogo",
+          audience:
+            "Dla firm, które chcą lepiej wykorzystywać informacje, usprawnić obsługę zapytań, pracę z dokumentami lub powtarzalne zadania.",
+          benefitLabel: "Co możesz zyskać",
+          benefit:
+            "Łatwiejszy dostęp do informacji, mniej ręcznej pracy i lepiej uporządkowane procesy. Możliwe efekty określamy na podstawie konkretnego zastosowania.",
+          examplesLabel: "Przykładowe zastosowania",
+          examples: [
+            "Asystenci AI korzystający z firmowej bazy wiedzy",
+            "Analiza i podsumowywanie dokumentów",
+            "Wsparcie w przygotowywaniu odpowiedzi na zapytania klientów",
+          ],
+          practicalLabel: "Jak pracujemy",
+          practical:
+            "Zaczynamy od analizy problemu, danych i oczekiwanego rezultatu. Następnie dobieramy rozwiązanie, przygotowujemy koncepcję lub prototyp i ustalamy zakres integracji oraz wdrożenia.",
+          imageAlt:
+            "Wizualizacja przetwarzania informacji z wykorzystaniem sztucznej inteligencji",
+          metricLabel: "Przykładowy przepływ pracy AI",
+        },
+        {
+          module: "MODUŁ 02",
+          category: "Architektura Oprogramowania",
+          title: "Aplikacje i systemy dedykowane",
+          description:
+            "Dedykowane oprogramowanie webowe i platformy biznesowe rozwiązujące unikalne wąskie gardła. Eliminujemy ograniczenia szablonowych platform, tworząc kod dokładnie na miarę.",
+          audienceLabel: "Dla kogo",
+          audience:
+            "Przedsiębiorstwa, które wyrosły z gotowych systemów pudełkowych lub arkuszy kalkulacyjnych.",
+          benefitLabel: "Co zyskasz",
+          benefit:
+            "Pełną kontrolę nad procesem, skalowalność i narzędzie idealnie skrojone pod nawyki Twoich pracowników.",
+          examplesLabel: "Przykładowe zastosowania:",
+          examples: [
+            "Panele klienta B2B",
+            "Systemy zarządzania zleceniami i produkcją",
+            "Dedykowane panele administracyjne",
+          ],
+          practicalLabel: "Jak to wygląda w praktyce:",
+          practical:
+            "Praca w zwinnym modelu partnerskim: od precyzyjnych warsztatów funkcjonalnych z architektem, przez kod prototypu, po wdrożenie produkcyjne i stałą asystę powdrożeniową.",
+          imageAlt: "Architektura systemu informatycznego klasy enterprise",
+          architectureLabel: "Architektura",
+          responseTimeLabel: "Czas odpowiedzi",
+        },
+        {
+          module: "MODUŁ 03",
+          category: "Ekosystem Cyfrowy",
+          title: "Automatyzacja procesów i integracje",
+          description:
+            "Bezproblemowe łączenie używanych na co dzień aplikacji i likwidacja ręcznego przepisywania danych. Tworzymy spójną magistralę wymiany informacji w całym przedsiębiorstwie.",
+          audienceLabel: "Dla kogo",
+          audience:
+            "Zespoły pracujące na wielu nieskomunikowanych narzędziach (CRM, ERP, skrzynka pocztowa, fakturowanie).",
+          benefitLabel: "Co zyskasz",
+          benefit:
+            "Zero błędów ludzkich przy przepisywaniu danych, powiadomienia w czasie rzeczywistym i oszczędność dziesiątek godzin tygodniowo.",
+          examplesLabel: "Przykładowe zastosowania:",
+          examples: [
+            "Automatyczny obieg faktur",
+            "Synchronizacja zamówień ze stanem magazynowym",
+            "Powiadomienia SMS / Slack / Email",
+          ],
+          practicalLabel: "Jak to wygląda w praktyce:",
+          practical:
+            "Bezpieczna konfiguracja webhooków, API i zautomatyzowanych reguł z monitoringiem działania 24/7.",
+          imageAlt: "Wizualizacja przepływu danych i integracji systemów",
+          automationLabel: "W pełni zautomatyzowane",
+        },
+      ],
+      faq: {
+        badge: "ODPOWIEDZI NA CZĘSTE PYTANIA",
+        title: "Najczęściej zadawane pytania",
+        description:
+          "Wszystko, co warto wiedzieć przed rozpoczęciem wspólnego wdrożenia technologicznego z zespołem Ultrasonica.",
+        items: [
+          {
+            q: "Czy muszę znać się na AI?",
+            a: "Nie, to nasza rola. Tłumaczymy wszystko prostym, zrozumiałym językiem biznesowym i dbamy o to, by narzędzia były intuicyjne dla każdego członka Twojego zespołu od pierwszego dnia.",
+          },
+          {
+            q: "Ile to kosztuje?",
+            a: "Każdy projekt ma inną skalę i specyfikę techniczną. Po pierwszej, bezpłatnej rozmowie i analizie wymagań przygotowujemy jasną, przejrzystą wycenę z podziałem na etapy – bez ukrytych kosztów.",
+          },
+          {
+            q: "Czy moje dane są bezpieczne?",
+            a: "Bezwzględnie tak. Projektujemy rozwiązania zgodnie z RODO, korzystając z odizolowanych, bezpiecznych instancji, gdzie Twoje firmowe dane nigdy nie są wykorzystywane do trenowania ogólnodostępnych modeli publicznych.",
+          },
+          {
+            q: "Jak wygląda współpraca?",
+            a: "Rozmawiasz bezpośrednio z głównym inżynierem i architektem rozwiązań, a nie z account managerem czy handlowcem. Po analizie celów biznesowych tworzymy architekturę techniczną i zwinnie wdrażamy narzędzie w krótkich iteracjach z pełnym transferem wiedzy.",
+          },
+          {
+            q: "Czy można zacząć od małego projektu?",
+            a: "Oczywiście. Zawsze rekomendujemy start od szybkiego pilotażu (Proof of Concept) lub automatyzacji jednego, najbardziej uciążliwego wąskiego gardła, by natychmiast zobaczyć mierzalny zwrot z inwestycji.",
+          },
+        ],
+      },
+      cta: {
+        badge: "POROZMAWIAJMY O TWOIM PROJEKCIE",
+        title: "Poszukujesz rozwiązania dopasowanego do swoich potrzeb?",
+        description:
+          "Opowiedz nam o swoim projekcie i wyzwaniach. Przeanalizujemy potrzeby, omówimy możliwe kierunki realizacji i wspólnie określimy kolejne kroki.",
+        primaryButton: "Wyślij zapytanie",
+        secondaryButton: "Napisz bezpośrednio",
+        footer:
+          "Indywidualne podejście • Rzeczowa analiza • Przejrzyste zasady współpracy",
+      },
+      moduleVisuals: {
+        data: "DANE",
+        model: "MODEL AI",
+        result: "WYNIK",
+        verification: "WERYFIKACJA WYNIKÓW",
+      },
+    },
   },
 
   EN: {
@@ -486,6 +623,143 @@ export const translations = {
         primaryButton: "Send an enquiry",
         secondaryButton: "Email us directly",
         note: "No obligation • A practical discussion • An individual approach",
+      },
+    },
+
+    servicesPage: {
+      hero: {
+        badge: "COMPREHENSIVE SERVICE PORTFOLIO",
+        title: "Our Services:",
+        highlight: "Engineering and AI",
+        subtitle: "for Your Business",
+        description:
+          "We combine years of commercial software development experience with next-generation model architecture. We build production-ready, reliable solutions and secure AI implementations through direct collaboration with the lead engineer — without intermediaries or corporate noise.",
+      },
+      metrics: [
+        "Frontend applications",
+        "AI analysis and implementation",
+        "System integrations",
+        "Process automation",
+      ],
+      services: [
+        {
+          module: "MODULE 01",
+          category: "Artificial Intelligence",
+          title: "AI Analysis and Implementation",
+          description:
+            "We identify areas where artificial intelligence can improve the way your business works. We design solutions using language models and integrate them with applications and tools tailored to specific business needs.",
+          audienceLabel: "Who it's for",
+          audience:
+            "Businesses looking to make better use of information, improve enquiry handling, work with documents or streamline repetitive tasks.",
+          benefitLabel: "Potential benefits",
+          benefit:
+            "Easier access to information, less manual work and better-organised processes. Expected outcomes are assessed for each specific use case.",
+          examplesLabel: "Example applications",
+          examples: [
+            "AI assistants using company knowledge bases",
+            "Document analysis and summarisation",
+            "Assistance with preparing responses to customer enquiries",
+          ],
+          practicalLabel: "Our approach",
+          practical:
+            "We start by analysing the problem, available data and desired outcome. We then select an appropriate approach, prepare a concept or prototype and define the scope of integration and implementation.",
+          imageAlt:
+            "Visualisation of information processing using artificial intelligence",
+          metricLabel: "Example AI workflow",
+        },
+        {
+          module: "MODULE 02",
+          category: "Software Architecture",
+          title: "Custom Applications and Systems",
+          description:
+            "Custom web applications and business platforms designed to solve unique operational bottlenecks. We eliminate the limitations of off-the-shelf platforms by building software tailored to your needs.",
+          audienceLabel: "Who is it for",
+          audience:
+            "Businesses that have outgrown off-the-shelf software or spreadsheet-based workflows.",
+          benefitLabel: "What you gain",
+          benefit:
+            "Full process control, scalability and tools tailored to the way your employees actually work.",
+          examplesLabel: "Example applications:",
+          examples: [
+            "B2B customer portals",
+            "Order and production management systems",
+            "Custom administration dashboards",
+          ],
+          practicalLabel: "How it works in practice:",
+          practical:
+            "Agile, partnership-based delivery: from focused functional workshops with the architect, through prototype development, to production deployment and ongoing post-launch support.",
+          imageAlt: "Enterprise software system architecture",
+          architectureLabel: "Architecture",
+          responseTimeLabel: "Response Time",
+        },
+        {
+          module: "MODULE 03",
+          category: "Digital Ecosystem",
+          title: "Process Automation and Integrations",
+          description:
+            "Seamless integration of the applications you use every day, eliminating manual data entry. We create a consistent information exchange backbone across your organisation.",
+          audienceLabel: "Who is it for",
+          audience:
+            "Teams working with multiple disconnected tools (CRM, ERP, email and invoicing systems).",
+          benefitLabel: "What you gain",
+          benefit:
+            "No human errors from manual data entry, real-time notifications and dozens of hours saved every week.",
+          examplesLabel: "Example applications:",
+          examples: [
+            "Automated invoice workflows",
+            "Order and inventory synchronisation",
+            "SMS / Slack / Email notifications",
+          ],
+          practicalLabel: "How it works in practice:",
+          practical:
+            "Secure configuration of webhooks, APIs and automated rules, with 24/7 operational monitoring.",
+          imageAlt: "Data flow and system integration visualisation",
+          automationLabel: "Fully automated",
+        },
+      ],
+      faq: {
+        badge: "FREQUENTLY ASKED QUESTIONS",
+        title: "Frequently Asked Questions",
+        description:
+          "Everything worth knowing before starting a technology implementation project with the Ultrasonica team.",
+        items: [
+          {
+            q: "Do I need to know anything about AI?",
+            a: "No, that's our job. We explain everything in clear, straightforward business language and make sure the tools are intuitive for every member of your team from day one.",
+          },
+          {
+            q: "How much does it cost?",
+            a: "Every project has its own scope and technical requirements. After an initial free consultation and requirements analysis, we prepare a clear, transparent quotation broken down into stages — with no hidden costs.",
+          },
+          {
+            q: "Is my data secure?",
+            a: "Absolutely. We design solutions in line with GDPR requirements, using isolated, secure instances where your company's data is never used to train publicly available AI models.",
+          },
+          {
+            q: "What does working together look like?",
+            a: "You work directly with the lead engineer and solution architect, not an account manager or salesperson. After analysing your business goals, we design the technical architecture and implement the solution in short, agile iterations, with full knowledge transfer.",
+          },
+          {
+            q: "Can we start with a small project?",
+            a: "Of course. We always recommend starting with a quick pilot (Proof of Concept) or automating one of your most time-consuming bottlenecks, so you can see measurable returns as soon as possible.",
+          },
+        ],
+      },
+      cta: {
+        badge: "LET'S DISCUSS YOUR PROJECT",
+        title: "Looking for a solution tailored to your needs?",
+        description:
+          "Tell us about your project and the challenges you face. We will assess your needs, discuss possible implementation approaches and define the next steps together.",
+        primaryButton: "Send an enquiry",
+        secondaryButton: "Email us directly",
+        footer:
+          "Individual approach • Practical analysis • Transparent cooperation",
+      },
+      moduleVisuals: {
+        data: "DATA",
+        model: "AI MODEL",
+        result: "RESULT",
+        verification: "RESULT VERIFICATION",
       },
     },
   },
