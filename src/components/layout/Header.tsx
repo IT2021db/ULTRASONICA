@@ -25,16 +25,21 @@ export const Header: React.FC = () => {
     <header className="fixed top-0 w-full z-50 bg-[#001029]/85 backdrop-blur-xl border-b border-[#13233c] shadow-[0_1px_12px_rgba(0,0,0,0.3)]">
       <div className="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between">
         {/* Brand Logo & Title */}
-      <div className="flex items-center gap-space-sm">
+        {/* Brand Logo & Title */}
+        <div className="flex items-center gap-space-sm group shrink-0 relative translate-x-5">
           <img
             alt="ULTRASONICA Icon"
-            className="w-8 h-8 rounded-full object-contain"
+            className="w-9 h-9 rounded-full object-contain shrink-0"
             src={`${import.meta.env.BASE_URL}images/logo.png`}
           />
+
           <div className="flex flex-col">
-            <span className="font-headline-sm text-headline-sm uppercase tracking-wider text-white font-bold group-hover:text-secondary-fixed transition-colors">
-              ULTRASONICA
-            </span>
+            <img
+              alt="ULTRASONICA"
+              className="w-[190px] sm:w-[220px] h-auto object-contain block"
+              src={`${import.meta.env.BASE_URL}images/logoText.png`}
+            />
+
             <span className="font-subheading-eyebrow text-subheading-eyebrow text-secondary-fixed-dim uppercase tracking-widest text-[11px] sm:text-[13px]">
               {brandSubtitle}
             </span>
