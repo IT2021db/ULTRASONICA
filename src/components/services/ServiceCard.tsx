@@ -3,7 +3,8 @@ import { ServiceVisual } from "./ServiceVisual";
 import type { Language } from "../../i18n/translations";
 import { translations } from "../../i18n/translations";
 
-type Service = (typeof translations)["PL"]["servicesPage"]["services"][number];
+type Service =
+  (typeof translations)[Language]["servicesPage"]["services"][number];
 
 interface ServiceCardProps {
   service: Service;
