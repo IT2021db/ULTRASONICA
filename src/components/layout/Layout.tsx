@@ -10,7 +10,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen bg-[#001029] text-on-surface">
       <Header />
-      <main className="w-full pt-20 bg-[#FAFAF9] min-h-screen flex-1">
+      <main className="w-full min-w-0 pt-20 bg-[#FAFAF9] min-h-screen flex-1">
         {children}
       </main>
       <Footer />
