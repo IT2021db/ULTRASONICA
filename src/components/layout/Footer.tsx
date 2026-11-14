@@ -48,21 +48,21 @@ export const Footer: React.FC = () => {
               </Link>
 
               <Link
-                to="/uslugi"
+                to="/services"
                 className="font-body-sm text-body-sm text-slate-400 hover:text-secondary-fixed transition-colors"
               >
                 {t.navigation.services}
               </Link>
 
               <Link
-                to="/realizacje"
+                to="/projects"
                 className="font-body-sm text-body-sm text-slate-400 hover:text-secondary-fixed transition-colors"
               >
                 {t.navigation.projects}
               </Link>
 
               <Link
-                to="/kontakt"
+                to="/contact"
                 className="font-body-sm text-body-sm text-slate-400 hover:text-secondary-fixed transition-colors"
               >
                 {t.navigation.contact}
