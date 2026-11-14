@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
       <div className="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between">
         {/* Brand Logo & Title */}
         {/* Brand Logo & Title */}
-        <div className="flex items-center gap-space-sm group shrink-0 relative translate-x-5">
+        <div className="flex items-center gap-2 sm:gap-space-sm group min-w-0 shrink relative sm:translate-x-5">
           <img
             alt="ULTRASONICA Icon"
             className="w-9 h-9 rounded-full object-contain shrink-0"
@@ -36,11 +36,11 @@ export const Header: React.FC = () => {
           <div className="flex flex-col">
             <img
               alt="ULTRASONICA"
-              className="w-[190px] sm:w-[220px] h-auto object-contain block"
+              className="w-[145px] sm:w-[190px] lg:w-[220px] h-auto object-contain block"
               src={`${import.meta.env.BASE_URL}images/logoText.png`}
             />
 
-            <span className="font-subheading-eyebrow text-subheading-eyebrow text-secondary-fixed-dim uppercase tracking-widest text-[11px] sm:text-[13px]">
+            <span className="hidden sm:block font-subheading-eyebrow text-subheading-eyebrow text-secondary-fixed-dim uppercase tracking-widest text-[11px] lg:text-[13px]">
               {brandSubtitle}
             </span>
           </div>
@@ -65,7 +65,7 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Actions (Language Switcher, Contact CTA, Mobile Toggle) */}
-        <div className="flex items-center gap-space-sm sm:gap-space-md">
+        <div className="flex items-center gap-2 sm:gap-space-sm shrink-0">
           {/* Language Switcher */}
           <div className="flex items-center bg-[#071933] border border-[#1a2e4e] rounded-full px-space-xs py-1">
             <button
@@ -98,7 +98,7 @@ export const Header: React.FC = () => {
           {/* CTA Button */}
           <Link
             to="/contact"
-            className="hidden sm:inline-flex items-center justify-center font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-space-lg py-2.5 rounded-[10px] shadow-[0_0_20px_rgba(0,229,255,0.3)] hover:shadow-[0_0_28px_rgba(0,229,255,0.55)] transition-all"
+            className="hidden lg:inline-flex font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-space-lg py-2.5 rounded-[10px] shadow-[0_0_20px_rgba(0,229,255,0.3)] hover:shadow-[0_0_28px_rgba(0,229,255,0.55)] transition-all"
           >
             {contactLabel}
           </Link>
