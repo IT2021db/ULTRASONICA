@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { servicesData } from '../../../data/services';
-import { Badge } from '../../ui/Badge';
+import React from "react";
+import { Link } from "react-router-dom";
+import { servicesData } from "../../../data/services";
+import { Badge } from "../../ui/Badge";
 
 export const ServicesOverviewSection: React.FC = () => {
   return (
@@ -18,7 +18,9 @@ export const ServicesOverviewSection: React.FC = () => {
             </h2>
           </div>
           <p className="font-body-md text-body-md text-[#475569] max-w-md">
-            Nie sprzedajemy modnych eksperymentów. Dostarczamy stabilne, bezpieczne narzędzia, które stają się kręgosłupem operacyjnym Twojej firmy.
+            Nie sprzedajemy modnych eksperymentów. Dostarczamy stabilne,
+            bezpieczne narzędzia, które stają się kręgosłupem operacyjnym Twojej
+            firmy.
           </p>
         </div>
 
@@ -32,7 +34,9 @@ export const ServicesOverviewSection: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between mb-space-md">
                   <div className="w-14 h-14 rounded-lg bg-gradient-to-tr from-[#0A6CFF]/10 to-[#00E5FF]/20 border border-[#0A6CFF]/20 flex items-center justify-center text-[#0A6CFF] shadow-sm group-hover:scale-105 transition-transform">
-                    <span className="material-symbols-outlined text-[30px]">{service.homeIcon}</span>
+                    <span className="material-symbols-outlined text-[30px]">
+                      {service.homeIcon}
+                    </span>
                   </div>
                   <span className="font-label-sm text-label-sm text-[#0A6CFF] bg-[#F0F7FF] px-3 py-1 rounded-full border border-[#D5E7FF] uppercase tracking-widest font-semibold">
                     {service.homePillarCode}
@@ -46,15 +50,20 @@ export const ServicesOverviewSection: React.FC = () => {
                 </p>
                 <ul className="flex flex-col gap-2.5 mb-space-md bg-[#F8FAFC] p-4 rounded-lg border border-slate-100">
                   {service.homeBulletPoints.map((point, pIdx) => (
-                    <li key={pIdx} className="flex items-center gap-2 font-body-sm text-body-sm text-[#1E293B]">
-                      <span className="material-symbols-outlined text-[#0A6CFF] text-[18px]">check_circle</span>
+                    <li
+                      key={pIdx}
+                      className="flex items-center gap-2 font-body-sm text-body-sm text-[#1E293B]"
+                    >
+                      <span className="material-symbols-outlined text-[#0A6CFF] text-[18px]">
+                        check_circle
+                      </span>
                       {point}
                     </li>
                   ))}
                 </ul>
               </div>
               <Link
-                to="/uslugi"
+                to="/services"
                 className="inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-[#0A6CFF] group-hover:text-[#0056d1] transition-colors pt-space-sm border-t border-slate-100"
               >
                 Więcej o {service.title.toLowerCase()}

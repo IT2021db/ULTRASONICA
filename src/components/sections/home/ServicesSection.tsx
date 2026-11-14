@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../../context/LanguageContext";
@@ -75,7 +74,7 @@ export const ServicesSection: React.FC = () => {
               </div>
 
               <Link
-                to="/uslugi"
+                to="/services"
                 className="inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-[#0A6CFF] group-hover:text-[#0056d1] transition-colors pt-space-sm border-t border-slate-100"
               >
                 {card.link}

@@ -9,9 +9,9 @@ export const Header: React.FC = () => {
 
   const navLinks = [
     { name: t.navigation.home, path: "/" },
-    { name: t.navigation.services, path: "/uslugi" },
-    { name: t.navigation.projects, path: "/realizacje" },
-    { name: t.navigation.contact, path: "/kontakt" },
+    { name: t.navigation.services, path: "/services" },
+    { name: t.navigation.projects, path: "/projects" },
+    { name: t.navigation.contact, path: "/contact" },
   ];
 
   const contactLabel = t.navigation.contactButton;
@@ -97,7 +97,7 @@ export const Header: React.FC = () => {
 
           {/* CTA Button */}
           <Link
-            to="/kontakt"
+            to="/contact"
             className="hidden sm:inline-flex items-center justify-center font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-space-lg py-2.5 rounded-[10px] shadow-[0_0_20px_rgba(0,229,255,0.3)] hover:shadow-[0_0_28px_rgba(0,229,255,0.55)] transition-all"
           >
             {contactLabel}
@@ -139,7 +139,7 @@ export const Header: React.FC = () => {
           ))}
           <div className="pt-2 border-t border-[#13233c]">
             <Link
-              to="/kontakt"
+              to="/contact"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full inline-flex items-center justify-center font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-space-lg py-2.5 rounded-[10px] shadow-[0_0_20px_rgba(0,229,255,0.3)]"
             >
