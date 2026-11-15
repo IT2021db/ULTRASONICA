@@ -1,7 +1,14 @@
 
 import React from "react";
+import { useLanguage } from "../../context/LanguageContext";
+import { translations } from "../../i18n/translations";
 
 export const Scenario03ClientPortal: React.FC = () => {
+  const { language } = useLanguage();
+  const t = translations[language].caseStudiesPage;
+  const scenario = t.scenarios[2];
+  const demo = scenario.demo;
+
   return (
     <article className="bg-white border border-slate-200 p-6 lg:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden rounded-lg">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -9,15 +16,15 @@ export const Scenario03ClientPortal: React.FC = () => {
         <div className="lg:col-span-6 flex flex-col space-y-6">
           <div className="flex items-center gap-3">
             <span className="font-label-sm text-label-sm font-bold text-[#0A6CFF] bg-[#F0F7FF] border border-[#D5E7FF] px-2.5 py-1 rounded">
-              SCENARIUSZ 03
+              {language === "PL" ? "SCENARIUSZ 03" : "SCENARIO 03"}
             </span>
             <span className="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider text-[11px] sm:text-[13px]">
-              PORTAL B2B &amp; OBSŁUGA ZAMÓWIEŃ
+              {scenario.category}
             </span>
           </div>
 
           <h2 className="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
-            Portal B2B do składania zamówień i monitorowania realizacji
+            {scenario.title}
           </h2>
 
           <div className="space-y-4">
@@ -28,13 +35,10 @@ export const Scenario03ClientPortal: React.FC = () => {
               </span>
               <div>
                 <span className="font-label-md text-label-md font-bold text-[#E11D48] uppercase tracking-wider block mb-1">
-                  Problem
+                  {t.labels.problem}
                 </span>
                 <p className="font-body-md text-body-md text-[#475569]">
-                  Zamówienia przyjmowane przez telefon, wiadomości i e-mail
-                  utrudniają kontrolę nad ich kompletnością oraz aktualnym
-                  statusem. Informacje o realizacji są rozproszone, a pracownicy
-                  poświęcają czas na obsługę powtarzających się zapytań klientów.
+                  {scenario.problem}
                 </p>
               </div>
             </div>
@@ -46,14 +50,10 @@ export const Scenario03ClientPortal: React.FC = () => {
               </span>
               <div>
                 <span className="font-label-md text-label-md font-bold text-[#0A6CFF] uppercase tracking-wider block mb-1">
-                  Rozwiązanie
+                  {t.labels.solution}
                 </span>
                 <p className="font-body-md text-body-md text-[#334155]">
-                  Dedykowana aplikacja webowa umożliwiająca kontrahentom
-                  składanie zamówień, dostęp do historii współpracy oraz
-                  śledzenie statusu realizacji. Portal może korzystać z danych
-                  systemów ERP, magazynowych i produkcyjnych dzięki integracjom
-                  dopasowanym do infrastruktury firmy.
+                  {scenario.solution}
                 </p>
               </div>
             </div>
@@ -65,14 +65,10 @@ export const Scenario03ClientPortal: React.FC = () => {
               </span>
               <div>
                 <span className="font-label-md text-label-md font-bold text-[#16A34A] uppercase tracking-wider block mb-1">
-                  Efekt
+                  {t.labels.effect}
                 </span>
                 <p className="font-body-md text-body-md text-[#1E293B]">
-                  Jeden uporządkowany kanał obsługi zamówień, łatwiejszy dostęp
-                  do informacji o ich realizacji i mniej powtarzalnej
-                  komunikacji z klientami. Zespół zyskuje lepszy wgląd w
-                  obsługiwane zlecenia i może sprawniej planować kolejne etapy
-                  pracy.
+                  {scenario.effect}
                 </p>
               </div>
             </div>
@@ -90,7 +86,7 @@ export const Scenario03ClientPortal: React.FC = () => {
                 <div className="w-2.5 h-2.5 rounded-full bg-[#10B981]"></div>
               </div>
               <span className="font-label-sm text-label-sm text-secondary-fixed font-semibold">
-                Portal Kontrahenta • B2B Portal
+                {demo.applicationName}
               </span>
               <span className="material-symbols-outlined text-slate-400 text-[16px]">
                 account_circle
@@ -100,10 +96,10 @@ export const Scenario03ClientPortal: React.FC = () => {
             <div className="rounded-lg bg-[#02132C] p-4 space-y-3">
               <div className="flex justify-between items-center gap-2">
                 <span className="font-headline-sm text-headline-sm text-white font-bold">
-                  Status zamówień
+                  {demo.orderStatus}
                 </span>
                 <span className="font-label-sm text-label-sm text-secondary-fixed bg-[#0F2039] px-2 py-0.5 rounded border border-[#1A2A44]">
-                  Podgląd demo
+                  {t.labels.demoView}
                 </span>
               </div>
 
@@ -112,28 +108,28 @@ export const Scenario03ClientPortal: React.FC = () => {
                 <div className="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F] gap-2">
                   <div className="flex flex-col min-w-0">
                     <span className="font-label-sm text-label-sm font-semibold text-white">
-                      Zamówienie #001
+                      {demo.order1}
                     </span>
                     <span className="font-label-sm text-label-sm text-slate-400">
-                      Przykładowa partia produkcyjna
+                      {demo.batch1}
                     </span>
                   </div>
                   <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-secondary-fixed font-medium shrink-0">
-                    W produkcji
+                    {demo.inProduction}
                   </span>
                 </div>
 
                 <div className="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F] gap-2">
                   <div className="flex flex-col min-w-0">
                     <span className="font-label-sm text-label-sm font-semibold text-white">
-                      Zamówienie #002
+                      {demo.order2}
                     </span>
                     <span className="font-label-sm text-label-sm text-slate-400">
-                      Przykładowa partia towaru
+                      {demo.batch2}
                     </span>
                   </div>
                   <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-[#00E5FF] font-medium shrink-0">
-                    Gotowe do wysyłki
+                    {demo.readyToShip}
                   </span>
                 </div>
               </div>
@@ -141,10 +137,10 @@ export const Scenario03ClientPortal: React.FC = () => {
               {/* Demo information and action */}
               <div className="pt-1 flex items-center justify-between gap-2">
                 <span className="font-label-sm text-label-sm text-slate-400">
-                  Historia i szczegóły zleceń
+                  {demo.orderHistory}
                 </span>
                 <span className="font-label-sm text-label-sm px-3 py-1.5 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded font-medium shadow-sm whitespace-nowrap">
-                  + Nowe zamówienie
+                  {demo.newOrder}
                 </span>
               </div>
             </div>
@@ -157,7 +153,7 @@ export const Scenario03ClientPortal: React.FC = () => {
 
               <div className="flex items-center justify-between">
                 <span className="font-label-sm text-label-sm font-bold text-secondary-fixed">
-                  Status mobilny
+                  {demo.mobileStatus}
                 </span>
                 <span className="material-symbols-outlined text-[14px] text-secondary-fixed">
                   notifications_active
@@ -166,15 +162,15 @@ export const Scenario03ClientPortal: React.FC = () => {
 
               <div className="p-2 rounded bg-[#0F2039] border border-[#1E304F]">
                 <span className="font-label-sm text-label-sm text-slate-400 block text-[10px]">
-                  Aktualizacja statusu:
+                  {demo.statusUpdate}
                 </span>
                 <span className="font-body-sm text-body-sm text-slate-200 text-xs block leading-tight font-medium">
-                  Zamówienie #001 zostało przekazane do kolejnego etapu realizacji.
+                  {demo.notification}
                 </span>
               </div>
 
               <div className="w-full py-1 text-center bg-[#1A2A44] rounded text-[11px] font-label-sm text-secondary-fixed">
-                Szczegóły zamówienia
+                {demo.orderDetails}
               </div>
             </div>
           </div>

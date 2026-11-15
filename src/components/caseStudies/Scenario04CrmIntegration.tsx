@@ -1,11 +1,18 @@
 
 import React from "react";
+import { useLanguage } from "../../context/LanguageContext";
+import { translations } from "../../i18n/translations";
 
 export const Scenario04CrmIntegration: React.FC = () => {
+  const { language } = useLanguage();
+  const t = translations[language].caseStudiesPage;
+  const scenario = t.scenarios[3];
+  const demo = scenario.demo;
+
   return (
     <article className="bg-white border border-slate-200 p-6 lg:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden rounded-lg">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-        {/* Mobile Phone Mockup (6 cols - Order 2 on mobile, 1 on desktop) */}
+        {/* Mobile Phone Mockup */}
         <div className="lg:col-span-6 order-2 lg:order-1 flex justify-center">
           <div className="w-full max-w-[320px] bg-[#001029] p-3 shadow-xl rounded-lg border border-slate-800">
             <div className="bg-[#02132C] p-4 flex flex-col space-y-3.5 rounded-md border border-[#1A2A44]">
@@ -19,7 +26,7 @@ export const Scenario04CrmIntegration: React.FC = () => {
               {/* Header Status */}
               <div className="flex items-center justify-between pb-1 border-b border-[#1A2A44]">
                 <span className="font-headline-sm text-headline-sm text-white font-bold">
-                  CRM Assistant
+                  {demo.applicationName}
                 </span>
                 <span className="material-symbols-outlined text-secondary-fixed text-[18px]">
                   sync
@@ -33,19 +40,14 @@ export const Scenario04CrmIntegration: React.FC = () => {
                     <span className="material-symbols-outlined text-[14px]">
                       mark_email_read
                     </span>{" "}
-                    Nowa korespondencja
+                    {demo.newCorrespondence}
                   </span>
                   <span className="text-slate-400 text-xs">
-                    Przykład
+                    {demo.example}
                   </span>
                 </div>
                 <p className="font-body-sm text-body-sm text-slate-200 text-xs leading-snug">
-                  Wiadomość od{" "}
-                  <strong className="text-white">
-                    Klient B2B
-                  </strong>{" "}
-                  została powiązana z odpowiednim kontaktem i historią
-                  współpracy w CRM.
+                  {demo.message}
                 </p>
               </div>
 
@@ -56,15 +58,14 @@ export const Scenario04CrmIntegration: React.FC = () => {
                     <span className="material-symbols-outlined text-[14px]">
                       schedule_send
                     </span>{" "}
-                    Zadanie follow-up
+                    {demo.followUpTask}
                   </span>
                   <span className="text-slate-400 text-xs">
-                    Do wykonania
+                    {demo.toDo}
                   </span>
                 </div>
                 <p className="font-body-sm text-body-sm text-slate-300 text-xs leading-snug">
-                  Przygotuj kontakt z klientem w sprawie wysłanej oferty.
-                  Termin i sposób przypomnienia określają reguły CRM.
+                  {demo.taskDescription}
                 </p>
               </div>
 
@@ -75,15 +76,14 @@ export const Scenario04CrmIntegration: React.FC = () => {
                     <span className="material-symbols-outlined text-[14px] text-amber-400">
                       assignment
                     </span>{" "}
-                    Kolejny krok
+                    {demo.nextStep}
                   </span>
                   <span className="text-secondary-fixed text-xs font-bold">
-                    CRM
+                    {demo.crm}
                   </span>
                 </div>
                 <p className="font-body-sm text-body-sm text-slate-300 text-xs leading-snug">
-                  Oferta handlowa oczekuje na odpowiedź. Historia kontaktu i
-                  ustalenia są dostępne w jednym miejscu.
+                  {demo.nextStepDescription}
                 </p>
               </div>
 
@@ -91,29 +91,29 @@ export const Scenario04CrmIntegration: React.FC = () => {
                 <span className="material-symbols-outlined text-[16px]">
                   person_search
                 </span>{" "}
-                Karta klienta
+                {demo.customerCard}
               </div>
 
               <div className="text-center text-[10px] text-slate-500">
-                Przykładowy widok demonstracyjny
+                {demo.demoView}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Content Columns (6 cols - Order 1 on mobile, 2 on desktop) */}
+        {/* Content Columns */}
         <div className="lg:col-span-6 order-1 lg:order-2 flex flex-col space-y-6">
           <div className="flex items-center gap-3">
             <span className="font-label-sm text-label-sm font-bold text-[#0A6CFF] bg-[#F0F7FF] border border-[#D5E7FF] px-2.5 py-1 rounded">
-              SCENARIUSZ 04
+              {language === "PL" ? "SCENARIUSZ 04" : "SCENARIO 04"}
             </span>
             <span className="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider text-[11px] sm:text-[13px]">
-              INTEGRACJE CRM • AUTOMATYZACJA SPRZEDAŻY
+              {scenario.category}
             </span>
           </div>
 
           <h2 className="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
-            Integracja CRM z pocztą i automatyzacją zadań
+            {scenario.title}
           </h2>
 
           <div className="space-y-4">
@@ -124,14 +124,10 @@ export const Scenario04CrmIntegration: React.FC = () => {
               </span>
               <div>
                 <span className="font-label-md text-label-md font-bold text-[#E11D48] uppercase tracking-wider block mb-1">
-                  Problem
+                  {t.labels.problem}
                 </span>
                 <p className="font-body-md text-body-md text-[#475569]">
-                  Informacje o klientach i ustaleniach handlowych są rozproszone
-                  między skrzynkami pocztowymi, arkuszami i systemem CRM.
-                  Pracownikom trudno kontrolować historię kontaktu, pilnować
-                  terminów odpowiedzi i pamiętać o kolejnych działaniach
-                  sprzedażowych.
+                  {scenario.problem}
                 </p>
               </div>
             </div>
@@ -143,14 +139,10 @@ export const Scenario04CrmIntegration: React.FC = () => {
               </span>
               <div>
                 <span className="font-label-md text-label-md font-bold text-[#0A6CFF] uppercase tracking-wider block mb-1">
-                  Rozwiązanie
+                  {t.labels.solution}
                 </span>
                 <p className="font-body-md text-body-md text-[#334155]">
-                  Integracja CRM z pocztą elektroniczną, która porządkuje
-                  korespondencję i przypisuje ją do odpowiednich kontaktów.
-                  Automatyczne reguły mogą tworzyć zadania, przypominać o
-                  follow-upach i wspierać pracowników w kolejnych etapach
-                  obsługi klienta.
+                  {scenario.solution}
                 </p>
               </div>
             </div>
@@ -162,13 +154,10 @@ export const Scenario04CrmIntegration: React.FC = () => {
               </span>
               <div>
                 <span className="font-label-md text-label-md font-bold text-[#16A34A] uppercase tracking-wider block mb-1">
-                  Efekt
+                  {t.labels.effect}
                 </span>
                 <p className="font-body-md text-body-md text-[#1E293B]">
-                  Spójna historia komunikacji z klientami, lepsza organizacja
-                  pracy handlowców i mniejsze ryzyko pominięcia ważnych zadań.
-                  Zespół może szybciej reagować na potrzeby klientów i
-                  konsekwentniej prowadzić proces sprzedaży.
+                  {scenario.effect}
                 </p>
               </div>
             </div>

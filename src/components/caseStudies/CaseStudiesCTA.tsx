@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
+import { translations } from "../../i18n/translations";
 
 export const CaseStudiesCTA: React.FC = () => {
+  const { language } = useLanguage();
+  const t = translations[language].caseStudiesPage.cta;
+
   return (
     <section className="w-full bg-[#FAFAF9] pb-24 relative overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-gutter">
@@ -13,20 +18,16 @@ export const CaseStudiesCTA: React.FC = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#081a33]/80 border border-[#1d375f] backdrop-blur-md text-secondary-fixed mb-space-sm shadow-sm">
               <span className="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
               <span className="font-subheading-eyebrow text-subheading-eyebrow font-semibold uppercase text-[11px] sm:text-[13px]">
-                POROZMAWIAJ O MOŻLIWOŚCIACH
+                {t.badge}
               </span>
             </div>
 
             <h2 className="font-headline-xl text-headline-xl text-white font-bold tracking-tight">
-              Jak inteligentne rozwiązania mogą usprawnić działanie Twojej
-              firmy?
+              {t.title}
             </h2>
 
             <p className="font-body-lg text-body-lg text-slate-300 max-w-xl">
-              Każde przedsiębiorstwo ma własne procesy i wyzwania. Analiza
-              potrzeb pozwala zidentyfikować obszary, w których AI,
-              automatyzacja lub dedykowane oprogramowanie mogą przynieść realną
-              wartość biznesową.
+              {t.description}
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
@@ -34,7 +35,7 @@ export const CaseStudiesCTA: React.FC = () => {
                 to="/kontakt"
                 className="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-8 py-3.5 rounded-[10px] shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:shadow-[0_0_36px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
               >
-                Opisz swój projekt
+                {t.primaryButton}
               </Link>
 
               <a
@@ -44,7 +45,7 @@ export const CaseStudiesCTA: React.FC = () => {
                 <span className="material-symbols-outlined text-[18px]">
                   mail
                 </span>
-                Napisz bezpośrednio
+                {t.secondaryButton}
               </a>
             </div>
           </div>
