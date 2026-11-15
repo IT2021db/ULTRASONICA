@@ -3,7 +3,7 @@ export const translations = {
     navigation: {
       home: "Start",
       services: "Usługi",
-      projects: "Realizacje",
+      projects: "Przykłady zastosowań",
       contact: "Kontakt",
       contactButton: "Wyślij zapytanie",
       brandSubtitle: "INŻYNIERIA INTELIGENTNYCH SYSTEMÓW",
@@ -396,173 +396,174 @@ export const translations = {
       },
     },
 
-caseStudiesPage: {
-  hero: {
-    badge: "Przykładowe scenariusze wdrożeń • Nie są to referencje klientów",
-    title: "Od procesów biznesowych do inteligentnych systemów",
-    description:
-      "Poznaj przykładowe scenariusze wykorzystania sztucznej inteligencji, automatyzacji i dedykowanego oprogramowania w przedsiębiorstwach. Pokazuję w nich, jak projektować rozwiązania, które integrują systemy, usprawniają przepływ informacji i wspierają codzienną pracę zespołów.",
-    metrics: [
-      { label: "OCHRONA DANYCH", value: "Kontrola dostępu" },
-      { label: "ARCHITEKTURA AI", value: "LLM + RAG" },
-      { label: "AUTOMATYZACJA", value: "Inteligentne procesy" },
-      { label: "INTEGRACJE SYSTEMÓW", value: "API i Webhooks" },
-    ],
-  },
-
-  labels: {
-    problem: "Problem",
-    solution: "Rozwiązanie",
-    effect: "Efekt",
-    demoPreview: "Podgląd demonstracyjny",
-    demoView: "Podgląd demo",
-    example: "Przykład",
-    sources: "Źródła: dokumentacja",
-  },
-
-  scenarios: [
-    {
-      category: "SPRZEDAŻ B2B & BAZY WIEDZY",
-      title: "Asystent AI wspierający proces sprzedaży B2B",
-      problem:
-        "Pracownicy działów sprzedaży poświęcają dużo czasu na wyszukiwanie informacji w katalogach produktowych, analizowanie dokumentacji technicznej i przygotowywanie odpowiedzi na powtarzające się zapytania klientów.",
-      solution:
-        "Wewnętrzny asystent AI korzystający z firmowej bazy wiedzy, katalogów produktów i dokumentacji technicznej. Dzięki technologii RAG wyszukuje odpowiednie informacje i pomaga przygotowywać spersonalizowane odpowiedzi oraz szkice ofert.",
-      effect:
-        "Szybszy dostęp do wiedzy produktowej, sprawniejsze przygotowywanie odpowiedzi i ofert oraz większa spójność komunikacji z klientami. Pracownik weryfikuje i zatwierdza każdą odpowiedź przed jej wysłaniem.",
-      demo: {
-        applicationName: "Sales Knowledge Assistant",
-        status: "Baza wiedzy aktywna",
-        queryLabel: "Przykładowe zapytanie klienta",
-        query:
-          "Dzień dobry, szukamy urządzenia przemysłowego o mocy powyżej 22 kW, przeznaczonego do pracy w środowisku o podwyższonym zapyleniu. Jakie rozwiązanie Państwo rekomendują?",
-        responseLabel: "Propozycja odpowiedzi AI",
-        response:
-          "Na podstawie dostępnej dokumentacji mogę wskazać rozwiązania spełniające podane wymagania. Przy wyborze należy zweryfikować parametry techniczne, warunki środowiskowe i dostępność urządzenia. Przygotowałem wstępną propozycję odpowiedzi wraz z odniesieniami do dokumentacji produktowej.",
-        approveButton: "Zatwierdź szkic",
-        editButton: "Edytuj odpowiedź",
-        placeholder: "Zadaj pytanie lub wyszukaj w bazie wiedzy...",
+    caseStudiesPage: {
+      hero: {
+        badge:
+          "Przykładowe scenariusze wdrożeń • Nie są to referencje klientów",
+        title: "Od procesów biznesowych do inteligentnych systemów",
+        description:
+          "Poznaj przykładowe scenariusze wykorzystania sztucznej inteligencji, automatyzacji i dedykowanego oprogramowania w przedsiębiorstwach. Pokazuję w nich, jak projektować rozwiązania, które integrują systemy, usprawniają przepływ informacji i wspierają codzienną pracę zespołów.",
+        metrics: [
+          { label: "OCHRONA DANYCH", value: "Kontrola dostępu" },
+          { label: "ARCHITEKTURA AI", value: "LLM + RAG" },
+          { label: "AUTOMATYZACJA", value: "Inteligentne procesy" },
+          { label: "INTEGRACJE SYSTEMÓW", value: "API i Webhooks" },
+        ],
       },
-    },
 
-    {
-      category: "FINANSE & AUTOMATYZACJA DOKUMENTÓW",
-      title: "Automatyzacja przetwarzania faktur i dokumentów kosztowych",
-      problem:
-        "Ręczne wprowadzanie danych z faktur, kontrolowanie poprawności dokumentów i przypisywanie ich do odpowiednich kategorii księgowych zajmuje czas pracowników i zwiększa ryzyko pomyłek.",
-      solution:
-        "System łączący technologię OCR i AI, który odczytuje dane z dokumentów, rozpoznaje pozycje faktur, sprawdza ich spójność i przygotowuje informacje do przekazania do systemu księgowego lub ERP.",
-      effect:
-        "Mniej ręcznego wprowadzania danych, sprawniejszy obieg dokumentów i łatwiejsza kontrola poprawności. Dokumenty wymagające dodatkowej weryfikacji trafiają do pracownika przed zatwierdzeniem i zaksięgowaniem.",
-      demo: {
-        applicationName: "OCR & AI Document Processing",
-        status: "Analiza zakończona",
-        document: "Dokument: Faktura_przykladowa.pdf",
-        extractedData: "Dane odczytane",
-        seller: "Sprzedawca:",
-        sampleSupplier: "Przykładowy dostawca",
-        identification: "Dane identyfikacyjne odczytane",
-        grossAmount: "Kwota brutto:",
-        amount: "4 876,00 PLN",
-        vat: "VAT: 23%",
-        bankAccount: "Numer rachunku bankowego:",
-        accountNumber: "PL XX XXXX XXXX XXXX XXXX XXXX XXXX",
-        verification: "Do weryfikacji",
-        documentRecognition: "Rozpoznawanie dokumentu:",
-        completed: "Zakończone",
-        dataControl: "Kontrola danych:",
-        verificationRequired: "Weryfikacja wymagana",
-        erpIntegration: "Integracja ERP:",
-        readyForTransfer: "Gotowe do przekazania",
-        nextStep: "Kolejny krok: zatwierdzenie danych przez pracownika.",
-        approveButton: "Zatwierdź dokument",
-      },
-    },
-
-    {
-      category: "PORTAL B2B & OBSŁUGA ZAMÓWIEŃ",
-      title: "Portal B2B do składania zamówień i monitorowania realizacji",
-      problem:
-        "Zamówienia przyjmowane przez telefon, wiadomości i e-mail utrudniają kontrolę nad ich kompletnością oraz aktualnym statusem. Informacje o realizacji są rozproszone, a pracownicy poświęcają czas na obsługę powtarzających się zapytań klientów.",
-      solution:
-        "Dedykowana aplikacja webowa umożliwiająca kontrahentom składanie zamówień, dostęp do historii współpracy oraz śledzenie statusu realizacji. Portal może korzystać z danych systemów ERP, magazynowych i produkcyjnych dzięki integracjom dopasowanym do infrastruktury firmy.",
-      effect:
-        "Jeden uporządkowany kanał obsługi zamówień, łatwiejszy dostęp do informacji o ich realizacji i mniej powtarzalnej komunikacji z klientami. Zespół zyskuje lepszy wgląd w obsługiwane zlecenia i może sprawniej planować kolejne etapy pracy.",
-      demo: {
-        applicationName: "Portal Kontrahenta • B2B Portal",
-        orderStatus: "Status zamówień",
-        order1: "Zamówienie #001",
-        batch1: "Przykładowa partia produkcyjna",
-        inProduction: "W produkcji",
-        order2: "Zamówienie #002",
-        batch2: "Przykładowa partia towaru",
-        readyToShip: "Gotowe do wysyłki",
-        orderHistory: "Historia i szczegóły zleceń",
-        newOrder: "+ Nowe zamówienie",
-        mobileStatus: "Status mobilny",
-        statusUpdate: "Aktualizacja statusu:",
-        notification:
-          "Zamówienie #001 zostało przekazane do kolejnego etapu realizacji.",
-        orderDetails: "Szczegóły zamówienia",
-      },
-    },
-
-    {
-      category: "INTEGRACJE CRM • AUTOMATYZACJA SPRZEDAŻY",
-      title: "Integracja CRM z pocztą i automatyzacją zadań",
-      problem:
-        "Informacje o klientach i ustaleniach handlowych są rozproszone między skrzynkami pocztowymi, arkuszami i systemem CRM. Pracownikom trudno kontrolować historię kontaktu, pilnować terminów odpowiedzi i pamiętać o kolejnych działaniach sprzedażowych.",
-      solution:
-        "Integracja CRM z pocztą elektroniczną, która porządkuje korespondencję i przypisuje ją do odpowiednich kontaktów. Automatyczne reguły mogą tworzyć zadania, przypominać o follow-upach i wspierać pracowników w kolejnych etapach obsługi klienta.",
-      effect:
-        "Spójna historia komunikacji z klientami, lepsza organizacja pracy handlowców i mniejsze ryzyko pominięcia ważnych zadań. Zespół może szybciej reagować na potrzeby klientów i konsekwentniej prowadzić proces sprzedaży.",
-      demo: {
-        applicationName: "CRM Assistant",
-        newCorrespondence: "Nowa korespondencja",
+      labels: {
+        problem: "Problem",
+        solution: "Rozwiązanie",
+        effect: "Efekt",
+        demoPreview: "Podgląd demonstracyjny",
+        demoView: "Podgląd demo",
         example: "Przykład",
-        message:
-          "Wiadomość od Klient B2B została powiązana z odpowiednim kontaktem i historią współpracy w CRM.",
-        followUpTask: "Zadanie follow-up",
-        toDo: "Do wykonania",
-        taskDescription:
-          "Przygotuj kontakt z klientem w sprawie wysłanej oferty. Termin i sposób przypomnienia określają reguły CRM.",
-        nextStep: "Kolejny krok",
-        crm: "CRM",
-        nextStepDescription:
-          "Oferta handlowa oczekuje na odpowiedź. Historia kontaktu i ustalenia są dostępne w jednym miejscu.",
-        customerCard: "Karta klienta",
-        demoView: "Przykładowy widok demonstracyjny",
+        sources: "Źródła: dokumentacja",
+      },
+
+      scenarios: [
+        {
+          category: "SPRZEDAŻ B2B & BAZY WIEDZY",
+          title: "Asystent AI wspierający proces sprzedaży B2B",
+          problem:
+            "Pracownicy działów sprzedaży poświęcają dużo czasu na wyszukiwanie informacji w katalogach produktowych, analizowanie dokumentacji technicznej i przygotowywanie odpowiedzi na powtarzające się zapytania klientów.",
+          solution:
+            "Wewnętrzny asystent AI korzystający z firmowej bazy wiedzy, katalogów produktów i dokumentacji technicznej. Dzięki technologii RAG wyszukuje odpowiednie informacje i pomaga przygotowywać spersonalizowane odpowiedzi oraz szkice ofert.",
+          effect:
+            "Szybszy dostęp do wiedzy produktowej, sprawniejsze przygotowywanie odpowiedzi i ofert oraz większa spójność komunikacji z klientami. Pracownik weryfikuje i zatwierdza każdą odpowiedź przed jej wysłaniem.",
+          demo: {
+            applicationName: "Sales Knowledge Assistant",
+            status: "Baza wiedzy aktywna",
+            queryLabel: "Przykładowe zapytanie klienta",
+            query:
+              "Dzień dobry, szukamy urządzenia przemysłowego o mocy powyżej 22 kW, przeznaczonego do pracy w środowisku o podwyższonym zapyleniu. Jakie rozwiązanie Państwo rekomendują?",
+            responseLabel: "Propozycja odpowiedzi AI",
+            response:
+              "Na podstawie dostępnej dokumentacji mogę wskazać rozwiązania spełniające podane wymagania. Przy wyborze należy zweryfikować parametry techniczne, warunki środowiskowe i dostępność urządzenia. Przygotowałem wstępną propozycję odpowiedzi wraz z odniesieniami do dokumentacji produktowej.",
+            approveButton: "Zatwierdź szkic",
+            editButton: "Edytuj odpowiedź",
+            placeholder: "Zadaj pytanie lub wyszukaj w bazie wiedzy...",
+          },
+        },
+
+        {
+          category: "FINANSE & AUTOMATYZACJA DOKUMENTÓW",
+          title: "Automatyzacja przetwarzania faktur i dokumentów kosztowych",
+          problem:
+            "Ręczne wprowadzanie danych z faktur, kontrolowanie poprawności dokumentów i przypisywanie ich do odpowiednich kategorii księgowych zajmuje czas pracowników i zwiększa ryzyko pomyłek.",
+          solution:
+            "System łączący technologię OCR i AI, który odczytuje dane z dokumentów, rozpoznaje pozycje faktur, sprawdza ich spójność i przygotowuje informacje do przekazania do systemu księgowego lub ERP.",
+          effect:
+            "Mniej ręcznego wprowadzania danych, sprawniejszy obieg dokumentów i łatwiejsza kontrola poprawności. Dokumenty wymagające dodatkowej weryfikacji trafiają do pracownika przed zatwierdzeniem i zaksięgowaniem.",
+          demo: {
+            applicationName: "OCR & AI Document Processing",
+            status: "Analiza zakończona",
+            document: "Dokument: Faktura_przykladowa.pdf",
+            extractedData: "Dane odczytane",
+            seller: "Sprzedawca:",
+            sampleSupplier: "Przykładowy dostawca",
+            identification: "Dane identyfikacyjne odczytane",
+            grossAmount: "Kwota brutto:",
+            amount: "4 876,00 PLN",
+            vat: "VAT: 23%",
+            bankAccount: "Numer rachunku bankowego:",
+            accountNumber: "PL XX XXXX XXXX XXXX XXXX XXXX XXXX",
+            verification: "Do weryfikacji",
+            documentRecognition: "Rozpoznawanie dokumentu:",
+            completed: "Zakończone",
+            dataControl: "Kontrola danych:",
+            verificationRequired: "Weryfikacja wymagana",
+            erpIntegration: "Integracja ERP:",
+            readyForTransfer: "Gotowe do przekazania",
+            nextStep: "Kolejny krok: zatwierdzenie danych przez pracownika.",
+            approveButton: "Zatwierdź dokument",
+          },
+        },
+
+        {
+          category: "PORTAL B2B & OBSŁUGA ZAMÓWIEŃ",
+          title: "Portal B2B do składania zamówień i monitorowania realizacji",
+          problem:
+            "Zamówienia przyjmowane przez telefon, wiadomości i e-mail utrudniają kontrolę nad ich kompletnością oraz aktualnym statusem. Informacje o realizacji są rozproszone, a pracownicy poświęcają czas na obsługę powtarzających się zapytań klientów.",
+          solution:
+            "Dedykowana aplikacja webowa umożliwiająca kontrahentom składanie zamówień, dostęp do historii współpracy oraz śledzenie statusu realizacji. Portal może korzystać z danych systemów ERP, magazynowych i produkcyjnych dzięki integracjom dopasowanym do infrastruktury firmy.",
+          effect:
+            "Jeden uporządkowany kanał obsługi zamówień, łatwiejszy dostęp do informacji o ich realizacji i mniej powtarzalnej komunikacji z klientami. Zespół zyskuje lepszy wgląd w obsługiwane zlecenia i może sprawniej planować kolejne etapy pracy.",
+          demo: {
+            applicationName: "Portal Kontrahenta • B2B Portal",
+            orderStatus: "Status zamówień",
+            order1: "Zamówienie #001",
+            batch1: "Przykładowa partia produkcyjna",
+            inProduction: "W produkcji",
+            order2: "Zamówienie #002",
+            batch2: "Przykładowa partia towaru",
+            readyToShip: "Gotowe do wysyłki",
+            orderHistory: "Historia i szczegóły zleceń",
+            newOrder: "+ Nowe zamówienie",
+            mobileStatus: "Status mobilny",
+            statusUpdate: "Aktualizacja statusu:",
+            notification:
+              "Zamówienie #001 zostało przekazane do kolejnego etapu realizacji.",
+            orderDetails: "Szczegóły zamówienia",
+          },
+        },
+
+        {
+          category: "INTEGRACJE CRM • AUTOMATYZACJA SPRZEDAŻY",
+          title: "Integracja CRM z pocztą i automatyzacją zadań",
+          problem:
+            "Informacje o klientach i ustaleniach handlowych są rozproszone między skrzynkami pocztowymi, arkuszami i systemem CRM. Pracownikom trudno kontrolować historię kontaktu, pilnować terminów odpowiedzi i pamiętać o kolejnych działaniach sprzedażowych.",
+          solution:
+            "Integracja CRM z pocztą elektroniczną, która porządkuje korespondencję i przypisuje ją do odpowiednich kontaktów. Automatyczne reguły mogą tworzyć zadania, przypominać o follow-upach i wspierać pracowników w kolejnych etapach obsługi klienta.",
+          effect:
+            "Spójna historia komunikacji z klientami, lepsza organizacja pracy handlowców i mniejsze ryzyko pominięcia ważnych zadań. Zespół może szybciej reagować na potrzeby klientów i konsekwentniej prowadzić proces sprzedaży.",
+          demo: {
+            applicationName: "CRM Assistant",
+            newCorrespondence: "Nowa korespondencja",
+            example: "Przykład",
+            message:
+              "Wiadomość od Klient B2B została powiązana z odpowiednim kontaktem i historią współpracy w CRM.",
+            followUpTask: "Zadanie follow-up",
+            toDo: "Do wykonania",
+            taskDescription:
+              "Przygotuj kontakt z klientem w sprawie wysłanej oferty. Termin i sposób przypomnienia określają reguły CRM.",
+            nextStep: "Kolejny krok",
+            crm: "CRM",
+            nextStepDescription:
+              "Oferta handlowa oczekuje na odpowiedź. Historia kontaktu i ustalenia są dostępne w jednym miejscu.",
+            customerCard: "Karta klienta",
+            demoView: "Przykładowy widok demonstracyjny",
+          },
+        },
+      ],
+
+      partnership: {
+        badge: "PROJEKTY DEDYKOWANE • PARTNERSTWO TECHNOLOGICZNE",
+        title: "Technologia dopasowana do sposobu działania Twojej firmy",
+        description:
+          "Każdy projekt rozpoczyna się od analizy procesów i potrzeb przedsiębiorstwa. Na tej podstawie określany jest zakres rozwiązania, jego architektura oraz możliwości integracji z istniejącą infrastrukturą IT.",
+        features: [
+          "Poufność i kontrola dostępu",
+          "Architektura dopasowana do firmy",
+          "Integracje i dedykowane systemy",
+        ],
+        approach: "INDYWIDUALNE PODEJŚCIE",
+        contactTitle: "Porozmawiaj o swoim projekcie",
+        contactDescription:
+          "Pierwsza rozmowa pozwoli określić potrzeby, możliwe kierunki rozwoju oraz zakres potencjalnego projektu.",
+        contactButton: "Przejdź do kontaktu →",
+      },
+
+      cta: {
+        badge: "POROZMAWIAJ O MOŻLIWOŚCIACH",
+        title:
+          "Jak inteligentne rozwiązania mogą usprawnić działanie Twojej firmy?",
+        description:
+          "Każde przedsiębiorstwo ma własne procesy i wyzwania. Analiza potrzeb pozwala zidentyfikować obszary, w których AI, automatyzacja lub dedykowane oprogramowanie mogą przynieść realną wartość biznesową.",
+        primaryButton: "Opisz swój projekt",
+        secondaryButton: "Napisz bezpośrednio",
       },
     },
-  ],
-
-  partnership: {
-    badge: "PROJEKTY DEDYKOWANE • PARTNERSTWO TECHNOLOGICZNE",
-    title: "Technologia dopasowana do sposobu działania Twojej firmy",
-    description:
-      "Każdy projekt rozpoczyna się od analizy procesów i potrzeb przedsiębiorstwa. Na tej podstawie określany jest zakres rozwiązania, jego architektura oraz możliwości integracji z istniejącą infrastrukturą IT.",
-    features: [
-      "Poufność i kontrola dostępu",
-      "Architektura dopasowana do firmy",
-      "Integracje i dedykowane systemy",
-    ],
-    approach: "INDYWIDUALNE PODEJŚCIE",
-    contactTitle: "Porozmawiaj o swoim projekcie",
-    contactDescription:
-      "Pierwsza rozmowa pozwoli określić potrzeby, możliwe kierunki rozwoju oraz zakres potencjalnego projektu.",
-    contactButton: "Przejdź do kontaktu →",
-  },
-
-  cta: {
-    badge: "POROZMAWIAJ O MOŻLIWOŚCIACH",
-    title: "Jak inteligentne rozwiązania mogą usprawnić działanie Twojej firmy?",
-    description:
-      "Każde przedsiębiorstwo ma własne procesy i wyzwania. Analiza potrzeb pozwala zidentyfikować obszary, w których AI, automatyzacja lub dedykowane oprogramowanie mogą przynieść realną wartość biznesową.",
-    primaryButton: "Opisz swój projekt",
-    secondaryButton: "Napisz bezpośrednio",
-  },
-},
-
   },
 
   EN: {
@@ -963,173 +964,173 @@ caseStudiesPage: {
       },
     },
 
-caseStudiesPage: {
-  hero: {
-    badge: "Example implementation scenarios • Not client testimonials",
-    title: "From business processes to intelligent systems",
-    description:
-      "Explore example scenarios showing how artificial intelligence, automation and custom software can be used in businesses. They illustrate how solutions can connect systems, improve information flow and support everyday team operations.",
-    metrics: [
-      { label: "DATA PROTECTION", value: "Access control" },
-      { label: "AI ARCHITECTURE", value: "LLM + RAG" },
-      { label: "AUTOMATION", value: "Intelligent workflows" },
-      { label: "SYSTEM INTEGRATION", value: "APIs and webhooks" },
-    ],
-  },
-
-  labels: {
-    problem: "Problem",
-    solution: "Solution",
-    effect: "Outcome",
-    demoPreview: "Demo preview",
-    demoView: "Demo view",
-    example: "Example",
-    sources: "Sources: documentation",
-  },
-
-  scenarios: [
-    {
-      category: "B2B SALES & KNOWLEDGE BASES",
-      title: "AI assistant supporting the B2B sales process",
-      problem:
-        "Sales teams spend considerable time searching product catalogues, reviewing technical documentation and preparing responses to recurring customer enquiries.",
-      solution:
-        "An internal AI assistant connected to the company's knowledge base, product catalogues and technical documentation. Using RAG technology, it retrieves relevant information and helps prepare personalised responses and draft quotations.",
-      effect:
-        "Faster access to product knowledge, more efficient preparation of responses and quotations, and more consistent customer communication. An employee reviews and approves every response before it is sent.",
-      demo: {
-        applicationName: "Sales Knowledge Assistant",
-        status: "Knowledge base active",
-        queryLabel: "Example customer enquiry",
-        query:
-          "Hello, we are looking for an industrial device with a power rating above 22 kW, designed to operate in an environment with elevated dust levels. Which solution would you recommend?",
-        responseLabel: "AI response proposal",
-        response:
-          "Based on the available documentation, I can identify solutions that meet the stated requirements. The technical specifications, operating conditions and device availability should be verified before making a selection. I have prepared a preliminary response together with references to the product documentation.",
-        approveButton: "Approve draft",
-        editButton: "Edit response",
-        placeholder: "Ask a question or search the knowledge base...",
+    caseStudiesPage: {
+      hero: {
+        badge: "Example implementation scenarios • Not client testimonials",
+        title: "From business processes to intelligent systems",
+        description:
+          "Explore example scenarios showing how artificial intelligence, automation and custom software can be used in businesses. They illustrate how solutions can connect systems, improve information flow and support everyday team operations.",
+        metrics: [
+          { label: "DATA PROTECTION", value: "Access control" },
+          { label: "AI ARCHITECTURE", value: "LLM + RAG" },
+          { label: "AUTOMATION", value: "Intelligent workflows" },
+          { label: "SYSTEM INTEGRATION", value: "APIs and webhooks" },
+        ],
       },
-    },
 
-    {
-      category: "FINANCE & DOCUMENT AUTOMATION",
-      title: "Automated processing of invoices and expense documents",
-      problem:
-        "Manually entering invoice data, checking document accuracy and assigning documents to the correct accounting categories takes up employees' time and increases the risk of errors.",
-      solution:
-        "A system combining OCR and AI technology to extract document data, recognise invoice line items, check consistency and prepare information for transfer to accounting or ERP software.",
-      effect:
-        "Less manual data entry, more efficient document workflows and easier accuracy checks. Documents requiring additional review are routed to an employee before approval and posting.",
-      demo: {
-        applicationName: "OCR & AI Document Processing",
-        status: "Analysis complete",
-        document: "Document: Sample_invoice.pdf",
-        extractedData: "Data extracted",
-        seller: "Seller:",
-        sampleSupplier: "Sample supplier",
-        identification: "Identification details extracted",
-        grossAmount: "Gross amount:",
-        amount: "4,876.00 PLN",
-        vat: "VAT: 23%",
-        bankAccount: "Bank account number:",
-        accountNumber: "PL XX XXXX XXXX XXXX XXXX XXXX XXXX",
-        verification: "Requires review",
-        documentRecognition: "Document recognition:",
-        completed: "Completed",
-        dataControl: "Data validation:",
-        verificationRequired: "Verification required",
-        erpIntegration: "ERP integration:",
-        readyForTransfer: "Ready for transfer",
-        nextStep: "Next step: employee approval of the data.",
-        approveButton: "Approve document",
-      },
-    },
-
-    {
-      category: "B2B PORTALS & ORDER MANAGEMENT",
-      title: "B2B portal for placing orders and tracking fulfilment",
-      problem:
-        "Orders received by phone, messaging apps and email make it difficult to track their completeness and current status. Fulfilment information is scattered, while employees spend time responding to recurring customer enquiries.",
-      solution:
-        "A custom web application that allows business partners to place orders, access their cooperation history and track fulfilment status. The portal can use data from ERP, warehouse and production systems through integrations tailored to the company's IT infrastructure.",
-      effect:
-        "A single, organised order management channel, easier access to fulfilment information and less repetitive customer communication. The team gains better visibility of ongoing orders and can plan subsequent work more efficiently.",
-      demo: {
-        applicationName: "Customer Portal • B2B Portal",
-        orderStatus: "Order status",
-        order1: "Order #001",
-        batch1: "Example production batch",
-        inProduction: "In production",
-        order2: "Order #002",
-        batch2: "Example goods batch",
-        readyToShip: "Ready to ship",
-        orderHistory: "Order history and details",
-        newOrder: "+ New order",
-        mobileStatus: "Mobile status",
-        statusUpdate: "Status update:",
-        notification:
-          "Order #001 has moved to the next stage of fulfilment.",
-        orderDetails: "Order details",
-      },
-    },
-
-    {
-      category: "CRM INTEGRATIONS • SALES AUTOMATION",
-      title: "CRM integration with email and task automation",
-      problem:
-        "Customer information and sales agreements are scattered across inboxes, spreadsheets and the CRM system. Employees find it difficult to track communication history, monitor response deadlines and remember follow-up sales activities.",
-      solution:
-        "An integration between the CRM system and email that organises correspondence and links it to the relevant contacts. Automated rules can create tasks, send follow-up reminders and support employees through subsequent stages of customer service.",
-      effect:
-        "A consistent customer communication history, better organisation of sales activities and a lower risk of overlooking important tasks. The team can respond to customer needs faster and manage the sales process more consistently.",
-      demo: {
-        applicationName: "CRM Assistant",
-        newCorrespondence: "New correspondence",
+      labels: {
+        problem: "Problem",
+        solution: "Solution",
+        effect: "Outcome",
+        demoPreview: "Demo preview",
+        demoView: "Demo view",
         example: "Example",
-        message:
-          "A message from B2B Customer has been linked to the relevant contact and cooperation history in the CRM.",
-        followUpTask: "Follow-up task",
-        toDo: "To do",
-        taskDescription:
-          "Contact the customer about the quotation that was sent. The deadline and reminder method are determined by CRM rules.",
-        nextStep: "Next step",
-        crm: "CRM",
-        nextStepDescription:
-          "The quotation is awaiting a response. Contact history and agreed details are available in one place.",
-        customerCard: "Customer record",
-        demoView: "Example demonstration view",
+        sources: "Sources: documentation",
+      },
+
+      scenarios: [
+        {
+          category: "B2B SALES & KNOWLEDGE BASES",
+          title: "AI assistant supporting the B2B sales process",
+          problem:
+            "Sales teams spend considerable time searching product catalogues, reviewing technical documentation and preparing responses to recurring customer enquiries.",
+          solution:
+            "An internal AI assistant connected to the company's knowledge base, product catalogues and technical documentation. Using RAG technology, it retrieves relevant information and helps prepare personalised responses and draft quotations.",
+          effect:
+            "Faster access to product knowledge, more efficient preparation of responses and quotations, and more consistent customer communication. An employee reviews and approves every response before it is sent.",
+          demo: {
+            applicationName: "Sales Knowledge Assistant",
+            status: "Knowledge base active",
+            queryLabel: "Example customer enquiry",
+            query:
+              "Hello, we are looking for an industrial device with a power rating above 22 kW, designed to operate in an environment with elevated dust levels. Which solution would you recommend?",
+            responseLabel: "AI response proposal",
+            response:
+              "Based on the available documentation, I can identify solutions that meet the stated requirements. The technical specifications, operating conditions and device availability should be verified before making a selection. I have prepared a preliminary response together with references to the product documentation.",
+            approveButton: "Approve draft",
+            editButton: "Edit response",
+            placeholder: "Ask a question or search the knowledge base...",
+          },
+        },
+
+        {
+          category: "FINANCE & DOCUMENT AUTOMATION",
+          title: "Automated processing of invoices and expense documents",
+          problem:
+            "Manually entering invoice data, checking document accuracy and assigning documents to the correct accounting categories takes up employees' time and increases the risk of errors.",
+          solution:
+            "A system combining OCR and AI technology to extract document data, recognise invoice line items, check consistency and prepare information for transfer to accounting or ERP software.",
+          effect:
+            "Less manual data entry, more efficient document workflows and easier accuracy checks. Documents requiring additional review are routed to an employee before approval and posting.",
+          demo: {
+            applicationName: "OCR & AI Document Processing",
+            status: "Analysis complete",
+            document: "Document: Sample_invoice.pdf",
+            extractedData: "Data extracted",
+            seller: "Seller:",
+            sampleSupplier: "Sample supplier",
+            identification: "Identification details extracted",
+            grossAmount: "Gross amount:",
+            amount: "4,876.00 PLN",
+            vat: "VAT: 23%",
+            bankAccount: "Bank account number:",
+            accountNumber: "PL XX XXXX XXXX XXXX XXXX XXXX XXXX",
+            verification: "Requires review",
+            documentRecognition: "Document recognition:",
+            completed: "Completed",
+            dataControl: "Data validation:",
+            verificationRequired: "Verification required",
+            erpIntegration: "ERP integration:",
+            readyForTransfer: "Ready for transfer",
+            nextStep: "Next step: employee approval of the data.",
+            approveButton: "Approve document",
+          },
+        },
+
+        {
+          category: "B2B PORTALS & ORDER MANAGEMENT",
+          title: "B2B portal for placing orders and tracking fulfilment",
+          problem:
+            "Orders received by phone, messaging apps and email make it difficult to track their completeness and current status. Fulfilment information is scattered, while employees spend time responding to recurring customer enquiries.",
+          solution:
+            "A custom web application that allows business partners to place orders, access their cooperation history and track fulfilment status. The portal can use data from ERP, warehouse and production systems through integrations tailored to the company's IT infrastructure.",
+          effect:
+            "A single, organised order management channel, easier access to fulfilment information and less repetitive customer communication. The team gains better visibility of ongoing orders and can plan subsequent work more efficiently.",
+          demo: {
+            applicationName: "Customer Portal • B2B Portal",
+            orderStatus: "Order status",
+            order1: "Order #001",
+            batch1: "Example production batch",
+            inProduction: "In production",
+            order2: "Order #002",
+            batch2: "Example goods batch",
+            readyToShip: "Ready to ship",
+            orderHistory: "Order history and details",
+            newOrder: "+ New order",
+            mobileStatus: "Mobile status",
+            statusUpdate: "Status update:",
+            notification:
+              "Order #001 has moved to the next stage of fulfilment.",
+            orderDetails: "Order details",
+          },
+        },
+
+        {
+          category: "CRM INTEGRATIONS • SALES AUTOMATION",
+          title: "CRM integration with email and task automation",
+          problem:
+            "Customer information and sales agreements are scattered across inboxes, spreadsheets and the CRM system. Employees find it difficult to track communication history, monitor response deadlines and remember follow-up sales activities.",
+          solution:
+            "An integration between the CRM system and email that organises correspondence and links it to the relevant contacts. Automated rules can create tasks, send follow-up reminders and support employees through subsequent stages of customer service.",
+          effect:
+            "A consistent customer communication history, better organisation of sales activities and a lower risk of overlooking important tasks. The team can respond to customer needs faster and manage the sales process more consistently.",
+          demo: {
+            applicationName: "CRM Assistant",
+            newCorrespondence: "New correspondence",
+            example: "Example",
+            message:
+              "A message from B2B Customer has been linked to the relevant contact and cooperation history in the CRM.",
+            followUpTask: "Follow-up task",
+            toDo: "To do",
+            taskDescription:
+              "Contact the customer about the quotation that was sent. The deadline and reminder method are determined by CRM rules.",
+            nextStep: "Next step",
+            crm: "CRM",
+            nextStepDescription:
+              "The quotation is awaiting a response. Contact history and agreed details are available in one place.",
+            customerCard: "Customer record",
+            demoView: "Example demonstration view",
+          },
+        },
+      ],
+
+      partnership: {
+        badge: "CUSTOM PROJECTS • TECHNOLOGY PARTNERSHIP",
+        title: "Technology tailored to the way your business operates",
+        description:
+          "Every project begins with an analysis of business processes and requirements. This provides the basis for defining the solution scope, its architecture and integration options with the existing IT infrastructure.",
+        features: [
+          "Confidentiality and access control",
+          "Architecture tailored to your business",
+          "Integrations and custom systems",
+        ],
+        approach: "INDIVIDUAL APPROACH",
+        contactTitle: "Let's discuss your project",
+        contactDescription:
+          "An initial conversation helps identify your needs, possible development directions and the potential scope of the project.",
+        contactButton: "Go to contact →",
+      },
+
+      cta: {
+        badge: "LET'S DISCUSS THE POSSIBILITIES",
+        title:
+          "How could intelligent solutions improve the way your business operates?",
+        description:
+          "Every business has its own processes and challenges. An assessment of your needs can identify areas where AI, automation or custom software could deliver real business value.",
+        primaryButton: "Tell me about your project",
+        secondaryButton: "Email me directly",
       },
     },
-  ],
-
-  partnership: {
-    badge: "CUSTOM PROJECTS • TECHNOLOGY PARTNERSHIP",
-    title: "Technology tailored to the way your business operates",
-    description:
-      "Every project begins with an analysis of business processes and requirements. This provides the basis for defining the solution scope, its architecture and integration options with the existing IT infrastructure.",
-    features: [
-      "Confidentiality and access control",
-      "Architecture tailored to your business",
-      "Integrations and custom systems",
-    ],
-    approach: "INDIVIDUAL APPROACH",
-    contactTitle: "Let's discuss your project",
-    contactDescription:
-      "An initial conversation helps identify your needs, possible development directions and the potential scope of the project.",
-    contactButton: "Go to contact →",
-  },
-
-  cta: {
-    badge: "LET'S DISCUSS THE POSSIBILITIES",
-    title: "How could intelligent solutions improve the way your business operates?",
-    description:
-      "Every business has its own processes and challenges. An assessment of your needs can identify areas where AI, automation or custom software could deliver real business value.",
-    primaryButton: "Tell me about your project",
-    secondaryButton: "Email me directly",
-  },
-},
-
   },
 } as const;
 
