@@ -41,7 +41,7 @@ export const ServicesCTA: React.FC = () => {
               </Link>
 
               <a
-                href="mailto:programistka.pl@gmail.com"
+                href="mailto:ultrasonica.tech@gmail.com"
                 className="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-medium text-white bg-[#0a1e3b]/80 border border-[#1e3962] hover:bg-[#112d54] px-7 py-4 rounded-[10px] shadow-sm transition-colors"
               >
                 <span className="material-symbols-outlined mr-2 text-[18px]">

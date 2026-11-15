@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export interface CtaBannerProps {
   eyebrow?: string;
@@ -14,18 +14,20 @@ export interface CtaBannerProps {
 }
 
 export const CtaBanner: React.FC<CtaBannerProps> = ({
-  eyebrow = 'POROZMAWIAJMY O TWOIM BIZNESIE',
+  eyebrow = "POROZMAWIAJMY O TWOIM BIZNESIE",
   title,
   description,
-  primaryButtonText = 'Wyślij zapytanie ofertowe',
-  primaryButtonTo = '/kontakt',
-  secondaryButtonText = 'Napisz bezpośrednio',
-  secondaryButtonHref = 'mailto:programistka.pl@gmail.com',
-  trustNote = 'Odpowiadamy w ciągu 24h • Bez korporacyjnego narzutu • Zgodność z RODO',
-  className = '',
+  primaryButtonText = "Wyślij zapytanie ofertowe",
+  primaryButtonTo = "/kontakt",
+  secondaryButtonText = "Napisz bezpośrednio",
+  secondaryButtonHref = "mailto:ultrasonica.tech@gmail.com",
+  trustNote = "Odpowiadamy w ciągu 24h • Bez korporacyjnego narzutu • Zgodność z RODO",
+  className = "",
 }) => {
   return (
-    <section className={`w-full bg-[#FAFAF9] py-16 lg:py-24 relative overflow-hidden border-t border-slate-200/80 ${className}`.trim()}>
+    <section
+      className={`w-full bg-[#FAFAF9] py-16 lg:py-24 relative overflow-hidden border-t border-slate-200/80 ${className}`.trim()}
+    >
       <div className="max-w-[1280px] mx-auto px-gutter relative z-10">
         <div className="relative rounded-lg overflow-hidden bg-gradient-to-r from-[#001433] via-[#051c3d] to-[#001029] border border-[#19355f] p-8 sm:p-12 lg:p-16 shadow-2xl">
           {/* Radiant glow spheres */}
@@ -55,13 +57,17 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({
                 className="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-9 py-4 rounded-[10px] shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:shadow-[0_0_36px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
               >
                 {primaryButtonText}
-                <span className="material-symbols-outlined ml-2 text-[20px]">send</span>
+                <span className="material-symbols-outlined ml-2 text-[20px]">
+                  send
+                </span>
               </Link>
               <a
                 href={secondaryButtonHref}
                 className="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-medium text-white bg-[#0a1e3b]/80 border border-[#1e3962] hover:bg-[#112d54] px-7 py-4 rounded-[10px] shadow-sm transition-colors"
               >
-                <span className="material-symbols-outlined mr-2 text-[18px]">mail</span>
+                <span className="material-symbols-outlined mr-2 text-[18px]">
+                  mail
+                </span>
                 {secondaryButtonText}
               </a>
             </div>

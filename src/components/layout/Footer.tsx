@@ -86,9 +86,9 @@ export const Footer: React.FC = () => {
 
             <a
               className="font-body-sm text-body-sm text-secondary-fixed hover:underline"
-              href="mailto:programistka.pl@gmail.com"
+              href="mailto:ultrasonica.tech@gmail.com"
             >
-              programistka.pl@gmail.com
+              ultrasonica.tech@gmail.com
             </a>
 
             <a

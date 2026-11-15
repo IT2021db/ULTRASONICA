@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface FormData {
   name: string;
@@ -19,18 +19,18 @@ interface FormErrors {
 
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    company: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    company: "",
+    subject: "",
+    message: "",
     gdpr: false,
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
-    type: 'success' | 'error';
+    type: "success" | "error";
     message: string;
     details?: string;
   } | null>(null);
@@ -40,10 +40,13 @@ export const ContactPage: React.FC = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     const { name, value, type } = e.target;
-    const val = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value;
+    const val =
+      type === "checkbox" ? (e.target as HTMLInputElement).checked : value;
 
     setFormData((prev) => ({
       ...prev,
@@ -64,30 +67,32 @@ export const ContactPage: React.FC = () => {
     const newErrors: FormErrors = {};
 
     if (!formData.name.trim() || formData.name.trim().length < 2) {
-      newErrors.name = 'Proszę podać imię i nazwisko.';
+      newErrors.name = "Proszę podać imię i nazwisko.";
     }
 
     if (!validateEmail(formData.email.trim())) {
-      newErrors.email = 'Wprowadź prawidłowy adres e-mail.';
+      newErrors.email = "Wprowadź prawidłowy adres e-mail.";
     }
 
     if (!formData.subject) {
-      newErrors.subject = 'Wybierz jedną z opcji z listy.';
+      newErrors.subject = "Wybierz jedną z opcji z listy.";
     }
 
     if (!formData.message.trim() || formData.message.trim().length < 20) {
-      newErrors.message = 'Wpisz krótką informację o projekcie (min. 20 znaków).';
+      newErrors.message =
+        "Wpisz krótką informację o projekcie (min. 20 znaków).";
     }
 
     if (!formData.gdpr) {
-      newErrors.gdpr = 'Wymagana zgoda na przetwarzanie danych.';
+      newErrors.gdpr = "Wymagana zgoda na przetwarzanie danych.";
     }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       setSubmitStatus({
-        type: 'error',
-        message: 'Proszę uzupełnić wszystkie wymagane pola oznaczone gwiazdką przed wysyłką.',
+        type: "error",
+        message:
+          "Proszę uzupełnić wszystkie wymagane pola oznaczone gwiazdką przed wysyłką.",
       });
       return;
     }
@@ -101,18 +106,18 @@ export const ContactPage: React.FC = () => {
 
     setIsSubmitting(false);
     setSubmitStatus({
-      type: 'success',
-      message: 'Walidacja formularza przebiegła pomyślnie!',
+      type: "success",
+      message: "Walidacja formularza przebiegła pomyślnie!",
       details:
-        'Wszystkie pola zostały poprawnie sprawdzone. Wiadomość nie została wysłana, ponieważ w trybie deweloperskim nie jest jeszcze skonfigurowana usługa wysyłkowa (backend / API / EmailJS). W celu bezpośredniego kontaktu napisz na adres: programistka.pl@gmail.com.',
+        "Wszystkie pola zostały poprawnie sprawdzone. Wiadomość nie została wysłana, ponieważ w trybie deweloperskim nie jest jeszcze skonfigurowana usługa wysyłkowa (backend / API / EmailJS). W celu bezpośredniego kontaktu napisz na adres: ultrasonica.tech@gmail.com.",
     });
 
     setFormData({
-      name: '',
-      email: '',
-      company: '',
-      subject: '',
-      message: '',
+      name: "",
+      email: "",
+      company: "",
+      subject: "",
+      message: "",
       gdpr: false,
     });
   };
@@ -139,27 +144,44 @@ export const ContactPage: React.FC = () => {
               Opowiedz nam o swojej firmie
             </h1>
             <p className="font-body-lg text-body-lg text-[#475569] leading-relaxed">
-              Umów się na wstępną, niezobowiązującą rozmowę. Przeanalizujemy Twoje potrzeby i zaproponujemy konkretne rozwiązania bez żargonu.
+              Umów się na wstępną, niezobowiązującą rozmowę. Przeanalizujemy
+              Twoje potrzeby i zaproponujemy konkretne rozwiązania bez żargonu.
             </p>
           </div>
 
           {/* Quick Metrics Strip w jasnym stylu */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter mt-10 p-6 bg-white border border-slate-200/90 shadow-sm rounded-lg">
             <div>
-              <span className="font-headline-sm text-headline-sm text-[#0A6CFF] font-bold block">15 min</span>
-              <span className="font-label-sm text-label-sm text-[#475569]">Średni czas analizy zapytania</span>
+              <span className="font-headline-sm text-headline-sm text-[#0A6CFF] font-bold block">
+                15 min
+              </span>
+              <span className="font-label-sm text-label-sm text-[#475569]">
+                Średni czas analizy zapytania
+              </span>
             </div>
             <div>
-              <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold block">100% NDA</span>
-              <span className="font-label-sm text-label-sm text-[#475569]">Poufność technologiczna</span>
+              <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold block">
+                100% NDA
+              </span>
+              <span className="font-label-sm text-label-sm text-[#475569]">
+                Poufność technologiczna
+              </span>
             </div>
             <div>
-              <span className="font-headline-sm text-headline-sm text-[#0A6CFF] font-bold block">Direct Senior</span>
-              <span className="font-label-sm text-label-sm text-[#475569]">Architekt systemów B2B (bez handlowców)</span>
+              <span className="font-headline-sm text-headline-sm text-[#0A6CFF] font-bold block">
+                Direct Senior
+              </span>
+              <span className="font-label-sm text-label-sm text-[#475569]">
+                Architekt systemów B2B (bez handlowców)
+              </span>
             </div>
             <div>
-              <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold block">0 zł</span>
-              <span className="font-label-sm text-label-sm text-[#475569]">Konsultacja wstępna</span>
+              <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold block">
+                0 zł
+              </span>
+              <span className="font-label-sm text-label-sm text-[#475569]">
+                Konsultacja wstępna
+              </span>
             </div>
           </div>
         </div>
@@ -182,7 +204,9 @@ export const ContactPage: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1 bg-[#F0F7FF] border border-[#D5E7FF] rounded-full">
                   <span className="w-2 h-2 rounded-full bg-[#0A6CFF] animate-ping"></span>
-                  <span className="font-label-sm text-label-sm text-[#0A6CFF] font-semibold">Online</span>
+                  <span className="font-label-sm text-label-sm text-[#0A6CFF] font-semibold">
+                    Online
+                  </span>
                 </div>
               </div>
 
@@ -190,14 +214,14 @@ export const ContactPage: React.FC = () => {
               {submitStatus && (
                 <div
                   className={`mb-6 p-4 rounded-lg font-body-sm transition-all duration-300 ${
-                    submitStatus.type === 'error'
-                      ? 'bg-red-50 text-red-700 border border-red-200'
-                      : 'bg-[#F0F7FF] border border-[#D5E7FF] text-[#0B0F19]'
+                    submitStatus.type === "error"
+                      ? "bg-red-50 text-red-700 border border-red-200"
+                      : "bg-[#F0F7FF] border border-[#D5E7FF] text-[#0B0F19]"
                   }`}
                 >
                   <div className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[#0A6CFF] text-[24px]">
-                      {submitStatus.type === 'error' ? 'error' : 'task_alt'}
+                      {submitStatus.type === "error" ? "error" : "task_alt"}
                     </span>
                     <div>
                       <strong className="font-headline-sm text-headline-sm text-[#0B0F19] block mb-1 font-bold">
@@ -213,7 +237,11 @@ export const ContactPage: React.FC = () => {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="flex flex-col gap-6" noValidate>
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col gap-6"
+                noValidate
+              >
                 {/* Imię i Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md">
                   <div className="flex flex-col gap-2">
@@ -222,7 +250,8 @@ export const ContactPage: React.FC = () => {
                       htmlFor="name"
                     >
                       <span>
-                        Imię i nazwisko <span className="text-[#0A6CFF]">*</span>
+                        Imię i nazwisko{" "}
+                        <span className="text-[#0A6CFF]">*</span>
                       </span>
                     </label>
                     <div className="relative">
@@ -280,7 +309,9 @@ export const ContactPage: React.FC = () => {
                     htmlFor="company"
                   >
                     <span>Nazwa firmy</span>
-                    <span className="font-label-sm text-label-sm text-[#64748B]">opcjonalnie</span>
+                    <span className="font-label-sm text-label-sm text-[#64748B]">
+                      opcjonalnie
+                    </span>
                   </label>
                   <input
                     id="company"
@@ -300,7 +331,8 @@ export const ContactPage: React.FC = () => {
                     htmlFor="subject"
                   >
                     <span>
-                      Czego dotyczy zapytanie? <span className="text-[#0A6CFF]">*</span>
+                      Czego dotyczy zapytanie?{" "}
+                      <span className="text-[#0A6CFF]">*</span>
                     </span>
                   </label>
                   <div className="relative">
@@ -315,7 +347,9 @@ export const ContactPage: React.FC = () => {
                       <option className="text-slate-400" disabled value="">
                         Wybierz obszar tematyczny...
                       </option>
-                      <option value="Wdrożenie AI & LLM">Wdrożenie AI &amp; LLM</option>
+                      <option value="Wdrożenie AI & LLM">
+                        Wdrożenie AI &amp; LLM
+                      </option>
                       <option value="Dedykowana aplikacja lub system B2B">
                         Dedykowana aplikacja lub system B2B
                       </option>
@@ -327,7 +361,9 @@ export const ContactPage: React.FC = () => {
                       </option>
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#64748B]">
-                      <span className="material-symbols-outlined text-[20px]">expand_more</span>
+                      <span className="material-symbols-outlined text-[20px]">
+                        expand_more
+                      </span>
                     </div>
                   </div>
                   {errors.subject && (
@@ -346,7 +382,9 @@ export const ContactPage: React.FC = () => {
                     <span>
                       Wiadomość <span className="text-[#0A6CFF]">*</span>
                     </span>
-                    <span className="font-label-sm text-label-sm text-[#64748B]">minimum 20 znaków</span>
+                    <span className="font-label-sm text-label-sm text-[#64748B]">
+                      minimum 20 znaków
+                    </span>
                   </label>
                   <textarea
                     id="message"
@@ -378,7 +416,9 @@ export const ContactPage: React.FC = () => {
                       className="mt-1 w-4 h-4 rounded border-slate-300 accent-[#0A6CFF] cursor-pointer"
                     />
                     <span className="font-body-sm text-body-sm text-[#475569] leading-snug group-hover:text-[#0B0F19] transition-colors">
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie ofertowe zgodnie z Polityką prywatności.
+                      Wyrażam zgodę na przetwarzanie moich danych osobowych w
+                      celu odpowiedzi na zapytanie ofertowe zgodnie z Polityką
+                      prywatności.
                     </span>
                   </label>
                   {errors.gdpr && (
@@ -395,7 +435,7 @@ export const ContactPage: React.FC = () => {
                     type="submit"
                     disabled={isSubmitting}
                     className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-8 py-3.5 rounded-[10px] shadow-[0_0_22px_rgba(0,229,255,0.35)] hover:shadow-[0_0_32px_rgba(0,229,255,0.6)] hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer ${
-                      isSubmitting ? 'opacity-75' : ''
+                      isSubmitting ? "opacity-75" : ""
                     }`}
                   >
                     {isSubmitting ? (
@@ -408,12 +448,16 @@ export const ContactPage: React.FC = () => {
                     ) : (
                       <>
                         <span>Wyślij zapytanie</span>
-                        <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        <span className="material-symbols-outlined text-[18px]">
+                          arrow_forward
+                        </span>
                       </>
                     )}
                   </button>
                   <span className="font-label-sm text-label-sm text-[#64748B] flex items-center gap-1.5">
-                    <span className="material-symbols-outlined text-[16px] text-[#0A6CFF]">lock</span>
+                    <span className="material-symbols-outlined text-[16px] text-[#0A6CFF]">
+                      lock
+                    </span>
                     Połączenie szyfrowane SSL (256-bit)
                   </span>
                 </div>
@@ -421,16 +465,18 @@ export const ContactPage: React.FC = () => {
                 {/* Alternatywa mailowa */}
                 <div className="pt-4 mt-2 bg-[#F8FAFC] border border-slate-200/90 rounded-lg p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[18px] text-[#0A6CFF]">info</span>
+                    <span className="material-symbols-outlined text-[18px] text-[#0A6CFF]">
+                      info
+                    </span>
                     <span className="font-label-sm text-label-sm text-[#475569]">
                       Wolisz napisać klasycznie z poczty?
                     </span>
                   </div>
                   <a
                     className="font-label-sm text-label-sm text-[#0A6CFF] hover:underline font-semibold"
-                    href="mailto:programistka.pl@gmail.com?subject=Zapytanie%20ofertowe%20-%20ULTRASONICA"
+                    href="mailto:ultrasonica.tech@gmail.com?subject=Zapytanie%20ofertowe%20-%20ULTRASONICA"
                   >
-                    programistka.pl@gmail.com
+                    ultrasonica.tech@gmail.com
                   </a>
                 </div>
               </form>
@@ -442,7 +488,9 @@ export const ContactPage: React.FC = () => {
               <div className="bg-white p-8 border border-slate-200 rounded-lg shadow-sm relative overflow-hidden">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-lg bg-[#F0F7FF] text-[#0A6CFF] border border-[#D5E7FF] flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[22px]">corporate_fare</span>
+                    <span className="material-symbols-outlined text-[22px]">
+                      corporate_fare
+                    </span>
                   </div>
                   <div>
                     <span className="font-subheading-eyebrow text-subheading-eyebrow text-[#0A6CFF] uppercase tracking-wider block font-bold text-[11px] sm:text-[13px]">
@@ -458,10 +506,14 @@ export const ContactPage: React.FC = () => {
                 <div className="space-y-5">
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 rounded-full bg-[#F0F7FF] border border-[#D5E7FF] flex items-center justify-center text-[#0A6CFF] shrink-0 mt-0.5">
-                      <span className="material-symbols-outlined text-[18px]">location_on</span>
+                      <span className="material-symbols-outlined text-[18px]">
+                        location_on
+                      </span>
                     </div>
                     <div>
-                      <span className="font-label-sm text-label-sm text-[#64748B] block">Adres fizyczny</span>
+                      <span className="font-label-sm text-label-sm text-[#64748B] block">
+                        Adres fizyczny
+                      </span>
                       <p className="font-body-md text-body-md text-[#0B0F19] font-semibold">
                         ul. Władysława IV 55
                       </p>
@@ -475,14 +527,18 @@ export const ContactPage: React.FC = () => {
                         target="_blank"
                       >
                         <span>Otwórz w Mapach Google</span>
-                        <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                        <span className="material-symbols-outlined text-[16px]">
+                          open_in_new
+                        </span>
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 rounded-full bg-[#F0F7FF] border border-[#D5E7FF] flex items-center justify-center text-[#0A6CFF] shrink-0 mt-0.5">
-                      <span className="material-symbols-outlined text-[18px]">mail</span>
+                      <span className="material-symbols-outlined text-[18px]">
+                        mail
+                      </span>
                     </div>
                     <div>
                       <span className="font-label-sm text-label-sm text-[#64748B] block">
@@ -490,9 +546,9 @@ export const ContactPage: React.FC = () => {
                       </span>
                       <a
                         className="font-body-md-medium text-body-md-medium text-[#0A6CFF] hover:underline break-all font-semibold"
-                        href="mailto:programistka.pl@gmail.com"
+                        href="mailto:ultrasonica.tech@gmail.com"
                       >
-                        programistka.pl@gmail.com
+                        ultrasonica.tech@gmail.com
                       </a>
                     </div>
                   </div>
@@ -507,7 +563,11 @@ export const ContactPage: React.FC = () => {
                         Dlaczego nie podajemy numeru telefonu?
                       </span>
                       <p className="font-body-sm text-body-sm text-[#475569] leading-relaxed">
-                        Szanujemy Twój i nasz czas. Rozmawiasz od razu z głównym inżynierem i architektem systemów B2B z wieloletnim doświadczeniem, bez pośredników handlowych i korporacyjnego narzutu. Pierwsza rozmowa to merytoryczny warsztat technologiczny.
+                        Szanujemy Twój i nasz czas. Rozmawiasz od razu z głównym
+                        inżynierem i architektem systemów B2B z wieloletnim
+                        doświadczeniem, bez pośredników handlowych i
+                        korporacyjnego narzutu. Pierwsza rozmowa to merytoryczny
+                        warsztat technologiczny.
                       </p>
                     </div>
                   </div>
@@ -521,13 +581,17 @@ export const ContactPage: React.FC = () => {
                     LOKALIZACJA CYFROWA &amp; IN-PERSON
                   </span>
                   <span className="font-label-sm text-label-sm text-[#0A6CFF] flex items-center gap-1 font-semibold">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#0A6CFF]"></span> Trójmiasto, PL
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#0A6CFF]"></span>{" "}
+                    Trójmiasto, PL
                   </span>
                 </div>
                 <div
                   className="w-full h-48 bg-cover bg-center rounded-lg border border-slate-200 relative overflow-hidden group cursor-pointer"
                   onClick={() =>
-                    window.open('https://maps.google.com/?q=Władysława+IV+55+Gdynia', '_blank')
+                    window.open(
+                      "https://maps.google.com/?q=Władysława+IV+55+Gdynia",
+                      "_blank",
+                    )
                   }
                   style={{
                     backgroundImage:
@@ -550,14 +614,18 @@ export const ContactPage: React.FC = () => {
               {/* Karta Gwarancja prywatności RODO */}
               <div className="bg-white p-6 border border-slate-200 rounded-lg shadow-sm flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-[#F0F7FF] text-[#0A6CFF] border border-[#D5E7FF] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-[24px]">verified_user</span>
+                  <span className="material-symbols-outlined text-[24px]">
+                    verified_user
+                  </span>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">
                     100% Gwarancji Prywatności
                   </span>
                   <p className="font-body-sm text-body-sm text-[#475569] leading-relaxed">
-                    Twoje dane są u nas w 100% bezpieczne. Nie wysyłamy spamu ani nie przekazujemy danych osobom trzecim. Każdy kontakt traktujemy jako objęty klauzulą poufności biznesowej.
+                    Twoje dane są u nas w 100% bezpieczne. Nie wysyłamy spamu
+                    ani nie przekazujemy danych osobom trzecim. Każdy kontakt
+                    traktujemy jako objęty klauzulą poufności biznesowej.
                   </p>
                 </div>
               </div>

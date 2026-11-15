@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -19,14 +18,15 @@ export const CaseStudiesCTA: React.FC = () => {
             </div>
 
             <h2 className="font-headline-xl text-headline-xl text-white font-bold tracking-tight">
-              Jak inteligentne rozwiązania mogą usprawnić działanie Twojej firmy?
+              Jak inteligentne rozwiązania mogą usprawnić działanie Twojej
+              firmy?
             </h2>
 
             <p className="font-body-lg text-body-lg text-slate-300 max-w-xl">
               Każde przedsiębiorstwo ma własne procesy i wyzwania. Analiza
               potrzeb pozwala zidentyfikować obszary, w których AI,
-              automatyzacja lub dedykowane oprogramowanie mogą przynieść
-              realną wartość biznesową.
+              automatyzacja lub dedykowane oprogramowanie mogą przynieść realną
+              wartość biznesową.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
@@ -39,7 +39,7 @@ export const CaseStudiesCTA: React.FC = () => {
 
               <a
                 className="w-full sm:w-auto inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-white px-6 py-3.5 rounded-[10px] bg-[#0a1e3b]/80 border border-[#1e3962] hover:bg-[#112d54] transition-colors"
-                href="mailto:programistka.pl@gmail.com"
+                href="mailto:ultrasonica.tech@gmail.com"
               >
                 <span className="material-symbols-outlined text-[18px]">
                   mail
