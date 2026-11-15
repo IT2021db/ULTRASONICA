@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export const Scenario03ClientPortal: React.FC = () => {
@@ -11,12 +12,12 @@ export const Scenario03ClientPortal: React.FC = () => {
               SCENARIUSZ 03
             </span>
             <span className="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider text-[11px] sm:text-[13px]">
-              PORTAL B2B &amp; PLANOWANIE PRODUKCJI
+              PORTAL B2B &amp; OBSŁUGA ZAMÓWIEŃ
             </span>
           </div>
 
           <h2 className="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
-            Dedykowany portal klienta z systemem zamówień
+            Portal B2B do składania zamówień i monitorowania realizacji
           </h2>
 
           <div className="space-y-4">
@@ -30,8 +31,10 @@ export const Scenario03ClientPortal: React.FC = () => {
                   Problem
                 </span>
                 <p className="font-body-md text-body-md text-[#475569]">
-                  Zamówienia spływały chaotycznie przez telefon, SMS-y i maile,
-                  co prowadziło do pomyłek i opóźnień produkcyjnych.
+                  Zamówienia przyjmowane przez telefon, wiadomości i e-mail
+                  utrudniają kontrolę nad ich kompletnością oraz aktualnym
+                  statusem. Informacje o realizacji są rozproszone, a pracownicy
+                  poświęcają czas na obsługę powtarzających się zapytań klientów.
                 </p>
               </div>
             </div>
@@ -46,8 +49,11 @@ export const Scenario03ClientPortal: React.FC = () => {
                   Rozwiązanie
                 </span>
                 <p className="font-body-md text-body-md text-[#334155]">
-                  Prosta, responsywna aplikacja webowa dla stałych kontrahentów
-                  z podglądem stanów, automatyczną wyceną i historią zleceń.
+                  Dedykowana aplikacja webowa umożliwiająca kontrahentom
+                  składanie zamówień, dostęp do historii współpracy oraz
+                  śledzenie statusu realizacji. Portal może korzystać z danych
+                  systemów ERP, magazynowych i produkcyjnych dzięki integracjom
+                  dopasowanym do infrastruktury firmy.
                 </p>
               </div>
             </div>
@@ -62,8 +68,11 @@ export const Scenario03ClientPortal: React.FC = () => {
                   Efekt
                 </span>
                 <p className="font-body-md text-body-md text-[#1E293B]">
-                  Pełna przejrzystość zamówień dla klientów w trybie 24/7 oraz
-                  uporządkowany harmonogram dla zespołu produkcyjnego.
+                  Jeden uporządkowany kanał obsługi zamówień, łatwiejszy dostęp
+                  do informacji o ich realizacji i mniej powtarzalnej
+                  komunikacji z klientami. Zespół zyskuje lepszy wgląd w
+                  obsługiwane zlecenia i może sprawniej planować kolejne etapy
+                  pracy.
                 </p>
               </div>
             </div>
@@ -89,56 +98,54 @@ export const Scenario03ClientPortal: React.FC = () => {
             </div>
 
             <div className="rounded-lg bg-[#02132C] p-4 space-y-3">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center gap-2">
                 <span className="font-headline-sm text-headline-sm text-white font-bold">
-                  Aktualne zlecenia w toku
+                  Status zamówień
                 </span>
                 <span className="font-label-sm text-label-sm text-secondary-fixed bg-[#0F2039] px-2 py-0.5 rounded border border-[#1A2A44]">
-                  3 aktywne
+                  Podgląd demo
                 </span>
               </div>
 
               {/* Table Preview */}
               <div className="space-y-2">
-                <div className="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F]">
-                  <div className="flex flex-col">
+                <div className="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F] gap-2">
+                  <div className="flex flex-col min-w-0">
                     <span className="font-label-sm text-label-sm font-semibold text-white">
-                      #ORD-9021 • Moduły X4
+                      Zamówienie #001
                     </span>
                     <span className="font-label-sm text-label-sm text-slate-400">
-                      Dostawa: Piątek, 14:00
+                      Przykładowa partia produkcyjna
                     </span>
                   </div>
-                  <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-secondary-fixed font-medium">
+                  <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-secondary-fixed font-medium shrink-0">
                     W produkcji
                   </span>
                 </div>
-                <div className="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F]">
-                  <div className="flex flex-col">
+
+                <div className="p-2.5 rounded bg-[#0F2039] flex items-center justify-between border border-[#1E304F] gap-2">
+                  <div className="flex flex-col min-w-0">
                     <span className="font-label-sm text-label-sm font-semibold text-white">
-                      #ORD-8940 • Elementy T-800
+                      Zamówienie #002
                     </span>
                     <span className="font-label-sm text-label-sm text-slate-400">
-                      Dostawa: Zrealizowano
+                      Przykładowa partia towaru
                     </span>
                   </div>
-                  <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-[#00E5FF] font-medium">
-                    Wysłane kurierem
+                  <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-[#1A2A44] text-[#00E5FF] font-medium shrink-0">
+                    Gotowe do wysyłki
                   </span>
                 </div>
               </div>
 
-              {/* Direct Quick Action button */}
-              <div className="pt-1 flex items-center justify-between">
+              {/* Demo information and action */}
+              <div className="pt-1 flex items-center justify-between gap-2">
                 <span className="font-label-sm text-label-sm text-slate-400">
-                  Dostępność magazynu: 98%
+                  Historia i szczegóły zleceń
                 </span>
-                <button
-                  className="font-label-sm text-label-sm px-3 py-1.5 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded font-medium shadow-sm"
-                  type="button"
-                >
+                <span className="font-label-sm text-label-sm px-3 py-1.5 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded font-medium shadow-sm whitespace-nowrap">
                   + Nowe zamówienie
-                </button>
+                </span>
               </div>
             </div>
           </div>
@@ -147,24 +154,27 @@ export const Scenario03ClientPortal: React.FC = () => {
           <div className="absolute -bottom-4 right-0 sm:right-4 w-[190px] bg-[#000E25] p-2 shadow-2xl rounded-lg border border-slate-700">
             <div className="rounded-xl bg-[#02132C] p-3 space-y-2.5 border border-[#1A2A44]">
               <div className="w-10 h-1 bg-slate-600 rounded-full mx-auto mb-1"></div>
+
               <div className="flex items-center justify-between">
                 <span className="font-label-sm text-label-sm font-bold text-secondary-fixed">
-                  Mobilny status
+                  Status mobilny
                 </span>
                 <span className="material-symbols-outlined text-[14px] text-secondary-fixed">
                   notifications_active
                 </span>
               </div>
+
               <div className="p-2 rounded bg-[#0F2039] border border-[#1E304F]">
                 <span className="font-label-sm text-label-sm text-slate-400 block text-[10px]">
-                  Powiadomienie PUSH:
+                  Aktualizacja statusu:
                 </span>
                 <span className="font-body-sm text-body-sm text-slate-200 text-xs block leading-tight font-medium">
-                  Partia #ORD-9021 opuściła linię montażową.
+                  Zamówienie #001 zostało przekazane do kolejnego etapu realizacji.
                 </span>
               </div>
+
               <div className="w-full py-1 text-center bg-[#1A2A44] rounded text-[11px] font-label-sm text-secondary-fixed">
-                Podgląd trasy GPS
+                Szczegóły zamówienia
               </div>
             </div>
           </div>

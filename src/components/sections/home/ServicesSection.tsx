@@ -8,9 +8,9 @@ export const ServicesSection: React.FC = () => {
   const t = translations[language];
 
   const cards = [
-    { icon: "smart_toy", label: "01 / AI CORE" },
-    { icon: "dashboard_customize", label: "02 / SOFTWARE" },
-    { icon: "sync_alt", label: "03 / WORKFLOW" },
+    { icon: "smart_toy" },
+    { icon: "dashboard_customize" },
+    { icon: "sync_alt" },
   ];
 
   return (
@@ -36,7 +36,7 @@ export const ServicesSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
           {t.home.services.cards.map((card, index) => (
             <div
-              key={cards[index].label}
+              key={card.label}
               className="bg-white rounded-lg p-space-lg border border-slate-200 shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex flex-col justify-between hover:shadow-[0_16px_36px_rgba(10,108,255,0.1)] hover:border-[#0A6CFF]/50 transition-all duration-300 group"
             >
               <div>
@@ -47,7 +47,7 @@ export const ServicesSection: React.FC = () => {
                     </span>
                   </div>
                   <span className="font-label-sm text-label-sm text-[#0A6CFF] bg-[#F0F7FF] px-3 py-1 rounded-full border border-[#D5E7FF] uppercase tracking-widest font-semibold">
-                    {cards[index].label}
+                    {card.label}
                   </span>
                 </div>
 

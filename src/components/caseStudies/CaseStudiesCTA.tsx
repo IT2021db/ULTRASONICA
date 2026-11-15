@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -13,19 +14,19 @@ export const CaseStudiesCTA: React.FC = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#081a33]/80 border border-[#1d375f] backdrop-blur-md text-secondary-fixed mb-space-sm shadow-sm">
               <span className="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
               <span className="font-subheading-eyebrow text-subheading-eyebrow font-semibold uppercase text-[11px] sm:text-[13px]">
-                POROZMAWIAJMY O TWOIM BIZNESIE
+                POROZMAWIAJ O MOŻLIWOŚCIACH
               </span>
             </div>
 
             <h2 className="font-headline-xl text-headline-xl text-white font-bold tracking-tight">
-              Chcesz wdrożyć podobne rozwiązanie w swojej firmie?
-              Porozmawiajmy.
+              Jak inteligentne rozwiązania mogą usprawnić działanie Twojej firmy?
             </h2>
 
             <p className="font-body-lg text-body-lg text-slate-300 max-w-xl">
-              Przeanalizujemy Twoje procesy biznesowe i wskażemy wąskie
-              gardła, które najszybciej uwolnią czas Twojego zespołu. Bez
-              pustych obietnic i zbędnych kosztów.
+              Każde przedsiębiorstwo ma własne procesy i wyzwania. Analiza
+              potrzeb pozwala zidentyfikować obszary, w których AI,
+              automatyzacja lub dedykowane oprogramowanie mogą przynieść
+              realną wartość biznesową.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
@@ -33,7 +34,7 @@ export const CaseStudiesCTA: React.FC = () => {
                 to="/kontakt"
                 className="w-full sm:w-auto inline-flex items-center justify-center font-label-md text-label-md font-semibold text-white bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] px-8 py-3.5 rounded-[10px] shadow-[0_0_24px_rgba(0,229,255,0.45)] hover:shadow-[0_0_36px_rgba(0,229,255,0.7)] hover:scale-105 transition-all"
               >
-                Wyślij zapytanie
+                Opisz swój projekt
               </Link>
 
               <a

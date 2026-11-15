@@ -10,12 +10,12 @@ export const Scenario01SalesAssistant: React.FC = () => {
               SCENARIUSZ 01
             </span>
             <span className="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider text-[11px] sm:text-[13px]">
-              SPRZEDAŻ B2B &amp; KATALOGI TECHNICZNE
+              SPRZEDAŻ B2B &amp; BAZY WIEDZY
             </span>
           </div>
 
           <h2 className="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
-            Asystent AI do odpowiadania na zapytania ofertowe
+            Asystent AI wspierający proces sprzedaży B2B
           </h2>
 
           <div className="space-y-4">
@@ -28,8 +28,10 @@ export const Scenario01SalesAssistant: React.FC = () => {
                   Problem
                 </span>
                 <p className="font-body-md text-body-md text-[#475569]">
-                  Handlowcy spędzali po 2-3 godziny dziennie na przeszukiwaniu
-                  specyfikacji technicznych i redagowaniu powtarzalnych maili.
+                  Pracownicy działów sprzedaży poświęcają dużo czasu na
+                  wyszukiwanie informacji w katalogach produktowych,
+                  analizowanie dokumentacji technicznej i przygotowywanie
+                  odpowiedzi na powtarzające się zapytania klientów.
                 </p>
               </div>
             </div>
@@ -43,8 +45,10 @@ export const Scenario01SalesAssistant: React.FC = () => {
                   Rozwiązanie
                 </span>
                 <p className="font-body-md text-body-md text-[#334155]">
-                  Wdrożenie wewnętrznego asystenta AI połączonego z katalogiem
-                  produktów i bezpieczną bazą wiedzy firmy.
+                  Wewnętrzny asystent AI korzystający z firmowej bazy wiedzy,
+                  katalogów produktów i dokumentacji technicznej. Dzięki
+                  technologii RAG wyszukuje odpowiednie informacje i pomaga
+                  przygotowywać spersonalizowane odpowiedzi oraz szkice ofert.
                 </p>
               </div>
             </div>
@@ -58,9 +62,10 @@ export const Scenario01SalesAssistant: React.FC = () => {
                   Efekt
                 </span>
                 <p className="font-body-md text-body-md text-[#1E293B]">
-                  Wstępne wersje spersonalizowanych ofert generowane w 10
-                  sekund; handlowcy skupiają się na relacjach i domykaniu
-                  sprzedaży.
+                  Szybszy dostęp do wiedzy produktowej, sprawniejsze
+                  przygotowywanie odpowiedzi i ofert oraz większa spójność
+                  komunikacji z klientami. Pracownik weryfikuje i zatwierdza
+                  każdą odpowiedź przed jej wysłaniem.
                 </p>
               </div>
             </div>
@@ -68,7 +73,7 @@ export const Scenario01SalesAssistant: React.FC = () => {
         </div>
 
         <div className="lg:col-span-6 flex flex-col items-center justify-center">
-          <div className="w-full max-w-[540px] bg-[#001029] rounded-t-xl p-2.5 pb-0 shadow-xl border border-slate-800">
+          <div className="w-full max-w-[540px] bg-[#001029] rounded-t-xl rounded-b-xl p-2.5 pb-0 shadow-xl border border-slate-800">
             <div className="flex items-center justify-between px-3 py-1.5 bg-[#000E25] rounded-t-lg">
               <div className="flex items-center gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></div>
@@ -79,11 +84,10 @@ export const Scenario01SalesAssistant: React.FC = () => {
                 <span className="material-symbols-outlined text-[13px] text-secondary-fixed">
                   lock
                 </span>
-                crm.ultrasonica.local/sales-copilot
+                Podgląd demonstracyjny
               </div>
               <div className="w-8"></div>
             </div>
-
             <div className="bg-[#02132C] p-4 sm:p-5 flex flex-col space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-[#1A2A44]">
                 <div className="flex items-center gap-2">
@@ -91,23 +95,24 @@ export const Scenario01SalesAssistant: React.FC = () => {
                     smart_toy
                   </span>
                   <span className="font-headline-sm text-headline-sm text-white">
-                    Sales Assistant RAG
+                    Sales Knowledge Assistant
                   </span>
                 </div>
                 <span className="font-label-sm text-label-sm text-secondary-fixed bg-[#0F2039] px-2 py-0.5 rounded-full border border-[#1A2A44]">
-                  Katalog v4.2 aktywny
+                  Baza wiedzy aktywna
                 </span>
               </div>
 
               <div className="space-y-3">
                 <div className="p-3 rounded-lg bg-[#0F2039] max-w-[85%] text-slate-200 border border-[#1E304F]">
                   <span className="font-label-sm text-label-sm text-slate-400 block mb-1">
-                    Zapytanie klienta (E-mail ID: #4812)
+                    Przykładowe zapytanie klienta
                   </span>
                   <p className="font-body-sm text-body-sm text-slate-200">
-                    „Dzień dobry, szukamy 15 falowników o mocy &gt;22kW
-                    odpornych na pył chemiczny z dostawą w 48h. Jaki model
-                    rekomendujecie?”
+                    „Dzień dobry, szukamy urządzenia przemysłowego o mocy
+                    powyżej 22 kW, przeznaczonego do pracy w środowisku o
+                    podwyższonym zapyleniu. Jakie rozwiązanie Państwo
+                    rekomendują?”
                   </p>
                 </div>
 
@@ -117,33 +122,26 @@ export const Scenario01SalesAssistant: React.FC = () => {
                       <span className="material-symbols-outlined text-[15px]">
                         auto_awesome
                       </span>{" "}
-                      Propozycja szkicu (czas reakcji: 1.4s)
+                      Propozycja odpowiedzi AI
                     </span>
                     <span className="font-label-sm text-label-sm text-[#00E5FF] font-medium">
-                      Trafność: 99.4%
+                      Źródła: dokumentacja
                     </span>
                   </div>
                   <p className="font-body-sm text-body-sm text-white mb-3">
-                    Sugerowany model:{" "}
-                    <strong className="text-secondary-fixed">
-                      UltraDrive-X25 (IP66)
-                    </strong>
-                    . Mamy na stanie w magazynie Gdynia 24 sztuki. Przygotowano
-                    wycenę hurtową z rabatem progowym (tier B).
+                    Na podstawie dostępnej dokumentacji mogę wskazać rozwiązania
+                    spełniające podane wymagania. Przy wyborze należy
+                    zweryfikować parametry techniczne, warunki środowiskowe i
+                    dostępność urządzenia. Przygotowałem wstępną propozycję
+                    odpowiedzi wraz z odniesieniami do dokumentacji produktowej.
                   </p>
-                  <div className="flex gap-2">
-                    <button
-                      className="font-label-sm text-label-sm px-3 py-1 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded font-semibold shadow-sm"
-                      type="button"
-                    >
-                      Wstaw do Gmaila
-                    </button>
-                    <button
-                      className="font-label-sm text-label-sm px-3 py-1 bg-[#0F2039] text-slate-200 border border-[#25354F] rounded hover:text-white"
-                      type="button"
-                    >
-                      Zmień rabat
-                    </button>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="font-label-sm text-label-sm px-3 py-1 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded font-semibold shadow-sm">
+                      Zatwierdź szkic
+                    </span>
+                    <span className="font-label-sm text-label-sm px-3 py-1 bg-[#0F2039] text-slate-200 border border-[#25354F] rounded">
+                      Edytuj odpowiedź
+                    </span>
                   </div>
                 </div>
               </div>
@@ -153,17 +151,16 @@ export const Scenario01SalesAssistant: React.FC = () => {
                   attach_file
                 </span>
                 <span className="font-body-sm text-body-sm flex-1 text-slate-400">
-                  Wpisz komendę lub podaj numer zapytania...
+                  Zadaj pytanie lub wyszukaj w bazie wiedzy...
                 </span>
                 <span className="material-symbols-outlined text-secondary-fixed text-[20px]">
                   send
                 </span>
               </div>
             </div>
-          </div>
-
-          <div className="w-full max-w-[590px] h-3.5 bg-slate-800 rounded-b-xl flex justify-center items-center">
-            <div className="w-16 h-1 bg-slate-600 rounded-full"></div>
+            <div className="w-full max-w-[590px] h-3.5 bg-slate-800 rounded-b-xl mb-2 flex justify-center items-center">
+              <div className="w-16 h-1 bg-slate-600 rounded-full"></div>
+            </div>{" "}
           </div>
         </div>
       </div>

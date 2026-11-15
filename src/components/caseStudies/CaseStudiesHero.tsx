@@ -13,52 +13,56 @@ export const CaseStudiesHero: React.FC = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0A6CFF]"></span>
             </span>
             <span className="font-subheading-eyebrow text-subheading-eyebrow tracking-widest uppercase font-bold text-[#0A6CFF] text-[11px] sm:text-[13px]">
-              Przykładowy scenariusz wdrożenia • Nie referencja klienta
+              Przykładowe scenariusze wdrożeń • Nie są to referencje klientów
             </span>
           </div>
 
           <h1 className="font-headline-xl text-headline-xl text-[#0B0F19] font-bold tracking-tight mb-4">
-            Jak inteligentne systemy pracują w firmach
+            Od procesów biznesowych do inteligentnych systemów
           </h1>
 
           <p className="font-body-lg text-body-lg text-[#475569] max-w-2xl leading-relaxed">
-            Zobacz realistyczne scenariusze wdrożeń automatyzacji i sztucznej
-            inteligencji w małych i średnich przedsiębiorstwach. Żadnych
-            fikcyjnych statystyk — czysta inżynieria procesowa i mierzalna
-            eliminacja chaosu.
+            Poznaj przykładowe scenariusze wykorzystania sztucznej inteligencji,
+            automatyzacji i dedykowanego oprogramowania w przedsiębiorstwach.
+            Pokazuję w nich, jak projektować rozwiązania, które integrują systemy,
+            usprawniają przepływ informacji i wspierają codzienną pracę
+            zespołów.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full mt-10 p-5 bg-[#F8FAFC] border border-slate-200 shadow-sm rounded-lg">
             <div className="flex flex-col">
               <span className="font-label-sm text-label-sm text-slate-500 font-semibold">
-                ARCHITEKTURA
+                OCHRONA DANYCH
               </span>
               <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">
-                Zero Data Leak
+                Kontrola dostępu
               </span>
             </div>
+
             <div className="flex flex-col">
               <span className="font-label-sm text-label-sm text-slate-500 font-semibold">
-                STANDARD MODELI
+                ARCHITEKTURA AI
               </span>
               <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">
-                Private LLM / RAG
+                LLM + RAG
               </span>
             </div>
+
             <div className="flex flex-col">
               <span className="font-label-sm text-label-sm text-slate-500 font-semibold">
-                CZAS REAKCJI
+                AUTOMATYZACJA
               </span>
               <span className="font-headline-sm text-headline-sm text-[#0A6CFF] font-bold">
-                ≤ 10 sekund
+                Inteligentne procesy
               </span>
             </div>
+
             <div className="flex flex-col">
               <span className="font-label-sm text-label-sm text-slate-500 font-semibold">
-                INTEGRACJE ERP
+                INTEGRACJE SYSTEMÓW
               </span>
               <span className="font-headline-sm text-headline-sm text-[#0B0F19] font-bold">
-                REST API &amp; Webhook
+                API i Webhooks
               </span>
             </div>
           </div>

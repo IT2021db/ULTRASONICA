@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export const Scenario02InvoiceProcessing: React.FC = () => {
@@ -14,12 +15,12 @@ export const Scenario02InvoiceProcessing: React.FC = () => {
                     document_scanner
                   </span>
                   <span className="font-headline-sm text-headline-sm text-white font-bold">
-                    OCR Parser • ERP Bridge
+                    OCR &amp; AI Document Processing
                   </span>
                 </div>
                 <span className="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed bg-[#0F2039] px-2.5 py-0.5 rounded-full border border-[#1E304F]">
                   <span className="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
-                  Status: Zgodny
+                  Analiza zakończona
                 </span>
               </div>
 
@@ -27,24 +28,24 @@ export const Scenario02InvoiceProcessing: React.FC = () => {
               <div className="p-3.5 rounded-lg bg-[#0F2039] space-y-2.5 border border-[#1E304F]">
                 <div className="flex items-center justify-between font-label-sm text-label-sm">
                   <span className="text-slate-300 font-medium">
-                    Plik: Faktura_VAT_2026_03_991.pdf
+                    Dokument: Faktura_przykladowa.pdf
                   </span>
                   <span className="text-secondary-fixed font-semibold">
-                    100% zaufania OCR
+                    Dane odczytane
                   </span>
                 </div>
 
-                {/* Extracted Entities Pills */}
+                {/* Extracted Entities */}
                 <div className="grid grid-cols-2 gap-2 text-label-sm font-label-sm">
                   <div className="p-2 rounded bg-[#1A2A44] border border-[#25354F]">
                     <span className="text-slate-400 block text-xs">
                       Sprzedawca:
                     </span>
                     <span className="text-white font-semibold truncate block">
-                      Nordic Metal Sp. z o.o.
+                      Przykładowy dostawca
                     </span>
                     <span className="text-secondary-fixed-dim text-xs">
-                      NIP: 586-21-44-890 [Biała Lista OK]
+                      Dane identyfikacyjne odczytane
                     </span>
                   </div>
                   <div className="p-2 rounded bg-[#1A2A44] border border-[#25354F]">
@@ -52,53 +53,63 @@ export const Scenario02InvoiceProcessing: React.FC = () => {
                       Kwota brutto:
                     </span>
                     <span className="text-white font-semibold block">
-                      48 760,00 PLN
+                      4 876,00 PLN
                     </span>
                     <span className="text-secondary-fixed-dim text-xs">
-                      VAT: 23% (9 117,72 PLN)
+                      VAT: 23%
                     </span>
                   </div>
                 </div>
 
                 <div className="p-2 rounded bg-[#1A2A44] border border-[#25354F]">
                   <span className="text-slate-400 block text-xs">
-                    Numer konta (IBAN):
+                    Numer rachunku bankowego:
                   </span>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between gap-2">
                     <span className="text-white font-mono text-xs">
-                      PL 88 1090 1102 0000 0005 3211 9901
+                      PL XX XXXX XXXX XXXX XXXX XXXX XXXX
                     </span>
-                    <span className="text-secondary-fixed text-xs font-semibold flex items-center gap-1">
+                    <span className="text-secondary-fixed text-xs font-semibold flex items-center gap-1 shrink-0">
                       <span className="material-symbols-outlined text-[13px]">
-                        check_circle
+                        fact_check
                       </span>
-                      Zweryfikowano
+                      Do weryfikacji
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* Live ERP Routing Log */}
-              <div className="p-3 rounded-lg bg-[#1A2A44] flex flex-col gap-1.5 font-label-sm text-label-sm border border-[#25354F]">
-                <div className="flex items-center justify-between text-slate-300">
-                  <span>Ścieżka dekretacji ERP:</span>
-                  <span className="text-white font-medium">
-                    Konto 401-02 (Surowce)
+              {/* Processing and validation */}
+              <div className="p-3 rounded-lg bg-[#1A2A44] flex flex-col gap-2 font-label-sm text-label-sm border border-[#25354F]">
+                <div className="flex items-center justify-between text-slate-300 gap-2">
+                  <span>Rozpoznawanie dokumentu:</span>
+                  <span className="text-secondary-fixed font-medium">
+                    Zakończone
                   </span>
                 </div>
-                <div className="flex items-center justify-between text-secondary-fixed">
-                  <span>Przesłano do Comarch Optima:</span>
-                  <span className="font-mono">Payload HTTP 201 Created</span>
+                <div className="flex items-center justify-between text-slate-300 gap-2">
+                  <span>Kontrola danych:</span>
+                  <span className="text-secondary-fixed font-medium">
+                    Weryfikacja wymagana
+                  </span>
+                </div>
+                <div className="flex items-center justify-between text-slate-300 gap-2">
+                  <span>Integracja ERP:</span>
+                  <span className="text-white font-medium">
+                    Gotowe do przekazania
+                  </span>
                 </div>
               </div>
 
-              <div className="flex justify-end gap-2 pt-1">
-                <button
-                  className="font-label-sm text-label-sm px-4 py-2 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded-lg font-semibold shadow-sm"
-                  type="button"
-                >
-                  Zatwierdź i zaksięguj
-                </button>
+              <div className="flex flex-col gap-2 pt-1">
+                <span className="font-label-sm text-label-sm text-slate-400">
+                  Kolejny krok: zatwierdzenie danych przez pracownika.
+                </span>
+                <div className="flex justify-end gap-2">
+                  <span className="font-label-sm text-label-sm px-4 py-2 bg-gradient-to-r from-[#00E5FF] to-[#0A6CFF] text-white rounded-lg font-semibold shadow-sm">
+                    Zatwierdź dokument
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -111,12 +122,12 @@ export const Scenario02InvoiceProcessing: React.FC = () => {
               SCENARIUSZ 02
             </span>
             <span className="font-subheading-eyebrow text-subheading-eyebrow text-slate-500 font-bold uppercase tracking-wider text-[11px] sm:text-[13px]">
-              FINANSE &amp; KSIĘGOWOŚĆ OPERACYJNA
+              FINANSE &amp; AUTOMATYZACJA DOKUMENTÓW
             </span>
           </div>
 
           <h2 className="font-headline-lg text-headline-lg text-[#0B0F19] font-bold">
-            Automatyczne przetwarzanie faktur i dokumentów kosztowych
+            Automatyzacja przetwarzania faktur i dokumentów kosztowych
           </h2>
 
           <div className="space-y-4">
@@ -130,8 +141,10 @@ export const Scenario02InvoiceProcessing: React.FC = () => {
                   Problem
                 </span>
                 <p className="font-body-md text-body-md text-[#475569]">
-                  Dział księgowości ręcznie przepisywał dane z setek faktur PDF
-                  i skanów trafiających na pocztę.
+                  Ręczne wprowadzanie danych z faktur, kontrolowanie
+                  poprawności dokumentów i przypisywanie ich do odpowiednich
+                  kategorii księgowych zajmuje czas pracowników i zwiększa
+                  ryzyko pomyłek.
                 </p>
               </div>
             </div>
@@ -146,9 +159,10 @@ export const Scenario02InvoiceProcessing: React.FC = () => {
                   Rozwiązanie
                 </span>
                 <p className="font-body-md text-body-md text-[#334155]">
-                  System OCR wspomagany AI, który automatycznie odczytuje
-                  pozycje, weryfikuje NIP oraz kwoty i przesyła dane
-                  bezpośrednio do systemu ERP.
+                  System łączący technologię OCR i AI, który odczytuje dane
+                  z dokumentów, rozpoznaje pozycje faktur, sprawdza ich
+                  spójność i przygotowuje informacje do przekazania
+                  do systemu księgowego lub ERP.
                 </p>
               </div>
             </div>
@@ -163,8 +177,10 @@ export const Scenario02InvoiceProcessing: React.FC = () => {
                   Efekt
                 </span>
                 <p className="font-body-md text-body-md text-[#1E293B]">
-                  Całkowita eliminacja ręcznego przepisywania danych i pomyłek w
-                  numerach kont, natychmiastowe księgowanie kosztów.
+                  Mniej ręcznego wprowadzania danych, sprawniejszy obieg
+                  dokumentów i łatwiejsza kontrola poprawności. Dokumenty
+                  wymagające dodatkowej weryfikacji trafiają do pracownika
+                  przed zatwierdzeniem i zaksięgowaniem.
                 </p>
               </div>
             </div>

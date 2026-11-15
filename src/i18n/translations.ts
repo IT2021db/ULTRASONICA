@@ -10,7 +10,7 @@ export const translations = {
     },
     footer: {
       description:
-        "Projektujemy i wdrażamy zaawansowane systemy sztucznej inteligencji oraz dedykowaną architekturę oprogramowania klasy enterprise dla liderów biznesu i operacji cyfrowych.",
+        "Projektowanie dedykowanego oprogramowania, analiza i wdrażanie rozwiązań AI oraz integracja systemów. Technologie dobierane do rzeczywistych potrzeb i procesów biznesowych.",
       navigationTitle: "Nawigacja",
       privacyPolicy: "Polityka prywatności",
       contactTitle: "Kontakt i siedziba",
@@ -19,127 +19,135 @@ export const translations = {
       copyright: "Wszelkie prawa zastrzeżone.",
       tagline: "Intelligent Systems Architecture & Deployment",
     },
+
     hero: {
       badge: "Inżynieria inteligentnych systemów",
       title: "Inteligentne systemy, które",
-      highlight: "oszczędzają czas",
+      highlight: " usprawniają pracę",
       subtitle: "Twojej firmy",
       description:
-        "Programujemy dedykowane aplikacje i wdrażamy sztuczną inteligencję tak, żeby natychmiast działały w codziennej pracy: prosto, bezpiecznie i bez technicznego żargonu.",
+        "Projektowanie dedykowanych aplikacji, automatyzacja procesów i praktyczne zastosowania AI — dopasowane do potrzeb przedsiębiorstwa, z uwzględnieniem bezpieczeństwa danych i istniejących systemów.",
       contactButton: "Wyślij zapytanie",
-      servicesButton: "Zobacz usługi",
+      servicesButton: "Poznaj usługi",
       benefits: {
-        communication: "Bez żargonu technicznego",
+        communication: "Technologia bez zbędnego żargonu",
         security: "Bezpieczeństwo danych i RODO",
         business: "Praktyczne korzyści biznesowe",
       },
       automation: "Automatyzacja procesów",
-      tailored: "100% dopasowania",
-      confidentiality: "Poufność i zgodność",
-      enterprise: "Klasa Enterprise",
+      tailored: "Dopasowanie do potrzeb",
+      confidentiality: "Poufność i bezpieczeństwo",
+      enterprise: "Rozwiązania dla firm",
     },
+
     home: {
       problems: {
-        badge: "DIAGNOZA PROBLEMÓW BIZNESOWYCH",
-        title: "Znasz to w swojej codziennej działalności?",
+        badge: "WYZWANIA W CODZIENNYCH PROCESACH",
+        title: "Co spowalnia codzienną pracę Twojej firmy?",
         description:
-          "Większość małych i średnich firm nie potrzebuje rewolucji technologicznej ani haseł z konferencji. Potrzebuje uwolnienia ludzi od żmudnej, powtarzalnej pracy.",
+          "W wielu przedsiębiorstwach czas i zasoby pochłaniają powtarzalne czynności, rozproszone informacje oraz procesy, które nie wykorzystują w pełni możliwości dostępnych technologii.",
         cards: [
           {
-            title: "Powtarzalne zadania zabierają cenny czas",
+            title: "Powtarzalne zadania zajmują czas",
             description:
-              "Setki godzin w każdym miesiącu uciekają na ręczne przepisywanie danych z PDF-ów, rutynowe odpisywanie na powtarzalne zapytania i ręczne generowanie zestawień w firmie.",
-            result: "Utrata nawet 20-30h miesięcznie na pracownika",
+              "Ręczne przepisywanie danych z dokumentów, obsługa podobnych zapytań i przygotowywanie zestawień to czynności, które można częściowo zautomatyzować.",
+            result: "Więcej czasu na istotne zadania",
           },
           {
-            title: "Dane rozsiane po wielu narzędziach",
+            title: "Dane są rozproszone między systemami",
             description:
-              "Brak płynnej spójności między CRM, arkuszami Excel, skrzynkami mailowymi i systemem fakturowania powoduje błędy ludzkie, opóźnienia i chaos informacyjny.",
-            result: "Brak jednego źródła prawdy o zamówieniach",
+              "Informacje zapisane w CRM, arkuszach kalkulacyjnych, poczcie i systemach fakturowych nie zawsze są ze sobą powiązane. Utrudnia to przepływ informacji i zwiększa ryzyko pomyłek.",
+            result: "Bardziej spójny przepływ informacji",
           },
           {
-            title: "AI brzmi obiecująco, ale od czego zacząć?",
+            title: "Potencjał AI trudno przełożyć na praktykę",
             description:
-              "Obawa przed niekontrolowanymi kosztami, wyciekiem firmowych dokumentów oraz skomplikowanymi wdrożeniami skutecznie blokuje automatyzację procesów.",
-            result: "Brak pragmatycznego doradztwa technicznego",
+              "Wybór odpowiednich narzędzi, kontrola kosztów, bezpieczeństwo danych i integracja z istniejącym oprogramowaniem wymagają przemyślanego podejścia.",
+            result: "Technologia dopasowana do potrzeb",
           },
         ],
       },
+
       services: {
-        badge: "KOMPLEKSOWA REALIZACJA",
-        title: "Usługi zaprojektowane pod realny biznes",
+        badge: "OBSZARY USŁUG",
+        title: "Technologie dopasowane do potrzeb firmy",
         description:
-          "Nie sprzedajemy modnych eksperymentów. Dostarczamy stabilne, bezpieczne narzędzia, które stają się kręgosłupem operacyjnym Twojej firmy.",
+          "Zakres usług obejmuje projektowanie rozwiązań AI, dedykowanego oprogramowania oraz integracji, które usprawniają codzienne procesy biznesowe.",
         cards: [
           {
-            title: "Wdrożenia AI & LLM",
+            label: "01 / AI",
+            title: "Rozwiązania AI i LLM",
             description:
-              "Dedykowane asystenty operacyjne oparte na wewnętrznej bazie wiedzy firmy. Inteligentna ekstrakcja danych, kategoryzacja zapytań ofertowych oraz bezpieczne modele z pełną izolacją danych.",
+              "Asystenci AI korzystający z firmowej bazy wiedzy, automatyczna ekstrakcja i klasyfikacja danych oraz chatboty wspierające procesy wewnętrzne.",
             features: [
-              "Prywatna baza wiedzy firmowej (RAG)",
-              "Automatyczna weryfikacja dokumentów",
-              "Wewnętrzne chatboty operacyjne",
+              "Integracja z firmową bazą wiedzy (RAG)",
+              "Ekstrakcja i analiza danych z dokumentów",
+              "Wewnętrzne chatboty i asystenci AI",
             ],
-            link: "Więcej o wdrożeniach AI",
+            link: "Więcej o rozwiązaniach AI",
           },
           {
+            label: "02 / SYSTEMY",
             title: "Aplikacje i systemy dedykowane",
             description:
-              "Wieloletnie doświadczenie w projektowaniu portali B2B, systemów ERP/CRM oraz paneli operacyjnych dostosowanych do indywidualnej specyfiki Twojej branży.",
+              "Projektowanie aplikacji webowych, portali B2B, systemów ERP/CRM i paneli operacyjnych dostosowanych do procesów oraz specyfiki przedsiębiorstwa.",
             features: [
-              "Autorskie panele zarządzania i CRM",
-              "Platformy B2B & strefy klienta",
-              "Skalowalna architektura i czysty kod",
+              "Dedykowane aplikacje i panele zarządzania",
+              "Platformy B2B i portale klienta",
+              "Architektura dopasowana do potrzeb",
             ],
             link: "Więcej o systemach dedykowanych",
           },
           {
+            label: "03 / INTEGRACJE",
             title: "Automatyzacja i integracje",
             description:
-              "Bezpieczne łączenie używanego dotychczas oprogramowania: poczty, magazynu, księgowości i zewnętrznych API. Eliminujemy powtarzalne, ręczne czynności.",
+              "Łączenie istniejących narzędzi i systemów, takich jak poczta, magazyn, księgowość czy zewnętrzne API. Automatyzacja powtarzalnych czynności i przepływu informacji.",
             features: [
-              "Automatyczny obieg faktur i zamówień",
-              "Dwukierunkowa synchronizacja API",
-              "Powiadomienia i webhooki w czasie rzeczywistym",
+              "Automatyzacja obiegu dokumentów i zamówień",
+              "Integracje systemów przez API",
+              "Powiadomienia i wymiana danych",
             ],
-            link: "Więcej o integracjach",
+            link: "Więcej o automatyzacji i integracjach",
           },
         ],
       },
+
       process: {
         badge: "METODOLOGIA WDROŻENIA",
         title: "Jak wygląda współpraca krok po kroku",
         description:
-          "Bez nierealnych obietnic i bez tygodni spędzonych na tworzeniu niepotrzebnej dokumentacji. Działamy w jasnym rytmie inżynieryjnym.",
+          "Bez nierealnych obietnic i bez tygodni spędzonych na tworzeniu niepotrzebnej dokumentacji. Proces realizacji opiera się na jasno określonych etapach i praktycznym podejściu inżynierskim.",
         steps: [
           {
             title: "1. Rozmowa o Twojej firmie i celach",
             description:
-              "Słuchamy, jak wygląda Twoja codzienna praca i gdzie pojawiają się wąskie gardła. Rozmawiasz bezpośrednio z główną inżynierką, bez żargonu technicznego.",
+              "Rozmowa pozwala poznać sposób funkcjonowania firmy i zidentyfikować problemy, które warto rozwiązać. Kontakt odbywa się bezpośrednio z osobą odpowiedzialną za analizę i realizację projektu.",
             result: "Rozpoznanie potrzeb",
           },
           {
             title: "2. Audyt procesów i precyzyjny plan",
             description:
-              "Wskazujemy konkretne miejsca, w których automatyzacja lub AI mogą przynieść korzyści biznesowe i oszczędność czasu.",
+              "Analiza pozwala określić, które procesy można usprawnić, gdzie występują ograniczenia i jakie rozwiązania technologiczne mogą przynieść firmie największą wartość.",
             result: "Przejrzysty zakres",
           },
           {
             title: "3. Zwinne wdrożenie i testy",
             description:
-              "Projektujemy i wdrażamy rozwiązanie we współpracy z Tobą. Każdy moduł testujemy na rzeczywistych danych, aby sprawdzić jego działanie.",
-            result: "Sprawdzona stabilność",
+              "Na podstawie ustalonych wymagań powstaje rozwiązanie dopasowane do specyfiki firmy. Zakres prac obejmuje projektowanie, programowanie, integrację systemów lub wdrażanie rozwiązań AI – zależnie od potrzeb projektu.",
+            result: "Testowanie i weryfikacja rozwiązania",
           },
           {
             title: "4. Rozwój, asysta i opieka",
             description:
-              "Zapewniamy partnerskie wsparcie techniczne. W razie potrzeby angażujemy zaufanych specjalistów, aby wspierać dalszy rozwój rozwiązania.",
-            result: "Partnerskie wsparcie",
+              "Po uruchomieniu rozwiązania możliwa jest dalsza współpraca obejmująca wsparcie techniczne, rozwój funkcjonalności i dostosowanie systemu do zmieniających się potrzeb firmy. Zakres opieki ustalany jest indywidualnie.",
+            result: "Możliwość dalszego rozwoju",
           },
         ],
       },
+
       about: {
-        imageAlt: "Inżynierka i założycielka ULTRASONICA",
+        imageAlt: "Inżynier i założycielka ULTRASONICA",
         badge: "KIM JESTEM",
         title:
           "Inżynierskie podejście. Doświadczenie w realizacji projektów. Nowe technologie.",
@@ -152,7 +160,7 @@ export const translations = {
           {
             value: "MGR INŻ.",
             label:
-              "Elektronika Telekomunikacja Informatyka – Politechnika Gdańska",
+              "Elektronika, Telekomunikacja, Informatyka – Politechnika Gdańska",
           },
           {
             value: "PROJEKTY",
@@ -164,138 +172,143 @@ export const translations = {
           },
         ],
       },
+
       whyUs: {
         badge: "DLACZEGO ULTRASONICA",
-        title: "Technologia zrozumiała dla biznesu",
+        title: "Technologia, która odpowiada na potrzeby biznesu",
         description:
-          "Łączymy inżynierskie podejście z praktycznym spojrzeniem na potrzeby firmy. Stawiamy na rozwiązania, które mają konkretny cel i uzasadnienie biznesowe.",
+          "Każde wdrożenie zaczyna się od zrozumienia problemu i celu biznesowego. Inżynierskie podejście pozwala ocenić możliwości technologii, a praktyczne spojrzenie na działalność firmy pomaga przełożyć je na rozwiązania, które mają rzeczywistą wartość.",
         cards: [
           {
-            title: "Rozumiemy technologię i biznes",
+            title: "Technologia i zrozumienie biznesu",
             description:
-              "Patrzymy na projekt z dwóch perspektyw: technicznej i organizacyjnej. Rozumiemy, że dobre rozwiązanie musi nie tylko działać, ale również wspierać codzienną pracę firmy.",
-            result: "Technologia z konkretnym celem",
+              "Analiza projektu obejmuje zarówno aspekty techniczne, jak i sposób funkcjonowania firmy. Rozwiązanie powinno nie tylko działać poprawnie, ale przede wszystkim odpowiadać na konkretne potrzeby i usprawniać codzienną pracę.",
+            result: "Rozwiązania osadzone w realiach biznesu",
           },
           {
-            title: "Rozwiązanie przed modą",
+            title: "Rozwiązanie zamiast technologicznej mody",
             description:
-              "Nie wdrażamy AI tylko dlatego, że jest popularne. Analizujemy problem i dobieramy narzędzia do rzeczywistych potrzeb — czasem najlepszym rozwiązaniem jest prostsza automatyzacja.",
-            result: "Technologia dobrana do potrzeb",
+              "Dobór technologii wynika z analizy problemu, a nie aktualnych trendów. Nie każdy proces wymaga sztucznej inteligencji — czasem prostsza automatyzacja pozwala osiągnąć lepszy efekt przy niższych kosztach.",
+            result: "Technologia dobrana do rzeczywistych potrzeb",
           },
           {
-            title: "Odpowiedzialne podejście do danych",
+            title: "Bezpieczeństwo i odpowiedzialność",
             description:
-              "Bezpieczeństwo i poufność traktujemy jako ważną część projektu. Dobieramy rozwiązania z uwzględnieniem rodzaju przetwarzanych danych i wymagań klienta.",
-            result: "Świadome podejście do bezpieczeństwa",
+              "Bezpieczeństwo informacji i poufność danych są uwzględniane już na etapie projektowania rozwiązania. Dobór technologii i sposobu przetwarzania danych zależy od specyfiki projektu oraz wymagań klienta.",
+            result: "Bezpieczeństwo uwzględnione w projekcie",
           },
           {
             title: "Przejrzyste zasady współpracy",
             description:
-              "Ustalamy zakres prac, kolejne etapy i koszty przed rozpoczęciem realizacji. Wiesz, nad czym pracujemy, jakie są założenia i czego możesz oczekiwać.",
+              "Zakres prac, etapy realizacji i koszty są określane przed rozpoczęciem projektu. Jasne ustalenia pozwalają świadomie podejmować decyzje i kontrolować przebieg realizacji.",
             result: "Jasny zakres i przewidywalne koszty",
           },
         ],
       },
+
       projects: {
         badge: "PRZYKŁADOWE ZASTOSOWANIA",
-        title: "Jak technologia może usprawnić pracę Twojej firmy",
+        title: "Jak technologia może usprawnić działanie Twojej firmy",
         description:
-          "Przedstawiamy przykłady rozwiązań, które można dostosować do procesów i systemów wykorzystywanych w Twojej organizacji.",
+          "Poniższe przykłady pokazują, jak można dostosować rozwiązania technologiczne do procesów biznesowych i systemów wykorzystywanych w firmie.",
         cards: [
           {
-            category: "AI I OBSŁUGA KLIENTA B2B",
-            title: "Inteligentna obsługa zapytań ofertowych",
+            category: "AI I OBSŁUGA KLIENTÓW B2B",
+            title: "Inteligentna obsługa zapytań biznesowych",
             description:
-              "Asystent AI analizuje wiadomości od klientów, rozpoznaje najważniejsze informacje i pomaga przygotować dane potrzebne do opracowania oferty.",
+              "Asystent AI analizuje przychodzące zapytania klientów, identyfikuje najważniejsze informacje i pomaga przygotować dane niezbędne do opracowania oferty.",
             features: [
-              "Odczytywanie informacji z wiadomości i załączników",
-              "Rozpoznawanie parametrów technicznych",
-              "Przygotowanie danych do wyceny",
-              "Możliwość integracji z systemem CRM lub ERP",
+              "Odczytywanie informacji z wiadomości e-mail i załączników",
+              "Identyfikacja parametrów technicznych",
+              "Przygotowywanie danych do ofert",
+              "Możliwość integracji z systemami CRM lub ERP",
             ],
             result:
-              "Sprawniejsza obsługa zapytań i mniej ręcznego przepisywania danych",
+              "Szybsza obsługa zapytań i mniej ręcznego wprowadzania danych",
           },
           {
-            category: "AUTOMATYZACJA PROCESÓW",
-            title: "Automatyczny obieg dokumentów",
+            category: "AUTOMATYZACJA PROCESÓW BIZNESOWYCH",
+            title: "Automatyczne przetwarzanie dokumentów",
             description:
-              "Rozwiązanie wspomaga odczytywanie i porządkowanie dokumentów, takich jak faktury czy zamówienia, oraz przekazywanie danych do kolejnych etapów procesu.",
+              "Rozwiązanie odczytuje i porządkuje informacje z dokumentów, takich jak faktury i zamówienia, a następnie przekazuje odpowiednie dane do kolejnych etapów procesu.",
             features: [
               "Odczytywanie danych z dokumentów",
-              "Rozpoznawanie rodzaju dokumentu",
+              "Rozpoznawanie typów dokumentów",
               "Weryfikacja wymaganych informacji",
-              "Integracja z systemem księgowym lub ERP",
+              "Integracja z systemami księgowymi lub ERP",
             ],
             result:
-              "Mniej powtarzalnych czynności i bardziej uporządkowany obieg dokumentów",
+              "Mniej powtarzalnych czynności i sprawniejszy obieg dokumentów",
           },
         ],
       },
+
       cta: {
-        badge: "POROZMAWIAJMY O TWOIM BIZNESIE",
-        title: "Porozmawiajmy o tym, co możemy usprawnić u Ciebie",
+        badge: "POROZMAWIAJMY O TWOJEJ FIRMIE",
+        title: "Sprawdźmy, jak usprawnić działanie Twojej firmy",
         description:
-          "Opowiedz nam o wyzwaniach, z którymi mierzy się Twoja firma. Wspólnie sprawdzimy, gdzie rozwiązania programistyczne, automatyzacja lub AI mogą przynieść realne korzyści.",
+          "Opowiedz o wyzwaniach, z którymi mierzy się Twoja firma. Przeanalizuję potrzeby i przedstawię możliwe kierunki wykorzystania dedykowanego oprogramowania, automatyzacji procesów lub AI.",
         primaryButton: "Wyślij zapytanie",
-        secondaryButton: "Napisz bezpośrednio",
+        secondaryButton: "Napisz bezpośrednio na e-mail",
         note: "Bez zobowiązań • Konkretna rozmowa • Indywidualne podejście",
       },
     },
 
     servicesPage: {
       hero: {
-        badge: "KOMPLEKSOWE PORTFOLIO USŁUG",
-        title: "Nasze Usługi:",
+        badge: "OBSZARY WSPARCIA TECHNOLOGICZNEGO",
+        title: "Usługi:",
         highlight: "Inżynieria i AI",
-        subtitle: "dla Twojego Biznesu",
+        subtitle: "dla Twojego biznesu",
         description:
-          "Lata komercyjnego rzemiosła programistycznego łączymy z architekturą modeli nowej generacji. Budujemy gotowe, stabilne rozwiązania produkcyjne i bezpieczne wdrożenia AI w modelu bezpośredniej współpracy z głównym inżynierem – bez pośredników i korporacyjnego szumu.",
+          "Łączę doświadczenie inżynierskie z projektowaniem oprogramowania i praktycznym wykorzystaniem sztucznej inteligencji. Tworzę dedykowane rozwiązania, integruję systemy i automatyzuję procesy biznesowe, dobierając technologie do konkretnych potrzeb firmy. Współpraca odbywa się bezpośrednio – od analizy założeń po realizację projektu.",
       },
+
       metrics: [
         "Aplikacje frontendowe",
         "Analiza i wdrażanie AI",
         "Integracje systemów",
         "Automatyzacja procesów",
       ],
+
       services: [
         {
           module: "MODUŁ 01",
           category: "Sztuczna inteligencja",
           title: "Analiza i wdrażanie rozwiązań AI",
           description:
-            "Pomagamy znaleźć obszary, w których sztuczna inteligencja może usprawnić pracę firmy. Projektujemy rozwiązania wykorzystujące modele językowe i integrujemy je z aplikacjami oraz narzędziami dopasowanymi do konkretnych potrzeb.",
+            "Analiza możliwości wykorzystania sztucznej inteligencji w działalności firmy. Projektowanie rozwiązań opartych na modelach językowych oraz ich integracja z aplikacjami i narzędziami dopasowanymi do konkretnych potrzeb.",
           audienceLabel: "Dla kogo",
           audience:
             "Dla firm, które chcą lepiej wykorzystywać informacje, usprawnić obsługę zapytań, pracę z dokumentami lub powtarzalne zadania.",
           benefitLabel: "Co możesz zyskać",
           benefit:
-            "Łatwiejszy dostęp do informacji, mniej ręcznej pracy i lepiej uporządkowane procesy. Możliwe efekty określamy na podstawie konkretnego zastosowania.",
+            "Łatwiejszy dostęp do informacji, mniej ręcznej pracy i lepiej uporządkowane procesy. Możliwe efekty określane są na podstawie konkretnego zastosowania.",
           examplesLabel: "Przykładowe zastosowania",
           examples: [
             "Asystenci AI korzystający z firmowej bazy wiedzy",
             "Analiza i podsumowywanie dokumentów",
             "Wsparcie w przygotowywaniu odpowiedzi na zapytania klientów",
           ],
-          practicalLabel: "Jak pracujemy",
+          practicalLabel: "Jak wygląda realizacja",
           practical:
-            "Zaczynamy od analizy problemu, danych i oczekiwanego rezultatu. Następnie dobieramy rozwiązanie, przygotowujemy koncepcję lub prototyp i ustalamy zakres integracji oraz wdrożenia.",
+            "Punktem wyjścia jest analiza problemu, dostępnych danych i oczekiwanego rezultatu. Następnie dobierane jest rozwiązanie, przygotowywana koncepcja lub prototyp oraz określany zakres integracji i wdrożenia.",
           imageAlt:
             "Wizualizacja przetwarzania informacji z wykorzystaniem sztucznej inteligencji",
           metricLabel: "Przykładowy przepływ pracy AI",
         },
         {
           module: "MODUŁ 02",
-          category: "Architektura Oprogramowania",
+          category: "Architektura oprogramowania",
           title: "Aplikacje i systemy dedykowane",
           description:
-            "Dedykowane oprogramowanie webowe i platformy biznesowe rozwiązujące unikalne wąskie gardła. Eliminujemy ograniczenia szablonowych platform, tworząc kod dokładnie na miarę.",
+            "Dedykowane aplikacje webowe i platformy biznesowe projektowane z myślą o konkretnych potrzebach operacyjnych. Oprogramowanie może uzupełniać lub zastępować rozwiązania gotowe tam, gdzie ich możliwości nie odpowiadają specyfice działalności firmy.",
           audienceLabel: "Dla kogo",
           audience:
             "Przedsiębiorstwa, które wyrosły z gotowych systemów pudełkowych lub arkuszy kalkulacyjnych.",
           benefitLabel: "Co zyskasz",
           benefit:
-            "Pełną kontrolę nad procesem, skalowalność i narzędzie idealnie skrojone pod nawyki Twoich pracowników.",
+            "Rozwiązanie dopasowane do specyfiki firmy, z możliwością rozwoju wraz ze zmieniającymi się potrzebami i sposobem pracy zespołu.",
           examplesLabel: "Przykładowe zastosowania:",
           examples: [
             "Panele klienta B2B",
@@ -304,23 +317,23 @@ export const translations = {
           ],
           practicalLabel: "Jak to wygląda w praktyce:",
           practical:
-            "Praca w zwinnym modelu partnerskim: od precyzyjnych warsztatów funkcjonalnych z architektem, przez kod prototypu, po wdrożenie produkcyjne i stałą asystę powdrożeniową.",
-          imageAlt: "Architektura systemu informatycznego klasy enterprise",
+            "Realizacja obejmuje ustalenie wymagań i funkcjonalności, przygotowanie projektu oraz rozwój oprogramowania. Po testach rozwiązanie może zostać wdrożone i rozwijane w uzgodnionym zakresie.",
+          imageAlt: "Architektura dedykowanego systemu informatycznego",
           architectureLabel: "Architektura",
           responseTimeLabel: "Czas odpowiedzi",
         },
         {
           module: "MODUŁ 03",
-          category: "Ekosystem Cyfrowy",
+          category: "Ekosystem cyfrowy",
           title: "Automatyzacja procesów i integracje",
           description:
-            "Bezproblemowe łączenie używanych na co dzień aplikacji i likwidacja ręcznego przepisywania danych. Tworzymy spójną magistralę wymiany informacji w całym przedsiębiorstwie.",
+            "Integracja aplikacji wykorzystywanych w codziennej pracy firmy oraz automatyzacja przepływu danych między systemami. Rozwiązania ograniczają potrzebę ręcznego przenoszenia informacji i usprawniają wymianę danych.",
           audienceLabel: "Dla kogo",
           audience:
-            "Zespoły pracujące na wielu nieskomunikowanych narzędziach (CRM, ERP, skrzynka pocztowa, fakturowanie).",
+            "Firmy korzystające z wielu niezależnych narzędzi, takich jak CRM, ERP, poczta elektroniczna czy systemy fakturowania.",
           benefitLabel: "Co zyskasz",
           benefit:
-            "Zero błędów ludzkich przy przepisywaniu danych, powiadomienia w czasie rzeczywistym i oszczędność dziesiątek godzin tygodniowo.",
+            "Mniej ręcznego wprowadzania danych, sprawniejszy przepływ informacji, automatyczne powiadomienia i więcej czasu na zadania wymagające zaangażowania pracowników.",
           examplesLabel: "Przykładowe zastosowania:",
           examples: [
             "Automatyczny obieg faktur",
@@ -329,49 +342,52 @@ export const translations = {
           ],
           practicalLabel: "Jak to wygląda w praktyce:",
           practical:
-            "Bezpieczna konfiguracja webhooków, API i zautomatyzowanych reguł z monitoringiem działania 24/7.",
+            "Integracja systemów z wykorzystaniem API, webhooków i reguł automatyzacji. Zakres monitorowania i obsługi rozwiązania jest ustalany w zależności od potrzeb projektu.",
           imageAlt: "Wizualizacja przepływu danych i integracji systemów",
-          automationLabel: "W pełni zautomatyzowane",
+          automationLabel: "Automatyzacja procesów",
         },
       ],
+
       faq: {
         badge: "ODPOWIEDZI NA CZĘSTE PYTANIA",
         title: "Najczęściej zadawane pytania",
         description:
-          "Wszystko, co warto wiedzieć przed rozpoczęciem wspólnego wdrożenia technologicznego z zespołem Ultrasonica.",
+          "Odpowiedzi na pytania dotyczące możliwości technologicznych, kosztów i przebiegu współpracy z ULTRASONICA.",
         items: [
           {
             q: "Czy muszę znać się na AI?",
-            a: "Nie, to nasza rola. Tłumaczymy wszystko prostym, zrozumiałym językiem biznesowym i dbamy o to, by narzędzia były intuicyjne dla każdego członka Twojego zespołu od pierwszego dnia.",
+            a: "Nie. Nie jest wymagana specjalistyczna wiedza techniczna. Wyjaśniam możliwości dostępnych technologii, pomagam ocenić ich przydatność i dobieram rozwiązania do sposobu działania firmy.",
           },
           {
             q: "Ile to kosztuje?",
-            a: "Każdy projekt ma inną skalę i specyfikę techniczną. Po pierwszej, bezpłatnej rozmowie i analizie wymagań przygotowujemy jasną, przejrzystą wycenę z podziałem na etapy – bez ukrytych kosztów.",
+            a: "Koszt zależy od zakresu projektu, jego złożoności i wykorzystywanych technologii. Po wstępnej rozmowie i analizie potrzeb przedstawiam zakres prac, proponowany sposób realizacji oraz wycenę. Ewentualne zmiany zakresu są omawiane przed ich realizacją.",
           },
           {
             q: "Czy moje dane są bezpieczne?",
-            a: "Bezwzględnie tak. Projektujemy rozwiązania zgodnie z RODO, korzystając z odizolowanych, bezpiecznych instancji, gdzie Twoje firmowe dane nigdy nie są wykorzystywane do trenowania ogólnodostępnych modeli publicznych.",
+            a: "Bezpieczeństwo danych jest uwzględniane już na etapie projektowania rozwiązania. Dobór zabezpieczeń, sposób przechowywania i przetwarzania danych oraz wybór dostawców usług zależą od charakteru projektu i jego wymagań. Kwestie związane z ochroną danych i RODO są analizowane odpowiednio do planowanego zastosowania.",
           },
           {
             q: "Jak wygląda współpraca?",
-            a: "Rozmawiasz bezpośrednio z głównym inżynierem i architektem rozwiązań, a nie z account managerem czy handlowcem. Po analizie celów biznesowych tworzymy architekturę techniczną i zwinnie wdrażamy narzędzie w krótkich iteracjach z pełnym transferem wiedzy.",
+            a: "Kontakt odbywa się bezpośrednio ze mną – od pierwszej rozmowy, przez analizę potrzeb i ustalenie zakresu prac, aż po realizację projektu. Sposób pracy i kolejne etapy są dostosowywane do specyfiki rozwiązania. Po zakończeniu realizacji możliwe jest również omówienie dalszego rozwoju i wsparcia technicznego.",
           },
           {
             q: "Czy można zacząć od małego projektu?",
-            a: "Oczywiście. Zawsze rekomendujemy start od szybkiego pilotażu (Proof of Concept) lub automatyzacji jednego, najbardziej uciążliwego wąskiego gardła, by natychmiast zobaczyć mierzalny zwrot z inwestycji.",
+            a: "Tak. Nie każdy problem wymaga rozbudowanego systemu. Współpracę można rozpocząć od automatyzacji pojedynczego procesu, integracji wybranych narzędzi lub przygotowania prototypu (Proof of Concept), który pozwoli ocenić zasadność dalszego rozwoju rozwiązania.",
           },
         ],
       },
+
       cta: {
         badge: "POROZMAWIAJMY O TWOIM PROJEKCIE",
         title: "Poszukujesz rozwiązania dopasowanego do swoich potrzeb?",
         description:
-          "Opowiedz nam o swoim projekcie i wyzwaniach. Przeanalizujemy potrzeby, omówimy możliwe kierunki realizacji i wspólnie określimy kolejne kroki.",
+          "Opisz problem lub proces, który chcesz usprawnić. Przeanalizuję Twoje potrzeby, przedstawię możliwe rozwiązania i pomogę określić zakres dalszych działań.",
         primaryButton: "Wyślij zapytanie",
         secondaryButton: "Napisz bezpośrednio",
         footer:
-          "Indywidualne podejście • Rzeczowa analiza • Przejrzyste zasady współpracy",
+          "Indywidualne podejście • Rzeczowa analiza • Bezpośredni kontakt",
       },
+
       moduleVisuals: {
         data: "DANE",
         model: "MODEL AI",
@@ -390,279 +406,292 @@ export const translations = {
       contactButton: "Send an enquiry",
       brandSubtitle: "INTELLIGENT SYSTEMS ENGINEERING",
     },
+
     footer: {
       description:
-        "We design and implement advanced artificial intelligence systems and custom enterprise-grade software architectures for business leaders and digital operations.",
+        "Custom software development, AI solution analysis and implementation, and system integration. Technologies selected to meet real business needs and operational requirements.",
       navigationTitle: "Navigation",
       privacyPolicy: "Privacy Policy",
-      contactTitle: "Contact & Headquarters",
+      contactTitle: "Contact & Location",
       mapLink: "Open in Maps",
       languageLabel: "Language",
       copyright: "All rights reserved.",
       tagline: "Intelligent Systems Architecture & Deployment",
     },
+
     hero: {
       badge: "Intelligent Systems Engineering",
       title: "Intelligent systems that",
-      highlight: "save your time",
-      subtitle: "and help your business",
+      highlight: " make work smarter",
+      subtitle: "for your business",
       description:
-        "We develop custom applications and implement artificial intelligence solutions that work in your everyday business operations — simply, securely and without unnecessary technical jargon.",
+        "Custom application development, process automation and practical AI solutions — tailored to business needs, with data security and existing systems in mind.",
       contactButton: "Send an enquiry",
-      servicesButton: "Explore our services",
+      servicesButton: "Explore services",
       benefits: {
-        communication: "No technical jargon",
+        communication: "Technology without the jargon",
         security: "Data security and GDPR",
         business: "Practical business benefits",
       },
       automation: "Process automation",
-      tailored: "Tailored to your needs",
-      confidentiality: "Confidentiality & compliance",
-      enterprise: "Enterprise-grade",
+      tailored: "Built around your needs",
+      confidentiality: "Confidentiality and security",
+      enterprise: "Solutions for businesses",
     },
+
     home: {
       problems: {
-        badge: "BUSINESS PROBLEM DIAGNOSIS",
-        title: "Does this sound familiar in your daily business?",
+        badge: "CHALLENGES IN EVERYDAY BUSINESS",
+        title: "What slows down your business operations?",
         description:
-          "Most small and medium-sized businesses do not need a technological revolution or conference buzzwords. They need to free their people from tedious, repetitive work.",
+          "In many businesses, time and resources are consumed by repetitive tasks, scattered information and processes that do not fully benefit from available technology.",
         cards: [
           {
-            title: "Repetitive tasks consume valuable time",
+            title: "Repetitive tasks take up valuable time",
             description:
-              "Hundreds of hours are lost every month to manually copying data from PDFs, answering recurring enquiries and preparing reports by hand.",
-            result: "Up to 20–30 hours lost per employee each month",
+              "Manually entering data from documents, handling recurring enquiries and preparing reports are tasks that can often be partially automated.",
+            result: "More time for important work",
           },
           {
-            title: "Data scattered across multiple tools",
+            title: "Data is scattered across multiple systems",
             description:
-              "Poor integration between CRM systems, Excel spreadsheets, email inboxes and invoicing software leads to human errors, delays and information chaos.",
-            result: "No single source of truth for orders",
+              "Information stored in CRM platforms, spreadsheets, email and invoicing systems is not always connected. This makes information flow more difficult and increases the risk of errors.",
+            result: "More consistent information flow",
           },
           {
-            title: "AI sounds promising, but where should you start?",
+            title: "Turning AI potential into practical results is challenging",
             description:
-              "Concerns about uncontrolled costs, company document leaks and complicated implementations often prevent businesses from automating their processes.",
-            result: "Lack of practical technical guidance",
+              "Choosing the right tools, managing costs, protecting data and integrating with existing software all require a considered approach.",
+            result: "Technology tailored to business needs",
           },
         ],
       },
+
       services: {
-        badge: "END-TO-END DELIVERY",
-        title: "Services designed for real business needs",
+        badge: "AREAS OF EXPERTISE",
+        title: "Technology tailored to business needs",
         description:
-          "We do not sell fashionable experiments. We deliver stable, secure tools that become the operational backbone of your business.",
+          "Services include AI solutions, custom software development and system integrations designed to improve everyday business processes.",
         cards: [
           {
-            title: "AI & LLM implementation",
+            label: "01 / AI",
+            title: "AI & LLM solutions",
             description:
-              "Dedicated operational assistants powered by your company's internal knowledge base. Intelligent data extraction, enquiry categorisation and secure models with data isolation.",
+              "AI assistants connected to company knowledge bases, automated data extraction and classification, and chatbots supporting internal business processes.",
             features: [
-              "Private company knowledge base (RAG)",
-              "Automated document verification",
-              "Internal operational chatbots",
+              "Integration with company knowledge bases (RAG)",
+              "Data extraction and document analysis",
+              "Internal chatbots and AI assistants",
             ],
-            link: "More about AI implementation",
+            link: "More about AI solutions",
           },
           {
+            label: "02 / SOFTWARE",
             title: "Custom applications and systems",
             description:
-              "Experience in designing B2B portals, ERP/CRM systems and operational dashboards tailored to the specific needs of your industry.",
+              "Design and development of web applications, B2B portals, ERP/CRM systems and operational dashboards tailored to business processes and requirements.",
             features: [
-              "Custom management dashboards and CRM",
+              "Custom applications and management dashboards",
               "B2B platforms and customer portals",
-              "Scalable architecture and clean code",
+              "Architecture tailored to business needs",
             ],
             link: "More about custom systems",
           },
           {
+            label: "03 / INTEGRATIONS",
             title: "Automation and integrations",
             description:
-              "Securely connecting your existing software: email, warehouse, accounting systems and external APIs. We eliminate repetitive manual tasks.",
+              "Connecting existing tools and systems, such as email, warehouse and accounting software or external APIs. Automating repetitive tasks and information flows.",
             features: [
-              "Automated invoice and order workflows",
-              "Two-way API synchronisation",
-              "Real-time notifications and webhooks",
+              "Automated document and order workflows",
+              "System integrations through APIs",
+              "Notifications and data exchange",
             ],
-            link: "More about integrations",
+            link: "More about automation and integrations",
           },
         ],
       },
+
       process: {
-        badge: "IMPLEMENTATION METHODOLOGY",
-        title: "How our collaboration works, step by step",
+        badge: "IMPLEMENTATION APPROACH",
+        title: "How the collaboration works, step by step",
         description:
-          "No unrealistic promises and no weeks spent creating unnecessary documentation. We follow a clear, engineering-driven process.",
+          "No unrealistic promises and no weeks spent creating unnecessary documentation. The process follows clearly defined stages and a practical, engineering-led approach.",
         steps: [
           {
             title: "1. Understanding your business and goals",
             description:
-              "We listen to how your business operates day to day and identify bottlenecks. You speak directly with the lead engineer, without technical jargon.",
+              "An initial conversation helps establish how your business operates and identify problems worth addressing. You work directly with the person responsible for analysing and delivering the project.",
             result: "Understanding your needs",
           },
           {
-            title: "2. Process audit and a clear plan",
+            title: "2. Process analysis and a clear plan",
             description:
-              "We identify where automation or AI can deliver business benefits and save valuable working time.",
+              "The analysis identifies which processes could be improved, where the limitations lie and which technology solutions may bring the greatest value to your business.",
             result: "Clearly defined scope",
           },
           {
-            title: "3. Agile implementation and testing",
+            title: "3. Development, implementation and testing",
             description:
-              "We design and implement the solution in close collaboration with you. Each module is tested using real data to verify how it performs.",
-            result: "Tested and reliable",
+              "A solution is developed around the agreed requirements and the specific needs of your business. Depending on the project, the work may include design, software development, system integration or AI implementation.",
+            result: "Testing and solution validation",
           },
           {
             title: "4. Further development and support",
             description:
-              "We provide ongoing technical support. When needed, we involve trusted specialists to help your solution grow.",
-            result: "Ongoing partner support",
+              "Once the solution is launched, further collaboration may include technical support, new functionality and adjustments as your business needs change. The scope of ongoing support is agreed individually.",
+            result: "Options for further development",
           },
         ],
       },
+
       about: {
         imageAlt: "ULTRASONICA engineer and founder",
         badge: "ABOUT ME",
         title:
           "An engineering mindset. Project delivery experience. New technologies.",
         paragraphs: [
-          "My technical background is built on a master's degree from the Faculty of Electronics at Gdańsk University of Technology, specialising in electronic systems and devices. I gained my first project design experience at the beginning of my professional career.",
+          "My technical background is built on a master's degree from the Faculty of Electronics at Gdańsk University of Technology, specialising in electronic systems and devices. I gained my first project experience at the beginning of my professional career.",
           "I later ran a company delivering electronic and IT systems for the mining industry. My primary responsibilities included project coordination, working with subcontractors and bringing together multiple technical components into solutions that worked as intended.",
-          "Today, I am building on this experience in modern software development, web applications and artificial intelligence. I combine project delivery experience with practical knowledge of emerging technologies. At ULTRASONICA, I focus on solutions that are well-designed, useful and aligned with real business needs.",
+          "Today, I am building on this experience in modern software development, web applications and artificial intelligence. I combine project delivery experience with practical knowledge of new technologies. At ULTRASONICA, I focus on solutions that are well-designed, useful and aligned with real business needs.",
         ],
         metrics: [
           {
             value: "M.SC. ENG.",
             label:
-              "Electronics, Telecommunications, Computer Science – Gdańsk University of Technology",
+              "Electronics, Telecommunications and Computer Science – Gdańsk University of Technology",
           },
           {
             value: "PROJECTS",
             label: "Coordination of technical system delivery for industry",
           },
           {
-            value: "DELIVERY",
+            value: "IMPLEMENTATION",
             label:
               "Bringing technology, specialists and business needs together",
           },
         ],
       },
+
       whyUs: {
         badge: "WHY ULTRASONICA",
-        title: "Technology that makes sense for business",
+        title: "Technology that meets business needs",
         description:
-          "We combine an engineering mindset with a practical understanding of business needs. We focus on solutions with a clear purpose and business value.",
+          "Every implementation starts with understanding the problem and the business objective. An engineering-driven approach helps assess what technology can achieve, while a practical understanding of business operations turns those possibilities into solutions that deliver real value.",
         cards: [
           {
-            title: "We understand technology and business",
+            title: "Technology and business understanding",
             description:
-              "We look at every project from both technical and organisational perspectives. A good solution must not only work but also support the company's day-to-day operations.",
-            result: "Technology with a clear purpose",
+              "Each project is considered from both a technical and an operational perspective. A solution should not only work as intended but, above all, address specific needs and improve day-to-day business operations.",
+            result: "Solutions grounded in business reality",
           },
           {
             title: "The right solution, not the latest trend",
             description:
-              "We do not implement AI simply because it is popular. We analyse the problem and choose tools based on actual needs — sometimes simpler automation is the better choice.",
-            result: "Technology suited to your needs",
+              "Technology choices are based on an analysis of the problem, not on current trends. Not every process requires artificial intelligence — sometimes simpler automation delivers better results at a lower cost.",
+            result: "Technology tailored to actual needs",
           },
           {
-            title: "A responsible approach to data",
+            title: "Security and responsibility",
             description:
-              "We treat data security and confidentiality as essential parts of every project. We select solutions with regard to the type of data processed and the client's requirements.",
-            result: "A considered approach to security",
+              "Information security and data confidentiality are considered from the earliest stages of solution design. The choice of technology and data processing methods depends on the project's specific requirements and the client's needs.",
+            result: "Security built into the design",
           },
           {
             title: "Transparent collaboration",
             description:
-              "We agree on the scope, stages and costs before starting the work. You know what we are working on, what the assumptions are and what to expect.",
+              "The scope of work, implementation stages and costs are defined before a project begins. Clear arrangements make it easier to make informed decisions and maintain control over the implementation process.",
             result: "Clear scope and predictable costs",
           },
         ],
       },
+
       projects: {
         badge: "EXAMPLE USE CASES",
         title: "How technology can improve your business operations",
         description:
-          "These examples illustrate solutions that can be adapted to the processes and systems used in your organisation.",
+          "The following examples illustrate how technology can be adapted to your business processes and existing systems.",
         cards: [
           {
             category: "AI & B2B CUSTOMER SERVICE",
-            title: "Intelligent handling of business enquiries",
+            title: "Intelligent processing of business enquiries",
             description:
-              "An AI assistant analyses customer enquiries, identifies key information and helps prepare the data needed to create a quotation.",
+              "An AI assistant analyses incoming customer enquiries, identifies key information and helps prepare the data required to generate quotations.",
             features: [
               "Extracting information from emails and attachments",
-              "Identifying technical parameters",
+              "Identifying technical specifications",
               "Preparing data for quotations",
               "Potential integration with CRM or ERP systems",
             ],
-            result:
-              "More efficient enquiry handling and less manual data entry",
+            result: "Faster enquiry processing and less manual data entry",
           },
           {
-            category: "PROCESS AUTOMATION",
-            title: "Automated document workflows",
+            category: "BUSINESS PROCESS AUTOMATION",
+            title: "Automated document processing",
             description:
-              "The solution helps read and organinse documents such as invoices and orders, then transfers relevant data to subsequent stages of the process.",
+              "The solution extracts and organises information from documents such as invoices and orders, then passes relevant data to the next stages of the process.",
             features: [
               "Extracting data from documents",
-              "Document type recognition",
-              "Verification of required information",
+              "Recognising document types",
+              "Verifying required information",
               "Integration with accounting or ERP systems",
             ],
             result:
-              "Fewer repetitive tasks and more organised document workflows",
+              "Fewer repetitive tasks and more efficient document workflows",
           },
         ],
       },
+
       cta: {
         badge: "LET'S TALK ABOUT YOUR BUSINESS",
-        title: "Let's discuss what we can improve in your business",
+        title: "Let's explore how your business can work more efficiently",
         description:
-          "Tell us about the challenges your business is facing. Together, we will explore where software development, automation or AI can deliver real benefits.",
+          "Tell me about the challenges your business faces. I will assess your needs and outline possible ways to use custom software, process automation or AI to address them.",
         primaryButton: "Send an enquiry",
-        secondaryButton: "Email us directly",
+        secondaryButton: "Email me directly",
         note: "No obligation • A practical discussion • An individual approach",
       },
     },
 
     servicesPage: {
       hero: {
-        badge: "COMPREHENSIVE SERVICE PORTFOLIO",
-        title: "Our Services:",
+        badge: "TECHNOLOGY SERVICES",
+        title: "Services:",
         highlight: "Engineering and AI",
-        subtitle: "for Your Business",
+        subtitle: "for your business",
         description:
-          "We combine years of commercial software development experience with next-generation model architecture. We build production-ready, reliable solutions and secure AI implementations through direct collaboration with the lead engineer — without intermediaries or corporate noise.",
+          "I combine an engineering background with software design and the practical application of artificial intelligence. I develop custom solutions, integrate systems and automate business processes, selecting technologies to meet specific business needs. You work with me directly, from the initial analysis through to project delivery.",
       },
+
       metrics: [
         "Frontend applications",
         "AI analysis and implementation",
         "System integrations",
         "Process automation",
       ],
+
       services: [
         {
           module: "MODULE 01",
           category: "Artificial Intelligence",
           title: "AI Analysis and Implementation",
           description:
-            "We identify areas where artificial intelligence can improve the way your business works. We design solutions using language models and integrate them with applications and tools tailored to specific business needs.",
+            "Analysis of how artificial intelligence could be used to improve business operations. Design of solutions based on language models and their integration with applications and tools selected to meet specific business needs.",
           audienceLabel: "Who it's for",
           audience:
             "Businesses looking to make better use of information, improve enquiry handling, work with documents or streamline repetitive tasks.",
           benefitLabel: "Potential benefits",
           benefit:
-            "Easier access to information, less manual work and better-organised processes. Expected outcomes are assessed for each specific use case.",
+            "Easier access to information, less manual work and better-organised processes. Potential outcomes are assessed for each specific use case.",
           examplesLabel: "Example applications",
           examples: [
             "AI assistants using company knowledge bases",
             "Document analysis and summarisation",
-            "Assistance with preparing responses to customer enquiries",
+            "Support with preparing responses to customer enquiries",
           ],
-          practicalLabel: "Our approach",
+          practicalLabel: "How it works",
           practical:
-            "We start by analysing the problem, available data and desired outcome. We then select an appropriate approach, prepare a concept or prototype and define the scope of integration and implementation.",
+            "The process starts with an analysis of the problem, available data and desired outcome. An appropriate approach is then selected, a concept or prototype is prepared, and the scope of integration and implementation is defined.",
           imageAlt:
             "Visualisation of information processing using artificial intelligence",
           metricLabel: "Example AI workflow",
@@ -672,13 +701,13 @@ export const translations = {
           category: "Software Architecture",
           title: "Custom Applications and Systems",
           description:
-            "Custom web applications and business platforms designed to solve unique operational bottlenecks. We eliminate the limitations of off-the-shelf platforms by building software tailored to your needs.",
-          audienceLabel: "Who is it for",
+            "Custom web applications and business platforms designed around specific operational needs. Software can complement or replace off-the-shelf solutions where their capabilities no longer meet the requirements of the business.",
+          audienceLabel: "Who it's for",
           audience:
             "Businesses that have outgrown off-the-shelf software or spreadsheet-based workflows.",
           benefitLabel: "What you gain",
           benefit:
-            "Full process control, scalability and tools tailored to the way your employees actually work.",
+            "A solution tailored to the specific needs of your business, with the flexibility to evolve as requirements and working practices change.",
           examplesLabel: "Example applications:",
           examples: [
             "B2B customer portals",
@@ -687,74 +716,77 @@ export const translations = {
           ],
           practicalLabel: "How it works in practice:",
           practical:
-            "Agile, partnership-based delivery: from focused functional workshops with the architect, through prototype development, to production deployment and ongoing post-launch support.",
-          imageAlt: "Enterprise software system architecture",
+            "The process includes defining requirements and functionality, preparing the design and developing the software. Following testing, the solution can be deployed and further developed within an agreed scope.",
+          imageAlt: "Custom software system architecture",
           architectureLabel: "Architecture",
-          responseTimeLabel: "Response Time",
+          responseTimeLabel: "Response time",
         },
         {
           module: "MODULE 03",
           category: "Digital Ecosystem",
           title: "Process Automation and Integrations",
           description:
-            "Seamless integration of the applications you use every day, eliminating manual data entry. We create a consistent information exchange backbone across your organisation.",
-          audienceLabel: "Who is it for",
+            "Integration of the applications used in your business and automation of data flows between systems. These solutions reduce the need for manual data transfer and improve information exchange.",
+          audienceLabel: "Who it's for",
           audience:
-            "Teams working with multiple disconnected tools (CRM, ERP, email and invoicing systems).",
+            "Businesses using multiple independent tools, such as CRM and ERP platforms, email and invoicing systems.",
           benefitLabel: "What you gain",
           benefit:
-            "No human errors from manual data entry, real-time notifications and dozens of hours saved every week.",
+            "Less manual data entry, smoother information flows, automated notifications and more time for tasks that require employees' attention.",
           examplesLabel: "Example applications:",
           examples: [
             "Automated invoice workflows",
             "Order and inventory synchronisation",
-            "SMS / Slack / Email notifications",
+            "SMS / Slack / email notifications",
           ],
           practicalLabel: "How it works in practice:",
           practical:
-            "Secure configuration of webhooks, APIs and automated rules, with 24/7 operational monitoring.",
+            "Systems are integrated using APIs, webhooks and automation rules. The scope of monitoring and ongoing support is agreed according to the needs of the project.",
           imageAlt: "Data flow and system integration visualisation",
-          automationLabel: "Fully automated",
+          automationLabel: "Process automation",
         },
       ],
+
       faq: {
         badge: "FREQUENTLY ASKED QUESTIONS",
         title: "Frequently Asked Questions",
         description:
-          "Everything worth knowing before starting a technology implementation project with the Ultrasonica team.",
+          "Answers to common questions about technology options, costs and working with ULTRASONICA.",
         items: [
           {
             q: "Do I need to know anything about AI?",
-            a: "No, that's our job. We explain everything in clear, straightforward business language and make sure the tools are intuitive for every member of your team from day one.",
+            a: "No specialist technical knowledge is required. I explain what the available technologies can do, help assess whether they are suitable and select solutions that fit the way your business operates.",
           },
           {
             q: "How much does it cost?",
-            a: "Every project has its own scope and technical requirements. After an initial free consultation and requirements analysis, we prepare a clear, transparent quotation broken down into stages — with no hidden costs.",
+            a: "The cost depends on the scope and complexity of the project and the technologies involved. Following an initial discussion and an assessment of your needs, I outline the proposed scope of work, the approach to delivery and the estimated cost. Any changes to the agreed scope are discussed before the work proceeds.",
           },
           {
             q: "Is my data secure?",
-            a: "Absolutely. We design solutions in line with GDPR requirements, using isolated, secure instances where your company's data is never used to train publicly available AI models.",
+            a: "Data security is considered from the solution design stage. The choice of safeguards, data storage and processing methods, and service providers depends on the nature and requirements of the project. Data protection and GDPR considerations are assessed in the context of the intended application.",
           },
           {
             q: "What does working together look like?",
-            a: "You work directly with the lead engineer and solution architect, not an account manager or salesperson. After analysing your business goals, we design the technical architecture and implement the solution in short, agile iterations, with full knowledge transfer.",
+            a: "You work directly with me, from the initial discussion and needs analysis through to defining the scope and delivering the project. The working method and stages are adapted to the nature of the solution. Once the project is complete, further development and technical support can also be discussed.",
           },
           {
             q: "Can we start with a small project?",
-            a: "Of course. We always recommend starting with a quick pilot (Proof of Concept) or automating one of your most time-consuming bottlenecks, so you can see measurable returns as soon as possible.",
+            a: "Yes. Not every problem requires a complex system. The work can start with automating a single process, integrating selected tools or developing a prototype (Proof of Concept) to assess whether further development is worthwhile.",
           },
         ],
       },
+
       cta: {
         badge: "LET'S DISCUSS YOUR PROJECT",
         title: "Looking for a solution tailored to your needs?",
         description:
-          "Tell us about your project and the challenges you face. We will assess your needs, discuss possible implementation approaches and define the next steps together.",
+          "Describe the problem or process you would like to improve. I will assess your needs, outline possible solutions and help define the next steps.",
         primaryButton: "Send an enquiry",
-        secondaryButton: "Email us directly",
+        secondaryButton: "Email me directly",
         footer:
-          "Individual approach • Practical analysis • Transparent cooperation",
+          "Individual approach • Practical analysis • Direct communication",
       },
+
       moduleVisuals: {
         data: "DATA",
         model: "AI MODEL",
