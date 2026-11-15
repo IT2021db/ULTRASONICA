@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
     { name: t.navigation.home, path: "/" },
     { name: t.navigation.services, path: "/services" },
     { name: t.navigation.projects, path: "/projects" },
-    { name: t.navigation.contact, path: "/contact" },
+   // { name: t.navigation.contact, path: "/contact" },
   ];
 
   const contactLabel = t.navigation.contactButton;
