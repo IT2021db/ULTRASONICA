@@ -7,6 +7,7 @@ import { HomePage } from "./pages/HomePage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { CaseStudiesPage } from "./pages/CaseStudiesPage";
 import { ContactPage } from "./pages/ContactPage";
+import { PrivacyPolicyPage } from "./pages/PrivacyPolicyPage";
 
 export const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ export const App: React.FC = () => {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/projects" element={<CaseStudiesPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
 
             {/* Redirects from old Polish URLs */}
             <Route
@@ -33,6 +35,10 @@ export const App: React.FC = () => {
               path="/kontakt"
               element={<Navigate to="/contact" replace />}
             />
+            <Route
+              path="/polityka-prywatnosci"
+              element={<Navigate to="/privacy-policy" replace />}
+            />
           </Routes>
         </Layout>
       </BrowserRouter>
@@ -41,3 +47,4 @@ export const App: React.FC = () => {
 };
 
 export default App;
+

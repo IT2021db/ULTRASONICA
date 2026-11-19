@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../i18n/translations";
+import { company } from "../../data/company";
 
 export const Footer: React.FC = () => {
   const { language, setLanguage } = useLanguage();
@@ -68,9 +69,12 @@ export const Footer: React.FC = () => {
                 {t.navigation.contact}
               </Link>
 
-              <span className="font-body-sm text-body-sm text-slate-400">
+              <Link
+                to="/privacy-policy"
+                className="font-body-sm text-body-sm text-slate-400 hover:text-secondary-fixed transition-colors"
+              >
                 {t.footer.privacyPolicy}
-              </span>
+              </Link>
             </nav>
           </div>
 
@@ -81,19 +85,19 @@ export const Footer: React.FC = () => {
             </span>
 
             <p className="font-body-sm text-body-sm text-slate-300">
-              ul. Władysława IV 23, 81-358 Gdynia
+              {company.addressLine1}, {company.postalAddress}
             </p>
 
             <a
               className="font-body-sm text-body-sm text-secondary-fixed hover:underline"
-              href="mailto:ultrasonica.tech@gmail.com"
+              href={`mailto:${company.email}`}
             >
-              ultrasonica.tech@gmail.com
+              {company.email}
             </a>
 
             <a
               className="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed-dim hover:text-secondary-fixed mt-space-xs"
-              href="https://maps.google.com/?q=Władysława+IV+55+Gdynia"
+              href={company.mapUrl}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -110,6 +114,7 @@ export const Footer: React.FC = () => {
               <div className="flex items-center bg-[#071933] border border-[#1a2e4e] rounded-full px-2 py-0.5">
                 <button
                   type="button"
+                  aria-pressed={language === "PL"}
                   onClick={() => setLanguage("PL")}
                   className={`font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold transition-all ${
                     language === "PL"
@@ -126,6 +131,7 @@ export const Footer: React.FC = () => {
 
                 <button
                   type="button"
+                  aria-pressed={language === "EN"}
                   onClick={() => setLanguage("EN")}
                   className={`font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold transition-all ${
                     language === "EN"
@@ -154,3 +160,4 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
+

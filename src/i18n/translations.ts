@@ -19,6 +19,17 @@ export const translations = {
       copyright: "Wszelkie prawa zastrzeżone.",
       tagline: "Intelligent Systems Architecture & Deployment",
     },
+    contactForm: {
+      invalidName: "Podaj imię i nazwisko.",
+      invalidEmail: "Wprowadź prawidłowy adres e-mail.",
+      subjectRequired: "Wybierz temat zapytania.",
+      messageTooShort: "Wpisz opis projektu (minimum 20 znaków).",
+      consentRequired: "Zaznacz wymagane pole przed wysłaniem.",
+      incomplete: "Sprawdź wymagane pola formularza.",
+      notConfigured: "Formularz nie jest jeszcze skonfigurowany. Napisz bezpośrednio na podany adres e-mail.",
+      failed: "Nie udało się wysłać wiadomości. Spróbuj ponownie lub napisz bezpośrednio na podany adres e-mail.",
+      sent: "Wiadomość została wysłana. Dziękujemy za kontakt.",
+    },
 
     hero: {
       badge: "Inżynieria inteligentnych systemów",
@@ -587,6 +598,17 @@ export const translations = {
       copyright: "All rights reserved.",
       tagline: "Intelligent Systems Architecture & Deployment",
     },
+    contactForm: {
+      invalidName: "Please enter your name.",
+      invalidEmail: "Please enter a valid email address.",
+      subjectRequired: "Please select an enquiry topic.",
+      messageTooShort: "Please describe your project (at least 20 characters).",
+      consentRequired: "Please tick the required checkbox before submitting.",
+      incomplete: "Please check the required fields in the form.",
+      notConfigured: "The form has not been configured yet. Please email us directly using the address below.",
+      failed: "Your message could not be sent. Please try again or email us directly.",
+      sent: "Your message has been sent. Thank you for getting in touch.",
+    },
 
     hero: {
       badge: "Intelligent Systems Engineering",
@@ -1135,3 +1157,4 @@ export const translations = {
 } as const;
 
 export type Language = keyof typeof translations;
+

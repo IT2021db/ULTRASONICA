@@ -5,12 +5,16 @@
     <loc>https://ultrasonica.eu/</loc>
   </url>
   <url>
-    <loc>https://ultrasonica.eu/uslugi</loc>
+    <loc>https://ultrasonica.eu/services</loc>
   </url>
   <url>
-    <loc>https://ultrasonica.eu/realizacje</loc>
+    <loc>https://ultrasonica.eu/projects</loc>
   </url>
   <url>
-    <loc>https://ultrasonica.eu/kontakt</loc>
+    <loc>https://ultrasonica.eu/contact</loc>
+  </url>
+  <url>
+    <loc>https://ultrasonica.eu/privacy-policy</loc>
   </url>
 </urlset>
+

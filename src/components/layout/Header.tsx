@@ -70,6 +70,7 @@ export const Header: React.FC = () => {
           <div className="flex items-center bg-[#071933] border border-[#1a2e4e] rounded-full px-space-xs py-1">
             <button
               type="button"
+              aria-pressed={language === "PL"}
               onClick={() => setLanguage("PL")}
               className={`font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold transition-all ${
                 language === "PL"
@@ -84,6 +85,7 @@ export const Header: React.FC = () => {
             </span>
             <button
               type="button"
+              aria-pressed={language === "EN"}
               onClick={() => setLanguage("EN")}
               className={`font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold transition-all ${
                 language === "EN"
@@ -106,7 +108,9 @@ export const Header: React.FC = () => {
           {/* Mobile Hamburger Toggle */}
           <button
             type="button"
-            aria-label="Menu"
+            aria-label={language === "PL" ? "Otwórz menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#071933] transition-colors"
           >
@@ -119,7 +123,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#001029]/95 border-b border-[#13233c] px-gutter py-4 flex flex-col gap-3">
+        <div id="mobile-navigation" className="lg:hidden bg-[#001029]/95 border-b border-[#13233c] px-gutter py-4 flex flex-col gap-3">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
@@ -151,3 +155,4 @@ export const Header: React.FC = () => {
     </header>
   );
 };
+
